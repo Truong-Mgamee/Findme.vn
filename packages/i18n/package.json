@@ -13,7 +13,9 @@
     "typecheck": "tsc -p tsconfig.json",
     "test": "vitest run",
     "lint": "tsc -p tsconfig.json --noEmit && node scripts/lint-keys.mjs",
-    "lint:keys": "node scripts/lint-keys.mjs"
+    "lint:keys": "node scripts/lint-keys.mjs",
+    "i18n:pseudo": "node scripts/pseudo-locale.mjs",
+    "i18n:draft": "node scripts/draft-locale.mjs"
   },
   "dependencies": {
     "@findme/engine-core": "workspace:*",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "typescript": "^5.7.0",
     "vitest": "^3.0.0",
-    "@types/node": "^22.10.0"
+    "@types/node": "^22.10.0",
+    "@anthropic-ai/sdk": "^0.80.0"
   }
 }
