@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Daily Fate",
+    "slug": "daily-fate",
+    "scheme": "dailyfate",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.mgamee.dailyfate" },
+    "android": {
+      "package": "com.mgamee.dailyfate",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F0E17",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": { "favicon": "./assets/favicon.png", "bundler": "metro", "output": "single" },
+    "plugins": ["expo-localization"]
+  }
+}
