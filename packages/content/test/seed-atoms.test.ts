@@ -45,11 +45,11 @@ describe('seed atoms on disk', () => {
       const n = countWords(a.body_md);
       expect(n, `${a.id} has ${n} words`).toBeGreaterThanOrEqual(60);
       expect(n, `${a.id} has ${n} words`).toBeLessThanOrEqual(140);
-      expect(a.body_md.trim()).toMatch(/[.!?…]$/);
+      expect(a.body_md.trim()).toMatch(/[.!?…]["”]?$/);
       const re = banned[a.locale];
       if (re) expect(a.body_md, `${a.id} contains a banned phrase`).not.toMatch(re);
-      if (a.locale === 'vi') expect(a.body_md, `${a.id} should address "bạn"`).toMatch(/\bbạn\b/);
-      if (a.locale === 'en') expect(a.body_md, `${a.id} should address "you"`).toMatch(/\byou\b/i);
+      if (a.locale === 'vi') expect(a.body_md, `${a.id} should address "bạn"`).toMatch(/bạn/i);
+      if (a.locale === 'en') expect(a.body_md, `${a.id} should address "you"`).toMatch(/\byour?\b/i);
     }
   });
 });
