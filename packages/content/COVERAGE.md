@@ -1,6 +1,6 @@
 # Atom coverage
 
-Generated 2026-10-10T16:27:38.430Z. Counts are keys from `keys-manifest.json`; "covered" = any atom (draft or better).
+Generated 2026-10-10T16:28:10.740Z. Counts are keys from `keys-manifest.json`; "covered" = any atom (draft or better).
 
 | Tradition | Locale | Keys | Covered | Draft | Reviewed | Published | Coverage |
 |---|---|---:|---:|---:|---:|---:|---:|
