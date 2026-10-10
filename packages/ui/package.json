@@ -1,0 +1,44 @@
+{
+  "name": "@findme/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared design tokens + chart/card components (react-native-svg) for the Findme mobile app and the web PWA (react-native-web).",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": { ".": "./src/index.ts", "./tokens": "./src/tokens.ts" },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "jest",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@findme/engine-almanac": "workspace:*",
+    "@findme/engine-astro": "workspace:*",
+    "@findme/engine-bazi": "workspace:*",
+    "@findme/engine-core": "workspace:*",
+    "@findme/engine-iching": "workspace:*",
+    "@findme/engine-numerology": "workspace:*",
+    "@findme/engine-tarot": "workspace:*",
+    "@findme/engine-ziwei": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=19",
+    "react-native": ">=0.79",
+    "react-native-svg": ">=15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-syntax-import-attributes": "^7.26.0",
+    "@react-native/babel-preset": "0.86.3",
+    "@testing-library/react-native": "^14.1.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.2.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-svg": "^15.15.0",
+    "typescript": "^5.7.0"
+  }
+}
