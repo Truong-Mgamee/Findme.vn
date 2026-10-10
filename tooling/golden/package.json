@@ -1,0 +1,23 @@
+{
+  "name": "@findme/golden-tests",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:update": "vitest run -u"
+  },
+  "dependencies": {
+    "@findme/engine-core": "workspace:*",
+    "@findme/engine-calendar": "workspace:*",
+    "@findme/engine-bazi": "workspace:*",
+    "@findme/engine-ziwei": "workspace:*",
+    "@findme/engine-almanac": "workspace:*",
+    "@findme/engine-numerology": "workspace:*",
+    "@findme/engine-astro": "workspace:*",
+    "@findme/engine-tarot": "workspace:*",
+    "@findme/engine-iching": "workspace:*"
+  },
+  "devDependencies": { "typescript": "^5.7.0", "vitest": "^3.0.0", "@types/node": "^22.10.0" }
+}
