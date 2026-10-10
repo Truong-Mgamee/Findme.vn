@@ -3729,6 +3729,441 @@
         }
       }
     },
+    "/v1/billing/products": {
+      "get": {
+        "summary": "Products available for web checkout (configured Stripe prices)",
+        "tags": [
+          "billing"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "products": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string"
+                          },
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "subscription",
+                              "credits"
+                            ]
+                          },
+                          "credits": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "key",
+                          "kind",
+                          "credits"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "products"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/billing/checkout": {
+      "post": {
+        "summary": "Create a Stripe Checkout session for a subscription or credit pack (501 when Stripe is not configured)",
+        "tags": [
+          "billing"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "product": {
+                    "type": "string",
+                    "enum": [
+                      "plus_weekly",
+                      "plus_monthly",
+                      "plus_yearly",
+                      "credits_1",
+                      "credits_5",
+                      "credits_15"
+                    ]
+                  },
+                  "successPath": {
+                    "type": "string",
+                    "default": "/app/billing/success"
+                  },
+                  "cancelPath": {
+                    "type": "string",
+                    "default": "/app/paywall"
+                  }
+                },
+                "required": [
+                  "product"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "url": {
+                      "type": "string"
+                    },
+                    "sessionId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url",
+                    "sessionId"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/billing/portal": {
+      "post": {
+        "summary": "Stripe Customer Portal link (manage/cancel). 501 when not configured",
+        "tags": [
+          "billing"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "customerId": {
+                    "type": "string"
+                  },
+                  "returnPath": {
+                    "type": "string",
+                    "default": "/app/settings"
+                  }
+                },
+                "required": [
+                  "customerId"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "url": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/me/push-token": {
+      "post": {
+        "summary": "Register an Expo/Web push token and enable daily push",
+        "tags": [
+          "me"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 512
+                  },
+                  "platform": {
+                    "type": "string",
+                    "enum": [
+                      "ios",
+                      "android",
+                      "web"
+                    ]
+                  }
+                },
+                "required": [
+                  "token",
+                  "platform"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "tokens": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "ok",
+                    "tokens"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove a push token (disables daily push when none remain)",
+        "tags": [
+          "me"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "token"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "tokens": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "ok",
+                    "tokens"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/content/atoms": {
       "get": {
         "summary": "Published content atoms by key (fallback locale → en); public, CDN-cacheable",

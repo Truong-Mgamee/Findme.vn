@@ -24,6 +24,8 @@ import { entitlementRoutes } from './routes/entitlements.js';
 import { webhookRoutes } from './routes/webhooks.js';
 import { aiRoutes } from './routes/ai.js';
 import { adminRoutes } from './routes/admin.js';
+import { billingRoutes } from './routes/billing.js';
+import { pushRoutes } from './routes/push.js';
 
 export const API_VERSION = '0.1.0';
 
@@ -148,6 +150,8 @@ export async function buildApp(opts: BuildOptions = {}): Promise<FastifyInstance
       await v1.register(readingRoutes);
       await v1.register(aiRoutes);
       await v1.register(adminRoutes);
+      await v1.register(billingRoutes);
+      await v1.register(pushRoutes);
       await v1.register(contentRoutes);
       await v1.register(entitlementRoutes);
       await v1.register(webhookRoutes);

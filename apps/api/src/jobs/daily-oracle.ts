@@ -15,6 +15,7 @@ import { defaultCalendarStandard, LOCALE_CONFIGS } from '@findme/i18n';
 import { dailyContent, users } from '../db/schema.js';
 import { aiAvailable } from '../services/ai.js';
 import { zonedNoonUtc } from '../services/today.js';
+import { runDailyPushJob, runTrialReminderJob } from './push.js';
 
 export interface DailyJobOptions {
   date: string;
@@ -172,8 +173,26 @@ export function startDailyScheduler(app: FastifyInstance, locales: Locale[]): ()
         app.log.error({ err, date }, 'daily oracle job failed');
       }
     }
+    try {
+      app.log.info(await runTrialReminderJob(app), 'trial reminders');
+    } catch (err) {
+      app.log.error({ err }, 'trial reminder job failed');
+    }
+  };
+  const pushTick = async () => {
+    try {
+      const r = await runDailyPushJob(app);
+      if (r.candidates) app.log.info(r, 'daily push');
+    } catch (err) {
+      app.log.error({ err }, 'daily push job failed');
+    }
   };
   void tick();
-  const handle = setInterval(() => void tick(), 60 * 60 * 1000);
-  return () => clearInterval(handle);
+  void pushTick();
+  const h1 = setInterval(() => void tick(), 60 * 60 * 1000);
+  const h2 = setInterval(() => void pushTick(), 15 * 60 * 1000);
+  return () => {
+    clearInterval(h1);
+    clearInterval(h2);
+  };
 }

@@ -47,6 +47,10 @@ const EnvSchema = z.object({
     .transform((v) => v === 'true' || v === '1'),
   /** Expo push endpoint; unset → push jobs log only */
   EXPO_PUSH_URL: z.string().default('https://exp.host/--/api/v2/push/send'),
+  /** Stripe (web checkout). Prices: JSON map product → price id, e.g. {"plus_monthly":"price_…","credits_5":"price_…"} */
+  STRIPE_SECRET_KEY: z.string().optional(),
+  STRIPE_PRICES: z.string().optional(),
+  WEB_BASE_URL: z.string().default('http://localhost:3000'),
   PUSH_ENABLED: z
     .string()
     .optional()

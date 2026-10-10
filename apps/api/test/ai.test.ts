@@ -139,3 +139,24 @@ describe('daily oracle job', () => {
     expect(today.segments).toContain('ea:13');
   });
 });
+
+describe('billing + push (P12 scaffolding)', () => {
+  it('checkout returns 501 without Stripe config; products list is empty', async () => {
+    const r = await app.inject({ method: 'POST', url: '/v1/billing/checkout', headers: auth(), payload: { product: 'plus_monthly' } });
+    expect(r.statusCode).toBe(501);
+    expect(json(await app.inject({ method: 'GET', url: '/v1/billing/products', headers: auth() })).products).toEqual([]);
+  });
+  it('registers and removes push tokens, toggling pushEnabled', async () => {
+    const add = await app.inject({ method: 'POST', url: '/v1/me/push-token', headers: auth(), payload: { token: 'ExponentPushToken[abcdefghijklmnop]', platform: 'ios' } });
+    expect(json(add)).toEqual({ ok: true, tokens: 1 });
+    expect(json(await app.inject({ method: 'GET', url: '/v1/me', headers: auth() })).pushEnabled).toBe(true);
+    expect((await app.inject({ method: 'PUT', url: '/v1/me', headers: auth(), payload: { tz: 'Asia/Ho_Chi_Minh', dailyHour: 7 } })).statusCode).toBe(200);
+    const { runDailyPushJob } = await import('../src/jobs/push.js');
+    const r = await runDailyPushJob(app, new Date(Date.UTC(2026, 9, 10, 0, 0))); // 07:00 Asia/Ho_Chi_Minh = default daily hour
+    expect(r.dryRun).toBe(true);
+    expect(r.candidates).toBeGreaterThanOrEqual(1);
+    const del = await app.inject({ method: 'DELETE', url: '/v1/me/push-token', headers: auth(), payload: { token: 'ExponentPushToken[abcdefghijklmnop]' } });
+    expect(json(del)).toEqual({ ok: true, tokens: 0 });
+    expect(json(await app.inject({ method: 'GET', url: '/v1/me', headers: auth() })).pushEnabled).toBe(false);
+  });
+});
