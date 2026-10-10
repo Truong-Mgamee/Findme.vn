@@ -1,0 +1,228 @@
+term_key,han,vi,en,zh-TW,ja,ko
+stem.0,甲,Giáp,Jia (Yang Wood),甲,甲,갑
+stem.1,乙,Ất,Yi (Yin Wood),乙,乙,을
+stem.2,丙,Bính,Bing (Yang Fire),丙,丙,병
+stem.3,丁,Đinh,Ding (Yin Fire),丁,丁,정
+stem.4,戊,Mậu,Wu (Yang Earth),戊,戊,무
+stem.5,己,Kỷ,Ji (Yin Earth),己,己,기
+stem.6,庚,Canh,Geng (Yang Metal),庚,庚,경
+stem.7,辛,Tân,Xin (Yin Metal),辛,辛,신
+stem.8,壬,Nhâm,Ren (Yang Water),壬,壬,임
+stem.9,癸,Quý,Gui (Yin Water),癸,癸,계
+branch.0,子,Tý,Zi (Rat),子,子,자
+branch.1,丑,Sửu,Chou (Ox),丑,丑,축
+branch.2,寅,Dần,Yin (Tiger),寅,寅,인
+branch.3,卯,Mão,Mao (Rabbit),卯,卯,묘
+branch.4,辰,Thìn,Chen (Dragon),辰,辰,진
+branch.5,巳,Tỵ,Si (Snake),巳,巳,사
+branch.6,午,Ngọ,Wu (Horse),午,午,오
+branch.7,未,Mùi,Wei (Goat),未,未,미
+branch.8,申,Thân,Shen (Monkey),申,申,신
+branch.9,酉,Dậu,You (Rooster),酉,酉,유
+branch.10,戌,Tuất,Xu (Dog),戌,戌,술
+branch.11,亥,Hợi,Hai (Pig),亥,亥,해
+element.0,木,Mộc,Wood,木,木,목
+element.1,火,Hỏa,Fire,火,火,화
+element.2,土,Thổ,Earth,土,土,토
+element.3,金,Kim,Metal,金,金,금
+element.4,水,Thủy,Water,水,水,수
+tengod.bijian,比肩,Tỷ Kiên,Friend (Companion),比肩,比肩,비견
+tengod.jiecai,劫財,Kiếp Tài,Rob Wealth,劫財,劫財,겁재
+tengod.shishen,食神,Thực Thần,Eating God (Output),食神,食神,식신
+tengod.shangguan,傷官,Thương Quan,Hurting Officer,傷官,傷官,상관
+tengod.piancai,偏財,Thiên Tài,Indirect Wealth,偏財,偏財,편재
+tengod.zhengcai,正財,Chính Tài,Direct Wealth,正財,正財,정재
+tengod.qisha,七殺,Thất Sát,Seven Killings,七殺,偏官,편관
+tengod.zhengguan,正官,Chính Quan,Direct Officer,正官,正官,정관
+tengod.pianyin,偏印,Thiên Ấn,Indirect Resource,偏印,偏印,편인
+tengod.zhengyin,正印,Chính Ấn,Direct Resource,正印,印綬,정인
+bazi.daymaster,日主,Nhật chủ,Day Master,日主,日主,일간
+bazi.useful,用神,Dụng thần,Useful element,用神,用神,용신
+bazi.strong,身強,Thân vượng,Strong day master,身強,身強,신강
+bazi.weak,身弱,Thân nhược,Weak day master,身弱,身弱,신약
+bazi.balanced,中和,Trung hòa,Balanced day master,中和,中和,중화
+bazi.dayun,大運,Đại vận,Decade luck cycle,大運,大運,대운
+bazi.liunian,流年,Lưu niên,Annual luck,流年,流年,유년
+bazi.nayin,納音,Nạp âm,Nayin (melodic element),納音,納音,납음
+bazi.monthqi,月令,Nguyệt lệnh,Month command,月令,月令,월령
+bazi.pillars,四柱,Tứ trụ,Four Pillars,四柱,四柱,사주
+star.ziweiMaj,紫微,Tử Vi,Zi Wei (Emperor star),紫微,紫微,자미
+star.tianjiMaj,天機,Thiên Cơ,Tian Ji (Strategist),天機,天機,천기
+star.taiyangMaj,太陽,Thái Dương,Tai Yang (Sun),太陽,太陽,태양
+star.wuquMaj,武曲,Vũ Khúc,Wu Qu (General of Wealth),武曲,武曲,무곡
+star.tiantongMaj,天同,Thiên Đồng,Tian Tong (Blessing),天同,天同,천동
+star.lianzhenMaj,廉貞,Liêm Trinh,Lian Zhen (Chastity),廉貞,廉貞,염정
+star.tianfuMaj,天府,Thiên Phủ,Tian Fu (Treasury),天府,天府,천부
+star.taiyinMaj,太陰,Thái Âm,Tai Yin (Moon),太陰,太陰,태음
+star.tanlangMaj,貪狼,Tham Lang,Tan Lang (Desire),貪狼,貪狼,탐랑
+star.jumenMaj,巨門,Cự Môn,Ju Men (Great Gate),巨門,巨門,거문
+star.tianxiangMaj,天相,Thiên Tướng,Tian Xiang (Minister),天相,天相,천상
+star.tianliangMaj,天梁,Thiên Lương,Tian Liang (Elder),天梁,天梁,천량
+star.qishaMaj,七殺,Thất Sát,Qi Sha (Marshal),七殺,七殺,칠살
+star.pojunMaj,破軍,Phá Quân,Po Jun (Vanguard),破軍,破軍,파군
+star.wenchangMin,文昌,Văn Xương,Wen Chang (Scholar),文昌,文昌,문창
+star.wenquMin,文曲,Văn Khúc,Wen Qu (Artist),文曲,文曲,문곡
+star.zuofuMin,左輔,Tả Phù,Zuo Fu (Left Assistant),左輔,左輔,좌보
+star.youbiMin,右弼,Hữu Bật,You Bi (Right Assistant),右弼,右弼,우필
+star.lucunMin,祿存,Lộc Tồn,Lu Cun (Stored Wealth),祿存,祿存,녹존
+star.tianmaMin,天馬,Thiên Mã,Tian Ma (Heavenly Horse),天馬,天馬,천마
+star.huoxingMin,火星,Hỏa Tinh,Huo Xing (Fire star),火星,火星,화성
+star.lingxingMin,鈴星,Linh Tinh,Ling Xing (Bell star),鈴星,鈴星,영성
+star.qingyangMin,擎羊,Kình Dương,Qing Yang (Ram),擎羊,擎羊,경양
+star.tuoluoMin,陀羅,Đà La,Tuo Luo (Spinning Top),陀羅,陀羅,타라
+star.dikongMin,地空,Địa Không,Di Kong (Void),地空,地空,지공
+star.dijieMin,地劫,Địa Kiếp,Di Jie (Robbery),地劫,地劫,지겁
+star.tiankuiMin,天魁,Thiên Khôi,Tian Kui (Noble Leader),天魁,天魁,천괴
+star.tianyueMin,天鉞,Thiên Việt,Tian Yue (Noble Helper),天鉞,天鉞,천월
+palace.soulPalace,命宮,Cung Mệnh,Life Palace,命宮,命宮,명궁
+palace.bodyPalace,身宮,Cung Thân,Body Palace,身宮,身宮,신궁
+palace.siblingsPalace,兄弟宮,Cung Huynh Đệ,Siblings Palace,兄弟宮,兄弟宮,형제궁
+palace.spousePalace,夫妻宮,Cung Phu Thê,Spouse Palace,夫妻宮,夫妻宮,부처궁
+palace.childrenPalace,子女宮,Cung Tử Tức,Children Palace,子女宮,子女宮,자녀궁
+palace.wealthPalace,財帛宮,Cung Tài Bạch,Wealth Palace,財帛宮,財帛宮,재백궁
+palace.healthPalace,疾厄宮,Cung Tật Ách,Health Palace,疾厄宮,疾厄宮,질액궁
+palace.surfacePalace,遷移宮,Cung Thiên Di,Travel Palace,遷移宮,遷移宮,천이궁
+palace.friendsPalace,交友宮,Cung Nô Bộc,Friends Palace,交友宮,交友宮,교우궁
+palace.careerPalace,官祿宮,Cung Quan Lộc,Career Palace,官祿宮,官祿宮,관록궁
+palace.propertyPalace,田宅宮,Cung Điền Trạch,Property Palace,田宅宮,田宅宮,전택궁
+palace.spiritPalace,福德宮,Cung Phúc Đức,Wellbeing Palace,福德宮,福德宮,복덕궁
+palace.parentsPalace,父母宮,Cung Phụ Mẫu,Parents Palace,父母宮,父母宮,부모궁
+mutagen.sihuaLu,化祿,Hóa Lộc,Lu transformation (prosperity),化祿,化祿,화록
+mutagen.sihuaQuan,化權,Hóa Quyền,Quan transformation (power),化權,化權,화권
+mutagen.sihuaKe,化科,Hóa Khoa,Ke transformation (merit),化科,化科,화과
+mutagen.sihuaJi,化忌,Hóa Kỵ,Ji transformation (obstruction),化忌,化忌,화기
+ziwei.sihua,四化,Tứ hóa,Four transformations,四化,四化,사화
+ziwei.soulstar,命主,Mệnh chủ,Life Master star,命主,命主,명주
+ziwei.bodystar,身主,Thân chủ,Body Master star,身主,身主,신주
+ziwei.decadal,大限,Đại hạn,Decade cycle,大限,大限,대한
+ziwei.yearly,流年,Lưu niên,Annual cycle,流年,流年,유년
+ziwei.empty,無正曜,Vô chính diệu,Empty palace (no major star),無正曜,無正曜,무정요
+ziwei.trio,三方四正,Tam phương tứ chính,Three directions and four squares,三方四正,三方四正,삼방사정
+fiveclass.water2nd,水二局,Thủy Nhị Cục,Water 2nd class,水二局,水二局,수이국
+fiveclass.wood3rd,木三局,Mộc Tam Cục,Wood 3rd class,木三局,木三局,목삼국
+fiveclass.metal4th,金四局,Kim Tứ Cục,Metal 4th class,金四局,金四局,금사국
+fiveclass.earth5th,土五局,Thổ Ngũ Cục,Earth 5th class,土五局,土五局,토오국
+fiveclass.fire6th,火六局,Hỏa Lục Cục,Fire 6th class,火六局,火六局,화육국
+pattern.mingWuZhengYao,命無正曜,Mệnh Vô Chính Diệu,Life Palace without major stars,命無正曜,命無正曜,명무정요
+pattern.ziFuTongGong,紫府同宮,Tử Phủ Đồng Cung,Zi Wei and Tian Fu together,紫府同宮,紫府同宮,자부동궁
+pattern.ziFuChaoYuan,紫府朝垣,Tử Phủ Triều Viên,Zi Wei and Tian Fu facing the Life Palace,紫府朝垣,紫府朝垣,자부조원
+pattern.shaPoLang,殺破狼,Sát Phá Lang,Sha Po Lang (Qi Sha / Po Jun / Tan Lang),殺破狼,殺破狼,살파랑
+pattern.jiYueTongLiang,機月同梁,Cơ Nguyệt Đồng Lương,Ji Yue Tong Liang,機月同梁,機月同梁,기월동량
+pattern.riYueTongGong,日月同宮,Nhật Nguyệt Đồng Cung,Sun and Moon together,日月同宮,日月同宮,일월동궁
+pattern.fuXiangChaoYuan,府相朝垣,Phủ Tướng Triều Viên,Tian Fu and Tian Xiang facing the Life Palace,府相朝垣,府相朝垣,부상조원
+pattern.juJiTongGong,巨機同宮,Cự Cơ Đồng Cung,Ju Men and Tian Ji together,巨機同宮,巨機同宮,거기동궁
+pattern.wuTanTongGong,武貪同宮,Vũ Tham Đồng Cung,Wu Qu and Tan Lang together,武貪同宮,武貪同宮,무탐동궁
+pattern.lianTanTongGong,廉貪同宮,Liêm Tham Đồng Cung,Lian Zhen and Tan Lang together,廉貪同宮,廉貪同宮,염탐동궁
+pattern.changQuTongGong,昌曲同宮,Xương Khúc Đồng Cung,Wen Chang and Wen Qu together,昌曲同宮,昌曲同宮,창곡동궁
+pattern.changQuJiaMing,昌曲夾命,Xương Khúc Giáp Mệnh,Wen Chang and Wen Qu flanking the Life Palace,昌曲夾命,昌曲夾命,창곡협명
+pattern.luMaJiaoChi,祿馬交馳,Lộc Mã Giao Trì,Lu Cun and Tian Ma galloping together,祿馬交馳,祿馬交馳,녹마교치
+pattern.huoLingTan,火鈴貪,Hỏa Linh Tham,Tan Lang with Huo Xing or Ling Xing,火鈴貪,火鈴貪,화령탐
+pattern.yangTuoJiaMing,羊陀夾命,Dương Đà Giáp Mệnh,Qing Yang and Tuo Luo flanking the Life Palace,羊陀夾命,羊陀夾命,양타협명
+pattern.kongJieTongGong,空劫同宮,Không Kiếp Đồng Cung,Di Kong and Di Jie together,空劫同宮,空劫同宮,공겁동궁
+pattern.ziXiangTongGong,紫相同宮,Tử Tướng Đồng Cung,Zi Wei and Tian Xiang together,紫相同宮,紫相同宮,자상동궁
+pattern.ziPoTongGong,紫破同宮,Tử Phá Đồng Cung,Zi Wei and Po Jun together,紫破同宮,紫破同宮,자파동궁
+pattern.tongLiangTongGong,同梁同宮,Đồng Lương Đồng Cung,Tian Tong and Tian Liang together,同梁同宮,同梁同宮,동량동궁
+zhixing.建,建,Trực Kiến,Establish (Jian),建日,建,건
+zhixing.除,除,Trực Trừ,Remove (Chu),除日,除,제
+zhixing.满,滿,Trực Mãn,Full (Man),滿日,満,만
+zhixing.平,平,Trực Bình,Balance (Ping),平日,平,평
+zhixing.定,定,Trực Định,Settle (Ding),定日,定,정
+zhixing.执,執,Trực Chấp,Hold (Zhi),執日,執,집
+zhixing.破,破,Trực Phá,Break (Po),破日,破,파
+zhixing.危,危,Trực Nguy,Danger (Wei),危日,危,위
+zhixing.成,成,Trực Thành,Success (Cheng),成日,成,성
+zhixing.收,收,Trực Thu,Receive (Shou),收日,収,수
+zhixing.开,開,Trực Khai,Open (Kai),開日,開,개
+zhixing.闭,閉,Trực Bế,Close (Bi),閉日,閉,폐
+almanac.huangdao,黃道吉日,Ngày hoàng đạo,Auspicious day,黃道吉日,吉日,길일
+almanac.heidao,黑道日,Ngày hắc đạo,Inauspicious day,黑道日,黒道日,흑도일
+almanac.clash,沖,Xung,Clash,沖,冲,충
+almanac.harmony,合,Hợp,Harmony (combination),合,合,합
+almanac.goodhour,吉時,Giờ hoàng đạo,Auspicious hour,吉時,吉時,길시
+almanac.badhour,凶時,Giờ hắc đạo,Inauspicious hour,凶時,凶時,흉시
+almanac.zhixing,建除十二神,Thập nhị trực,Twelve day officers,建除十二神,十二直,건제십이신
+almanac.xiu,二十八宿,Nhị thập bát tú,Twenty-eight mansions,二十八宿,二十八宿,이십팔수
+almanac.ninestar,九星,Cửu tinh,Nine Stars,九星,九星,구성
+almanac.ganzhi,干支,Can chi,Stem and branch,干支,干支,간지
+almanac.yi,宜,Nên,Favourable for,宜,宜,의
+almanac.ji,忌,Kỵ,Avoid,忌,忌,기
+almanac.lunar,農曆,Âm lịch,Lunar calendar,農曆,旧暦,음력
+almanac.solarterm,節氣,Tiết khí,Solar term,節氣,節気,절기
+tarot.major-00,,Chàng Khờ (The Fool),The Fool,愚者,愚者,바보
+tarot.major-01,,Pháp Sư (The Magician),The Magician,魔術師,魔術師,마법사
+tarot.major-02,,Nữ Tư Tế (The High Priestess),The High Priestess,女祭司,女教皇,여사제
+tarot.major-03,,Hoàng Hậu (The Empress),The Empress,皇后,女帝,여황제
+tarot.major-04,,Hoàng Đế (The Emperor),The Emperor,皇帝,皇帝,황제
+tarot.major-05,,Giáo Hoàng (The Hierophant),The Hierophant,教皇,教皇,교황
+tarot.major-06,,Tình Nhân (The Lovers),The Lovers,戀人,恋人,연인
+tarot.major-07,,Cỗ Xe (The Chariot),The Chariot,戰車,戦車,전차
+tarot.major-08,,Sức Mạnh (Strength),Strength,力量,力,힘
+tarot.major-09,,Ẩn Sĩ (The Hermit),The Hermit,隱者,隠者,은둔자
+tarot.major-10,,Bánh Xe Số Phận (Wheel of Fortune),Wheel of Fortune,命運之輪,運命の輪,운명의 수레바퀴
+tarot.major-11,,Công Lý (Justice),Justice,正義,正義,정의
+tarot.major-12,,Người Treo Ngược (The Hanged Man),The Hanged Man,倒吊人,吊された男,매달린 남자
+tarot.major-13,,Cái Chết (Death),Death,死神,死神,죽음
+tarot.major-14,,Tiết Độ (Temperance),Temperance,節制,節制,절제
+tarot.major-15,,Ác Quỷ (The Devil),The Devil,惡魔,悪魔,악마
+tarot.major-16,,Tòa Tháp (The Tower),The Tower,高塔,塔,탑
+tarot.major-17,,Ngôi Sao (The Star),The Star,星星,星,별
+tarot.major-18,,Mặt Trăng (The Moon),The Moon,月亮,月,달
+tarot.major-19,,Mặt Trời (The Sun),The Sun,太陽,太陽,태양
+tarot.major-20,,Phán Xét (Judgement),Judgement,審判,審判,심판
+tarot.major-21,,Thế Giới (The World),The World,世界,世界,세계
+suit.wands,,Bộ Gậy (Wands),Wands,權杖,ワンド,완드
+suit.cups,,Bộ Cốc (Cups),Cups,聖杯,カップ,컵
+suit.swords,,Bộ Kiếm (Swords),Swords,寶劍,ソード,소드
+suit.pentacles,,Bộ Tiền (Pentacles),Pentacles,錢幣,ペンタクル,펜타클
+tarot.major,,Ẩn chính (Major Arcana),Major Arcana,大阿爾克那,大アルカナ,메이저 아르카나
+tarot.minor,,Ẩn phụ (Minor Arcana),Minor Arcana,小阿爾克那,小アルカナ,마이너 아르카나
+tarot.upright,,Lá xuôi,Upright,正位,正位置,정방향
+tarot.reversed,,Lá ngược,Reversed,逆位,逆位置,역방향
+tarot.position,,Vị trí trong trải bài,Spread position,牌陣位置,スプレッドの位置,스프레드 위치
+tarot.spread,,Trải bài,Spread,牌陣,スプレッド,스프레드
+numerology.lifepath,,Số Chủ Đạo,Life Path number,生命靈數,ライフパスナンバー,생명수
+numerology.expression,,Số Sứ Mệnh,Expression number,表達數,エクスプレッションナンバー,표현수
+numerology.soulurge,,Số Linh Hồn,Soul Urge number,靈魂數,ソウルナンバー,영혼수
+numerology.personality,,Số Nhân Cách,Personality number,人格數,パーソナリティナンバー,성격수
+numerology.birthday,,Số Ngày Sinh,Birthday number,生日數,バースデーナンバー,생일수
+numerology.maturity,,Số Trưởng Thành,Maturity number,成熟數,マチュリティナンバー,성숙수
+numerology.personalyear,,Năm Cá Nhân,Personal Year,流年數,パーソナルイヤー,개인년수
+numerology.personalmonth,,Tháng Cá Nhân,Personal Month,流月數,パーソナルマンス,개인월수
+numerology.personalday,,Ngày Cá Nhân,Personal Day,流日數,パーソナルデー,개인일수
+numerology.master,,Số Bậc Thầy,Master number,卓越數,マスターナンバー,마스터 넘버
+numerology.karmic,,Số Nợ Nghiệp,Karmic Debt number,業債數,カルミックデットナンバー,카르마 부채수
+sign.aries,,Bạch Dương,Aries,牡羊座,牡羊座,양자리
+sign.taurus,,Kim Ngưu,Taurus,金牛座,牡牛座,황소자리
+sign.gemini,,Song Tử,Gemini,雙子座,双子座,쌍둥이자리
+sign.cancer,,Cự Giải,Cancer,巨蟹座,蟹座,게자리
+sign.leo,,Sư Tử,Leo,獅子座,獅子座,사자자리
+sign.virgo,,Xử Nữ,Virgo,處女座,乙女座,처녀자리
+sign.libra,,Thiên Bình,Libra,天秤座,天秤座,천칭자리
+sign.scorpio,,Bọ Cạp,Scorpio,天蠍座,蠍座,전갈자리
+sign.sagittarius,,Nhân Mã,Sagittarius,射手座,射手座,궁수자리
+sign.capricorn,,Ma Kết,Capricorn,摩羯座,山羊座,염소자리
+sign.aquarius,,Bảo Bình,Aquarius,水瓶座,水瓶座,물병자리
+sign.pisces,,Song Ngư,Pisces,雙魚座,魚座,물고기자리
+planet.sun,,Mặt Trời,Sun,太陽,太陽,태양
+planet.moon,,Mặt Trăng,Moon,月亮,月,달
+planet.rising,,Cung Mọc,Rising sign (Ascendant),上升星座,アセンダント,상승궁
+planet.mercury,,Sao Thủy,Mercury,水星,水星,수성
+planet.venus,,Sao Kim,Venus,金星,金星,금성
+planet.mars,,Sao Hỏa,Mars,火星,火星,화성
+planet.jupiter,,Sao Mộc,Jupiter,木星,木星,목성
+planet.saturn,,Sao Thổ,Saturn,土星,土星,토성
+astro.retrograde,,Nghịch hành,Retrograde,逆行,逆行,역행
+trigram.qian,乾,Càn,Qian (Heaven),乾,乾,건
+trigram.dui,兌,Đoài,Dui (Lake),兌,兌,태
+trigram.li,離,Ly,Li (Fire),離,離,리
+trigram.zhen,震,Chấn,Zhen (Thunder),震,震,진
+trigram.xun,巽,Tốn,Xun (Wind),巽,巽,손
+trigram.kan,坎,Khảm,Kan (Water),坎,坎,감
+trigram.gen,艮,Cấn,Gen (Mountain),艮,艮,간
+trigram.kun,坤,Khôn,Kun (Earth),坤,坤,곤
+iching.hexagram,卦,Quẻ,Hexagram,卦,卦,괘
+iching.line,爻,Hào,Line,爻,爻,효
+iching.changing,變爻,Hào động,Changing line,變爻,変爻,변효
+iching.relating,之卦,Quẻ biến,Relating hexagram,之卦,之卦,지괘
+iching.judgment,卦辭,Lời quẻ (Thoán từ),Judgment,卦辭,卦辞,괘사
+iching.image,象辭,Lời tượng,Image,象辭,象辞,상사

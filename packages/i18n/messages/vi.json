@@ -1,0 +1,83 @@
+{
+  "common": {
+    "appName": "Findme",
+    "continue": "Tiếp tục",
+    "back": "Quay lại",
+    "skip": "Bỏ qua",
+    "save": "Lưu",
+    "cancel": "Huỷ",
+    "retry": "Thử lại",
+    "loading": "Đang tải…",
+    "errorGeneric": "Có lỗi xảy ra. Vui lòng thử lại.",
+    "disclaimer": "Nội dung luận giải mang tính chiêm nghiệm và gợi mở, không thay thế tư vấn y tế, pháp lý hay tài chính.",
+    "plusBadge": "Plus",
+    "freeTodayBadge": "Miễn phí hôm nay"
+  },
+  "onboarding": {
+    "locale": { "title": "Chọn ngôn ngữ", "subtitle": "Bạn có thể đổi bất kỳ lúc nào." },
+    "pack": {
+      "title": "Bạn muốn khám phá gì?",
+      "eastAsia": "Đông Á: Tử Vi, Bát Tự, Lịch ngày, Kinh Dịch",
+      "western": "Phương Tây: Tarot, Thần số học, Chiêm tinh",
+      "both": "Cả hai"
+    },
+    "birth": {
+      "title": "Bạn sinh khi nào?",
+      "date": "Ngày sinh",
+      "time": "Giờ sinh",
+      "timeUnknown": "Tôi không rõ giờ sinh",
+      "timeUnknownHint": "Lá số Tử Vi và trụ giờ sẽ chỉ mang tính tham khảo.",
+      "place": "Nơi sinh",
+      "placeHint": "Dùng để tính múi giờ và giờ mặt trời thực.",
+      "gender": "Giới tính"
+    },
+    "insights": { "title": "Đây là bạn", "subtitle": "Ba điều lá số nói về bạn" },
+    "dailyTime": { "title": "Bạn muốn nhận \"Hôm nay của bạn\" lúc mấy giờ?", "enablePush": "Gửi thông báo mỗi ngày" },
+    "firstReading": { "title": "Bài luận giải đầy đủ đầu tiên", "subtitle": "Miễn phí. Mất khoảng một phút." }
+  },
+  "today": {
+    "title": "Hôm nay",
+    "streak": "{count, plural, other {Chuỗi # ngày}}",
+    "luckyNumber": "Số may mắn",
+    "luckyColor": "Màu may mắn",
+    "goodHours": "Giờ hoàng đạo",
+    "doToday": "Việc nên làm",
+    "avoidToday": "Việc nên kiêng",
+    "cardOfDay": "Lá bài hôm nay",
+    "personalDay": "Số ngày cá nhân {number}",
+    "askMore": "Hỏi thêm",
+    "share": "Chia sẻ"
+  },
+  "explore": {
+    "title": "Khám phá",
+    "ziwei": "Lá số Tử Vi",
+    "bazi": "Bát Tự (Tứ Trụ)",
+    "almanac": "Lịch ngày & chọn ngày tốt",
+    "iching": "Kinh Dịch",
+    "tarot": "Tarot",
+    "numerology": "Thần số học",
+    "compat": "Hợp tuổi / hợp đôi",
+    "astro": "Bản đồ sao"
+  },
+  "paywall": {
+    "title": "Đi sâu hơn với Plus",
+    "weekly": "Theo tuần",
+    "monthly": "Theo tháng",
+    "yearly": "Theo năm",
+    "bestValue": "Tiết kiệm nhất",
+    "trialCta": "Dùng thử 7 ngày miễn phí",
+    "renewNotice": "Tự động gia hạn {price}/{period} sau khi hết dùng thử. Huỷ bất kỳ lúc nào trong cài đặt cửa hàng.",
+    "useCredit": "Dùng 1 credit thay vì đăng ký",
+    "restore": "Khôi phục giao dịch"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "language": "Ngôn ngữ",
+    "calendarStandard": "Chuẩn lịch âm",
+    "profiles": "Hồ sơ",
+    "subscription": "Gói đăng ký",
+    "privacy": "Quyền riêng tư & dữ liệu",
+    "deleteData": "Xoá dữ liệu của tôi",
+    "about": "Giới thiệu"
+  }
+}

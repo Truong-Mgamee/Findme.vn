@@ -1,0 +1,83 @@
+{
+  "common": {
+    "appName": "Findme",
+    "continue": "Continue",
+    "back": "Back",
+    "skip": "Skip",
+    "save": "Save",
+    "cancel": "Cancel",
+    "retry": "Retry",
+    "loading": "Loading…",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "disclaimer": "Readings are for reflection and inspiration. They are not medical, legal or financial advice.",
+    "plusBadge": "Plus",
+    "freeTodayBadge": "Free today"
+  },
+  "onboarding": {
+    "locale": { "title": "Choose your language", "subtitle": "You can change this anytime." },
+    "pack": {
+      "title": "What would you like to explore?",
+      "eastAsia": "East Asian: Zi Wei, Four Pillars, Almanac, I Ching",
+      "western": "Western: Tarot, Numerology, Astrology",
+      "both": "Both"
+    },
+    "birth": {
+      "title": "When were you born?",
+      "date": "Date of birth",
+      "time": "Time of birth",
+      "timeUnknown": "I don't know my birth time",
+      "timeUnknownHint": "Zi Wei and hour-pillar results will be approximate.",
+      "place": "Place of birth",
+      "placeHint": "Used for time zone and true solar time.",
+      "gender": "Gender"
+    },
+    "insights": { "title": "This is you", "subtitle": "Three things your chart says" },
+    "dailyTime": { "title": "When should your Daily Oracle arrive?", "enablePush": "Send me a daily notification" },
+    "firstReading": { "title": "Your first full reading", "subtitle": "On us. It takes about a minute." }
+  },
+  "today": {
+    "title": "Today",
+    "streak": "{count, plural, one {# day streak} other {# day streak}}",
+    "luckyNumber": "Lucky number",
+    "luckyColor": "Lucky color",
+    "goodHours": "Good hours",
+    "doToday": "Favorable today",
+    "avoidToday": "Avoid today",
+    "cardOfDay": "Card of the day",
+    "personalDay": "Personal day {number}",
+    "askMore": "Ask more",
+    "share": "Share"
+  },
+  "explore": {
+    "title": "Explore",
+    "ziwei": "Zi Wei Dou Shu chart",
+    "bazi": "Four Pillars",
+    "almanac": "Almanac & date picker",
+    "iching": "I Ching",
+    "tarot": "Tarot",
+    "numerology": "Numerology",
+    "compat": "Compatibility",
+    "astro": "Birth chart"
+  },
+  "paywall": {
+    "title": "Go deeper with Plus",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "bestValue": "Best value",
+    "trialCta": "Start 7-day free trial",
+    "renewNotice": "Renews automatically at {price} per {period} after the trial. Cancel anytime in your store settings.",
+    "useCredit": "Use 1 credit instead",
+    "restore": "Restore purchases"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "calendarStandard": "Lunar calendar standard",
+    "profiles": "Profiles",
+    "subscription": "Subscription",
+    "privacy": "Privacy & data",
+    "deleteData": "Delete my data",
+    "about": "About"
+  }
+}

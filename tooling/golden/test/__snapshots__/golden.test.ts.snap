@@ -1,0 +1,1905 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`golden: calendar + bazi + ziwei per profile > au-sydney — Sydney DST (southern summer) 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Nhâm",
+    "firstPeriods": [
+      "2007:己亥",
+      "2017:戊戌",
+      "2027:丁酉",
+    ],
+    "luckDir": "backward",
+    "luckStart": "5y11m",
+    "strength": "balanced",
+    "useful": [
+      0,
+      3,
+    ],
+  },
+  "dst": true,
+  "horoscope": {
+    "age": 26,
+    "decadal": "GiápNgọ@4",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2001/11/11",
+  "lunarForChart": "2001/11/11",
+  "pillars": [
+    "辛巳",
+    "庚子",
+    "壬戌",
+    "甲辰",
+  ],
+  "solarCorrectionMin": -54.7,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianjiMaj",
+    "confidence": "high",
+    "five": "fire6th",
+    "palaces": [
+      "surfacePalace:寅:ziweiMaj+tianfuMaj",
+      "healthPalace:卯:taiyinMaj",
+      "wealthPalace:辰:tanlangMaj",
+      "childrenPalace:巳:jumenMaj*sihuaLu",
+      "spousePalace:午:lianzhenMaj+tianxiangMaj",
+      "siblingsPalace:未:tianliangMaj",
+      "soulPalace:申:qishaMaj",
+      "parentsPalace:酉:tiantongMaj",
+      "spiritPalace:戌:wuquMaj",
+      "propertyPalace:亥:taiyangMaj*sihuaQuan",
+      "careerPalace:子:pojunMaj",
+      "friendsPalace:丑:tianjiMaj",
+    ],
+    "patterns": [
+      "ziFuChaoYuan",
+      "shaPoLang",
+    ],
+    "soul": "lianzhenMaj",
+    "soulBranch": "shenEarthly",
+    "timeIndex": 4,
+  },
+  "zone": "Australia/Sydney",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > br-southern — Southern hemisphere, Brazil 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Đinh",
+    "firstPeriods": [
+      "1997:丁亥",
+      "2007:戊子",
+      "2017:己丑",
+    ],
+    "luckDir": "forward",
+    "luckStart": "1y8m",
+    "strength": "weak",
+    "useful": [
+      0,
+      1,
+    ],
+  },
+  "dst": true,
+  "horoscope": {
+    "age": 32,
+    "decadal": "KỷMão@1",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1995/9/10",
+  "lunarForChart": "1995/9/10",
+  "pillars": [
+    "乙亥",
+    "丙戌",
+    "丁酉",
+    "己酉",
+  ],
+  "solarCorrectionMin": -50.2,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianjiMaj",
+    "confidence": "high",
+    "five": "fire6th",
+    "palaces": [
+      "parentsPalace:寅:taiyangMaj+jumenMaj",
+      "spiritPalace:卯:tianxiangMaj",
+      "propertyPalace:辰:tianjiMaj*sihuaLu+tianliangMaj*sihuaQuan",
+      "careerPalace:巳:ziweiMaj*sihuaKe+qishaMaj",
+      "friendsPalace:午:",
+      "surfacePalace:未:",
+      "healthPalace:申:",
+      "wealthPalace:酉:lianzhenMaj+pojunMaj",
+      "childrenPalace:戌:",
+      "spousePalace:亥:tianfuMaj",
+      "siblingsPalace:子:tiantongMaj+taiyinMaj*sihuaJi",
+      "soulPalace:丑:wuquMaj+tanlangMaj",
+    ],
+    "patterns": [
+      "shaPoLang",
+      "wuTanTongGong",
+      "changQuTongGong",
+    ],
+    "soul": "jumenMaj",
+    "soulBranch": "chouEarthly",
+    "timeIndex": 9,
+  },
+  "zone": "America/Sao_Paulo",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > cn-1900 — early 20th century 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Giáp",
+    "firstPeriods": [
+      "1918:癸卯",
+      "1928:甲辰",
+      "1938:乙巳",
+    ],
+    "luckDir": "forward",
+    "luckStart": "5y8m",
+    "strength": "strong",
+    "useful": [
+      1,
+      2,
+      3,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 115,
+    "decadal": "KỷDậu@7",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1912/1/1",
+  "lunarForChart": "1912/1/1",
+  "pillars": [
+    "壬子",
+    "壬寅",
+    "甲子",
+    "戊辰",
+  ],
+  "solarCorrectionMin": -28.5,
+  "warnings": [],
+  "ziwei": {
+    "body": "huoxingMin",
+    "confidence": "high",
+    "five": "metal4th",
+    "palaces": [
+      "careerPalace:寅:",
+      "friendsPalace:卯:lianzhenMaj+pojunMaj",
+      "surfacePalace:辰:",
+      "healthPalace:巳:tianfuMaj",
+      "wealthPalace:午:tiantongMaj+taiyinMaj",
+      "childrenPalace:未:wuquMaj*sihuaJi+tanlangMaj",
+      "spousePalace:申:taiyangMaj+jumenMaj",
+      "siblingsPalace:酉:tianxiangMaj",
+      "soulPalace:戌:tianjiMaj+tianliangMaj*sihuaLu",
+      "parentsPalace:亥:ziweiMaj*sihuaQuan+qishaMaj",
+      "spiritPalace:子:",
+      "propertyPalace:丑:",
+    ],
+    "patterns": [
+      "jiYueTongLiang",
+    ],
+    "soul": "lucunMin",
+    "soulBranch": "xuEarthly",
+    "timeIndex": 4,
+  },
+  "zone": "Asia/Shanghai",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > cn-lichun-after — 1h after 立春 2026 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Kỷ",
+    "firstPeriods": [
+      "2036:辛卯",
+      "2046:壬辰",
+      "2056:癸巳",
+    ],
+    "luckDir": "forward",
+    "luckStart": "9y11m",
+    "strength": "balanced",
+    "useful": [
+      3,
+      1,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 2,
+    "decadal": "NhâmNgọ@4",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2025/12/17",
+  "lunarForChart": "2025/12/17",
+  "pillars": [
+    "丙午",
+    "庚寅",
+    "己酉",
+    "丁卯",
+  ],
+  "solarCorrectionMin": 0,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianjiMaj",
+    "confidence": "high",
+    "five": "earth5th",
+    "palaces": [
+      "careerPalace:寅:ziweiMaj*sihuaKe+tianfuMaj",
+      "friendsPalace:卯:taiyinMaj*sihuaJi",
+      "surfacePalace:辰:tanlangMaj",
+      "healthPalace:巳:jumenMaj",
+      "wealthPalace:午:lianzhenMaj+tianxiangMaj",
+      "childrenPalace:未:tianliangMaj*sihuaQuan",
+      "spousePalace:申:qishaMaj",
+      "siblingsPalace:酉:tiantongMaj",
+      "soulPalace:戌:wuquMaj",
+      "parentsPalace:亥:taiyangMaj",
+      "spiritPalace:子:pojunMaj",
+      "propertyPalace:丑:tianjiMaj*sihuaLu",
+    ],
+    "patterns": [
+      "ziFuChaoYuan",
+      "fuXiangChaoYuan",
+    ],
+    "soul": "lucunMin",
+    "soulBranch": "xuEarthly",
+    "timeIndex": 3,
+  },
+  "zone": "Asia/Shanghai",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > cn-lichun-before — 1h before 立春 2026 (Beijing 03:30) 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Kỷ",
+    "firstPeriods": [
+      "2036:戊子",
+      "2046:丁亥",
+      "2056:丙戌",
+    ],
+    "luckDir": "backward",
+    "luckStart": "9y10m",
+    "strength": "strong",
+    "useful": [
+      3,
+      4,
+      0,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 2,
+    "decadal": "QuýMùi@5",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2025/12/17",
+  "lunarForChart": "2025/12/17",
+  "pillars": [
+    "乙巳",
+    "己丑",
+    "己酉",
+    "丙寅",
+  ],
+  "solarCorrectionMin": 0,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianjiMaj",
+    "confidence": "high",
+    "five": "earth5th",
+    "palaces": [
+      "propertyPalace:寅:ziweiMaj*sihuaKe+tianfuMaj",
+      "careerPalace:卯:taiyinMaj*sihuaJi",
+      "friendsPalace:辰:tanlangMaj",
+      "surfacePalace:巳:jumenMaj",
+      "healthPalace:午:lianzhenMaj+tianxiangMaj",
+      "wealthPalace:未:tianliangMaj*sihuaQuan",
+      "childrenPalace:申:qishaMaj",
+      "spousePalace:酉:tiantongMaj",
+      "siblingsPalace:戌:wuquMaj",
+      "soulPalace:亥:taiyangMaj",
+      "parentsPalace:子:pojunMaj",
+      "spiritPalace:丑:tianjiMaj*sihuaLu",
+    ],
+    "patterns": [
+      "luMaJiaoChi",
+    ],
+    "soul": "jumenMaj",
+    "soulBranch": "haiEarthly",
+    "timeIndex": 2,
+  },
+  "zone": "Asia/Shanghai",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > cn-tet-1985 — same civil date under CN standard 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Canh",
+    "firstPeriods": [
+      "1990:戊寅",
+      "2000:己卯",
+      "2010:庚辰",
+    ],
+    "luckDir": "forward",
+    "luckStart": "4y7m",
+    "strength": "strong",
+    "useful": [
+      4,
+      0,
+      1,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 43,
+    "decadal": "ẤtHợi@9",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1984/12/1",
+  "lunarForChart": "1984/12/1",
+  "pillars": [
+    "甲子",
+    "丁丑",
+    "庚申",
+    "辛巳",
+  ],
+  "solarCorrectionMin": -25,
+  "warnings": [],
+  "ziwei": {
+    "body": "huoxingMin",
+    "confidence": "high",
+    "five": "metal4th",
+    "palaces": [
+      "surfacePalace:寅:",
+      "healthPalace:卯:lianzhenMaj*sihuaLu+pojunMaj*sihuaQuan",
+      "wealthPalace:辰:",
+      "childrenPalace:巳:tianfuMaj",
+      "spousePalace:午:tiantongMaj+taiyinMaj",
+      "siblingsPalace:未:wuquMaj*sihuaKe+tanlangMaj",
+      "soulPalace:申:taiyangMaj*sihuaJi+jumenMaj",
+      "parentsPalace:酉:tianxiangMaj",
+      "spiritPalace:戌:tianjiMaj+tianliangMaj",
+      "propertyPalace:亥:ziweiMaj+qishaMaj",
+      "careerPalace:子:",
+      "friendsPalace:丑:",
+    ],
+    "patterns": [
+      "luMaJiaoChi",
+    ],
+    "soul": "lianzhenMaj",
+    "soulBranch": "shenEarthly",
+    "timeIndex": 5,
+  },
+  "zone": "Asia/Shanghai",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > fi-high-lat — high latitude (Placidus still OK at 60°) 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Ất",
+    "firstPeriods": [
+      "1987:乙巳",
+      "1997:甲辰",
+      "2007:癸卯",
+    ],
+    "luckDir": "backward",
+    "luckStart": "5y0m",
+    "strength": "weak",
+    "useful": [
+      4,
+      0,
+    ],
+  },
+  "dst": true,
+  "horoscope": {
+    "age": 45,
+    "decadal": "NhâmDần@0",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1982/5/1",
+  "lunarForChart": "1982/5/1",
+  "pillars": [
+    "壬戌",
+    "丙午",
+    "乙亥",
+    "丁丑",
+  ],
+  "solarCorrectionMin": -81.5,
+  "warnings": [],
+  "ziwei": {
+    "body": "wenchangMin",
+    "confidence": "high",
+    "five": "fire6th",
+    "palaces": [
+      "childrenPalace:寅:",
+      "spousePalace:卯:",
+      "siblingsPalace:辰:tiantongMaj",
+      "soulPalace:巳:wuquMaj*sihuaJi+pojunMaj",
+      "parentsPalace:午:taiyangMaj",
+      "spiritPalace:未:tianfuMaj",
+      "propertyPalace:申:tianjiMaj+taiyinMaj",
+      "careerPalace:酉:ziweiMaj*sihuaQuan+tanlangMaj",
+      "friendsPalace:戌:jumenMaj",
+      "surfacePalace:亥:tianxiangMaj",
+      "healthPalace:子:tianliangMaj*sihuaLu",
+      "wealthPalace:丑:lianzhenMaj+qishaMaj",
+    ],
+    "patterns": [
+      "shaPoLang",
+    ],
+    "soul": "wuquMaj",
+    "soulBranch": "siEarthly",
+    "timeIndex": 1,
+  },
+  "zone": "Europe/Helsinki",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > jp-shichu — Japan standard (approx flag) 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Bính",
+    "firstPeriods": [
+      "1977:辛巳",
+      "1987:壬午",
+      "1997:癸未",
+    ],
+    "luckDir": "forward",
+    "luckStart": "2y0m",
+    "strength": "strong",
+    "useful": [
+      2,
+      3,
+      4,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 52,
+    "decadal": "MậuDần@0",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1975/3/19",
+  "lunarForChart": "1975/3/19",
+  "pillars": [
+    "乙卯",
+    "庚辰",
+    "丙午",
+    "乙未",
+  ],
+  "solarCorrectionMin": 21.5,
+  "warnings": [
+    "LUNAR_STD_APPROX",
+  ],
+  "ziwei": {
+    "body": "tiantongMaj",
+    "confidence": "high",
+    "five": "water2nd",
+    "palaces": [
+      "friendsPalace:寅:lianzhenMaj",
+      "surfacePalace:卯:",
+      "healthPalace:辰:pojunMaj",
+      "wealthPalace:巳:tiantongMaj",
+      "childrenPalace:午:wuquMaj+tianfuMaj",
+      "spousePalace:未:taiyangMaj+taiyinMaj*sihuaJi",
+      "siblingsPalace:申:tanlangMaj",
+      "soulPalace:酉:tianjiMaj*sihuaLu+jumenMaj",
+      "parentsPalace:戌:ziweiMaj*sihuaKe+tianxiangMaj",
+      "spiritPalace:亥:tianliangMaj*sihuaQuan",
+      "propertyPalace:子:qishaMaj",
+      "careerPalace:丑:",
+    ],
+    "patterns": [
+      "juJiTongGong",
+      "luMaJiaoChi",
+    ],
+    "soul": "wenquMin",
+    "soulBranch": "youEarthly",
+    "timeIndex": 7,
+  },
+  "zone": "Asia/Tokyo",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > kr-saju — Korea: true solar time ≈ −32 min 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Giáp",
+    "firstPeriods": [
+      "1995:壬戌",
+      "2005:癸亥",
+      "2015:甲子",
+    ],
+    "luckDir": "forward",
+    "luckStart": "7y2m",
+    "strength": "weak",
+    "useful": [
+      4,
+      0,
+    ],
+  },
+  "dst": true,
+  "horoscope": {
+    "age": 39,
+    "decadal": "ẤtSửu@11",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1988/8/7",
+  "lunarForChart": "1988/8/6",
+  "pillars": [
+    "戊辰",
+    "辛酉",
+    "甲戌",
+    "乙亥",
+  ],
+  "solarCorrectionMin": -86.5,
+  "warnings": [
+    "LUNAR_STD_APPROX",
+  ],
+  "ziwei": {
+    "body": "wenchangMin",
+    "confidence": "high",
+    "five": "water2nd",
+    "palaces": [
+      "careerPalace:寅:tanlangMaj*sihuaLu",
+      "friendsPalace:卯:tianjiMaj*sihuaJi+jumenMaj",
+      "surfacePalace:辰:ziweiMaj+tianxiangMaj",
+      "healthPalace:巳:tianliangMaj",
+      "wealthPalace:午:qishaMaj",
+      "childrenPalace:未:",
+      "spousePalace:申:lianzhenMaj",
+      "siblingsPalace:酉:",
+      "soulPalace:戌:pojunMaj",
+      "parentsPalace:亥:tiantongMaj",
+      "spiritPalace:子:wuquMaj+tianfuMaj",
+      "propertyPalace:丑:taiyangMaj+taiyinMaj*sihuaQuan",
+    ],
+    "patterns": [
+      "shaPoLang",
+    ],
+    "soul": "lucunMin",
+    "soulBranch": "xuEarthly",
+    "timeIndex": 11,
+  },
+  "zone": "Asia/Seoul",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > no-tz — tz missing → estimated from longitude 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Quý",
+    "firstPeriods": [
+      "2011:乙酉",
+      "2021:甲申",
+      "2031:癸未",
+    ],
+    "luckDir": "backward",
+    "luckStart": "0y7m",
+    "strength": "weak",
+    "useful": [
+      3,
+      4,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 17,
+    "decadal": "CanhThìn@2",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2010/9/3",
+  "lunarForChart": "2010/9/3",
+  "pillars": [
+    "庚寅",
+    "丙戌",
+    "癸巳",
+    "丁巳",
+  ],
+  "solarCorrectionMin": 26,
+  "warnings": [
+    "TZ_ESTIMATED",
+  ],
+  "ziwei": {
+    "body": "tianliangMaj",
+    "confidence": "medium",
+    "five": "metal4th",
+    "palaces": [
+      "childrenPalace:寅:",
+      "spousePalace:卯:tianfuMaj",
+      "siblingsPalace:辰:taiyinMaj*sihuaKe",
+      "soulPalace:巳:lianzhenMaj+tanlangMaj",
+      "parentsPalace:午:jumenMaj",
+      "spiritPalace:未:tianxiangMaj",
+      "propertyPalace:申:tiantongMaj*sihuaJi+tianliangMaj",
+      "careerPalace:酉:wuquMaj*sihuaQuan+qishaMaj",
+      "friendsPalace:戌:taiyangMaj*sihuaLu",
+      "surfacePalace:亥:",
+      "healthPalace:子:tianjiMaj",
+      "wealthPalace:丑:ziweiMaj+pojunMaj",
+    ],
+    "patterns": [
+      "shaPoLang",
+      "lianTanTongGong",
+    ],
+    "soul": "wuquMaj",
+    "soulBranch": "siEarthly",
+    "timeIndex": 5,
+  },
+  "zone": "UTC+7",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > tw-late-zi — late 子 hour Taipei 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Quý",
+    "firstPeriods": [
+      "1993:癸未",
+      "2003:壬午",
+      "2013:辛巳",
+    ],
+    "luckDir": "backward",
+    "luckStart": "2y7m",
+    "strength": "strong",
+    "useful": [
+      0,
+      1,
+      2,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 37,
+    "decadal": "CanhThìn@2",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1990/6/25",
+  "lunarForChart": "1990/6/26",
+  "pillars": [
+    "庚午",
+    "甲申",
+    "癸丑",
+    "壬子",
+  ],
+  "solarCorrectionMin": 1.5,
+  "warnings": [],
+  "ziwei": {
+    "body": "huoxingMin",
+    "confidence": "high",
+    "five": "wood3rd",
+    "palaces": [
+      "healthPalace:寅:lianzhenMaj",
+      "wealthPalace:卯:",
+      "childrenPalace:辰:pojunMaj",
+      "spousePalace:巳:tiantongMaj*sihuaJi",
+      "siblingsPalace:午:wuquMaj*sihuaQuan+tianfuMaj",
+      "soulPalace:未:taiyangMaj*sihuaLu+taiyinMaj*sihuaKe",
+      "parentsPalace:申:tanlangMaj",
+      "spiritPalace:酉:tianjiMaj+jumenMaj",
+      "propertyPalace:戌:ziweiMaj+tianxiangMaj",
+      "careerPalace:亥:tianliangMaj",
+      "friendsPalace:子:qishaMaj",
+      "surfacePalace:丑:",
+    ],
+    "patterns": [
+      "riYueTongGong",
+    ],
+    "soul": "wuquMaj",
+    "soulBranch": "weiEarthly",
+    "timeIndex": 12,
+  },
+  "zone": "Asia/Taipei",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > uk-winter — London winter, UTC 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Mậu",
+    "firstPeriods": [
+      "2002:丁丑",
+      "2012:戊寅",
+      "2022:己卯",
+    ],
+    "luckDir": "forward",
+    "luckStart": "1y6m",
+    "strength": "strong",
+    "useful": [
+      3,
+      4,
+      0,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 28,
+    "decadal": "NhâmThân@6",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1999/11/25",
+  "lunarForChart": "1999/11/25",
+  "pillars": [
+    "己卯",
+    "丙子",
+    "戊午",
+    "戊午",
+  ],
+  "solarCorrectionMin": -3.6,
+  "warnings": [],
+  "ziwei": {
+    "body": "tiantongMaj",
+    "confidence": "high",
+    "five": "earth5th",
+    "palaces": [
+      "wealthPalace:寅:wuquMaj*sihuaLu+tianxiangMaj",
+      "childrenPalace:卯:taiyangMaj+tianliangMaj*sihuaKe",
+      "spousePalace:辰:qishaMaj",
+      "siblingsPalace:巳:tianjiMaj",
+      "soulPalace:午:ziweiMaj",
+      "parentsPalace:未:",
+      "spiritPalace:申:pojunMaj",
+      "propertyPalace:酉:",
+      "careerPalace:戌:lianzhenMaj+tianfuMaj",
+      "friendsPalace:亥:taiyinMaj",
+      "surfacePalace:子:tanlangMaj*sihuaQuan",
+      "healthPalace:丑:tiantongMaj+jumenMaj",
+    ],
+    "patterns": [
+      "ziFuChaoYuan",
+      "fuXiangChaoYuan",
+      "yangTuoJiaMing",
+    ],
+    "soul": "pojunMaj",
+    "soulBranch": "wuEarthly",
+    "timeIndex": 6,
+  },
+  "zone": "Europe/London",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > us-dst — New York in DST 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Canh",
+    "firstPeriods": [
+      "1993:庚辰",
+      "2003:己卯",
+      "2013:戊寅",
+    ],
+    "luckDir": "backward",
+    "luckStart": "3y3m",
+    "strength": "strong",
+    "useful": [
+      4,
+      0,
+      1,
+    ],
+  },
+  "dst": true,
+  "horoscope": {
+    "age": 37,
+    "decadal": "BínhTuất@8",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1990/4/21",
+  "lunarForChart": "1990/4/21",
+  "pillars": [
+    "庚午",
+    "辛巳",
+    "庚辰",
+    "庚辰",
+  ],
+  "solarCorrectionMin": -52.1,
+  "warnings": [],
+  "ziwei": {
+    "body": "huoxingMin",
+    "confidence": "high",
+    "five": "fire6th",
+    "palaces": [
+      "parentsPalace:寅:ziweiMaj+tianfuMaj",
+      "spiritPalace:卯:taiyinMaj*sihuaKe",
+      "propertyPalace:辰:tanlangMaj",
+      "careerPalace:巳:jumenMaj",
+      "friendsPalace:午:lianzhenMaj+tianxiangMaj",
+      "surfacePalace:未:tianliangMaj",
+      "healthPalace:申:qishaMaj",
+      "wealthPalace:酉:tiantongMaj*sihuaJi",
+      "childrenPalace:戌:wuquMaj*sihuaQuan",
+      "spousePalace:亥:taiyangMaj*sihuaLu",
+      "siblingsPalace:子:pojunMaj",
+      "soulPalace:丑:tianjiMaj",
+    ],
+    "patterns": [],
+    "soul": "jumenMaj",
+    "soulBranch": "chouEarthly",
+    "timeIndex": 4,
+  },
+  "zone": "America/New_York",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > us-dst-change-day — US DST switch day 2024-03-10 02:30 (non-existent local time) 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Quý",
+    "firstPeriods": [
+      "2032:戊辰",
+      "2042:己巳",
+      "2052:庚午",
+    ],
+    "luckDir": "forward",
+    "luckStart": "8y3m",
+    "strength": "weak",
+    "useful": [
+      3,
+      4,
+    ],
+  },
+  "dst": true,
+  "horoscope": {
+    "age": 3,
+    "decadal": "QuýDậu@7",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2024/2/1",
+  "lunarForChart": "2024/2/1",
+  "pillars": [
+    "甲辰",
+    "丁卯",
+    "癸酉",
+    "癸丑",
+  ],
+  "solarCorrectionMin": -63.6,
+  "warnings": [],
+  "ziwei": {
+    "body": "wenchangMin",
+    "confidence": "high",
+    "five": "fire6th",
+    "palaces": [
+      "soulPalace:寅:",
+      "parentsPalace:卯:",
+      "spiritPalace:辰:tiantongMaj",
+      "propertyPalace:巳:wuquMaj*sihuaKe+pojunMaj*sihuaQuan",
+      "careerPalace:午:taiyangMaj*sihuaJi",
+      "friendsPalace:未:tianfuMaj",
+      "surfacePalace:申:tianjiMaj+taiyinMaj",
+      "healthPalace:酉:ziweiMaj+tanlangMaj",
+      "wealthPalace:戌:jumenMaj",
+      "childrenPalace:亥:tianxiangMaj",
+      "spousePalace:子:tianliangMaj",
+      "siblingsPalace:丑:lianzhenMaj*sihuaLu+qishaMaj",
+    ],
+    "patterns": [
+      "mingWuZhengYao",
+      "luMaJiaoChi",
+      "yangTuoJiaMing",
+    ],
+    "soul": "lucunMin",
+    "soulBranch": "yinEarthly",
+    "timeIndex": 1,
+  },
+  "zone": "America/Los_Angeles",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > vn-1997-ref — reference case used across docs 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Canh",
+    "firstPeriods": [
+      "2001:癸丑",
+      "2011:甲寅",
+      "2021:乙卯",
+    ],
+    "luckDir": "forward",
+    "luckStart": "4y1m",
+    "strength": "weak",
+    "useful": [
+      2,
+      3,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 30,
+    "decadal": "MậuThân@6",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1997/11/25",
+  "lunarForChart": "1997/11/25",
+  "pillars": [
+    "丁丑",
+    "壬子",
+    "庚子",
+    "壬午",
+  ],
+  "solarCorrectionMin": 4.2,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianxiangMaj",
+    "confidence": "high",
+    "five": "water2nd",
+    "palaces": [
+      "wealthPalace:寅:",
+      "childrenPalace:卯:tianfuMaj",
+      "spousePalace:辰:taiyinMaj*sihuaLu",
+      "siblingsPalace:巳:lianzhenMaj+tanlangMaj",
+      "soulPalace:午:jumenMaj*sihuaJi",
+      "parentsPalace:未:tianxiangMaj",
+      "spiritPalace:申:tiantongMaj*sihuaQuan+tianliangMaj",
+      "propertyPalace:酉:wuquMaj+qishaMaj",
+      "careerPalace:戌:taiyangMaj",
+      "friendsPalace:亥:",
+      "surfacePalace:子:tianjiMaj*sihuaKe",
+      "healthPalace:丑:ziweiMaj+pojunMaj",
+    ],
+    "patterns": [
+      "yangTuoJiaMing",
+    ],
+    "soul": "pojunMaj",
+    "soulBranch": "wuEarthly",
+    "timeIndex": 6,
+  },
+  "zone": "Asia/Ho_Chi_Minh",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > vn-2007-boundary — VN/CN differ by one day 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Quý",
+    "firstPeriods": [
+      "2012:癸卯",
+      "2022:甲辰",
+      "2032:乙巳",
+    ],
+    "luckDir": "forward",
+    "luckStart": "5y5m",
+    "strength": "balanced",
+    "useful": [
+      0,
+      3,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 20,
+    "decadal": "QuýMão@1",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2007/1/1",
+  "lunarForChart": "2007/1/2",
+  "pillars": [
+    "丁亥",
+    "壬寅",
+    "癸未",
+    "壬子",
+  ],
+  "solarCorrectionMin": -10.8,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianjiMaj",
+    "confidence": "high",
+    "five": "metal4th",
+    "palaces": [
+      "soulPalace:寅:",
+      "parentsPalace:卯:tianfuMaj",
+      "spiritPalace:辰:taiyinMaj*sihuaLu",
+      "propertyPalace:巳:lianzhenMaj+tanlangMaj",
+      "careerPalace:午:jumenMaj*sihuaJi",
+      "friendsPalace:未:tianxiangMaj",
+      "surfacePalace:申:tiantongMaj*sihuaQuan+tianliangMaj",
+      "healthPalace:酉:wuquMaj+qishaMaj",
+      "wealthPalace:戌:taiyangMaj",
+      "childrenPalace:亥:",
+      "spousePalace:子:tianjiMaj*sihuaKe",
+      "siblingsPalace:丑:ziweiMaj+pojunMaj",
+    ],
+    "patterns": [
+      "mingWuZhengYao",
+    ],
+    "soul": "lucunMin",
+    "soulBranch": "yinEarthly",
+    "timeIndex": 12,
+  },
+  "zone": "Asia/Ho_Chi_Minh",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > vn-early-zi — early 子 00:30 Saigon 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Mậu",
+    "firstPeriods": [
+      "2006:丁卯",
+      "2016:戊辰",
+      "2026:己巳",
+    ],
+    "luckDir": "forward",
+    "luckStart": "1y10m",
+    "strength": "weak",
+    "useful": [
+      1,
+      2,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 23,
+    "decadal": "MậuThìn@2",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2004/2/10",
+  "lunarForChart": "2004/2/10",
+  "pillars": [
+    "甲申",
+    "丙寅",
+    "戊寅",
+    "壬子",
+  ],
+  "solarCorrectionMin": -6.2,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianliangMaj",
+    "confidence": "high",
+    "five": "fire6th",
+    "palaces": [
+      "siblingsPalace:寅:taiyangMaj*sihuaJi+jumenMaj",
+      "soulPalace:卯:tianxiangMaj",
+      "parentsPalace:辰:tianjiMaj+tianliangMaj",
+      "spiritPalace:巳:ziweiMaj+qishaMaj",
+      "propertyPalace:午:",
+      "careerPalace:未:",
+      "friendsPalace:申:",
+      "surfacePalace:酉:lianzhenMaj*sihuaLu+pojunMaj*sihuaQuan",
+      "healthPalace:戌:",
+      "wealthPalace:亥:tianfuMaj",
+      "childrenPalace:子:tiantongMaj+taiyinMaj",
+      "spousePalace:丑:wuquMaj*sihuaKe+tanlangMaj",
+    ],
+    "patterns": [],
+    "soul": "wenquMin",
+    "soulBranch": "maoEarthly",
+    "timeIndex": 0,
+  },
+  "zone": "Asia/Ho_Chi_Minh",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > vn-leap-2023 — leap 2nd month 2023 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Nhâm",
+    "firstPeriods": [
+      "2027:丙辰",
+      "2037:丁巳",
+      "2047:戊午",
+    ],
+    "luckDir": "forward",
+    "luckStart": "3y8m",
+    "strength": "weak",
+    "useful": [
+      3,
+      4,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 4,
+    "decadal": "GiápTý@10",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "2023/L2/4",
+  "lunarForChart": "2023/L2/4",
+  "pillars": [
+    "癸卯",
+    "乙卯",
+    "壬午",
+    "癸卯",
+  ],
+  "solarCorrectionMin": -3.2,
+  "warnings": [],
+  "ziwei": {
+    "body": "tiantongMaj",
+    "confidence": "high",
+    "five": "metal4th",
+    "palaces": [
+      "spiritPalace:寅:ziweiMaj+tianfuMaj",
+      "propertyPalace:卯:taiyinMaj*sihuaKe",
+      "careerPalace:辰:tanlangMaj*sihuaJi",
+      "friendsPalace:巳:jumenMaj*sihuaQuan",
+      "surfacePalace:午:lianzhenMaj+tianxiangMaj",
+      "healthPalace:未:tianliangMaj",
+      "wealthPalace:申:qishaMaj",
+      "childrenPalace:酉:tiantongMaj",
+      "spousePalace:戌:wuquMaj",
+      "siblingsPalace:亥:taiyangMaj",
+      "soulPalace:子:pojunMaj*sihuaLu",
+      "parentsPalace:丑:tianjiMaj",
+    ],
+    "patterns": [
+      "shaPoLang",
+      "yangTuoJiaMing",
+    ],
+    "soul": "tanlangMaj",
+    "soulBranch": "ziEarthly",
+    "timeIndex": 3,
+  },
+  "zone": "Asia/Ho_Chi_Minh",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > vn-tet-1985 — VN Tết one month before China 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Canh",
+    "firstPeriods": [
+      "1990:戊寅",
+      "2000:己卯",
+      "2010:庚辰",
+    ],
+    "luckDir": "forward",
+    "luckStart": "4y7m",
+    "strength": "strong",
+    "useful": [
+      4,
+      0,
+      1,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 42,
+    "decadal": "TânTỵ@3",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1985/1/1",
+  "lunarForChart": "1985/1/1",
+  "pillars": [
+    "甲子",
+    "丁丑",
+    "庚申",
+    "辛巳",
+  ],
+  "solarCorrectionMin": -3.8,
+  "warnings": [],
+  "ziwei": {
+    "body": "tianxiangMaj",
+    "confidence": "high",
+    "five": "water2nd",
+    "palaces": [
+      "friendsPalace:寅:",
+      "surfacePalace:卯:tianfuMaj",
+      "healthPalace:辰:taiyinMaj*sihuaJi",
+      "wealthPalace:巳:lianzhenMaj+tanlangMaj",
+      "childrenPalace:午:jumenMaj",
+      "spousePalace:未:tianxiangMaj",
+      "siblingsPalace:申:tiantongMaj+tianliangMaj*sihuaQuan",
+      "soulPalace:酉:wuquMaj+qishaMaj",
+      "parentsPalace:戌:taiyangMaj",
+      "spiritPalace:亥:",
+      "propertyPalace:子:tianjiMaj*sihuaLu",
+      "careerPalace:丑:ziweiMaj*sihuaKe+pojunMaj",
+    ],
+    "patterns": [
+      "ziFuChaoYuan",
+      "shaPoLang",
+    ],
+    "soul": "wenquMin",
+    "soulBranch": "youEarthly",
+    "timeIndex": 5,
+  },
+  "zone": "Asia/Ho_Chi_Minh",
+}
+`;
+
+exports[`golden: calendar + bazi + ziwei per profile > vn-time-unknown — unknown birth time 1`] = `
+{
+  "bazi": {
+    "dayMaster": "Bính",
+    "firstPeriods": [
+      "1973:庚午",
+      "1983:己巳",
+      "1993:戊辰",
+    ],
+    "luckDir": "backward",
+    "luckStart": "4y3m",
+    "strength": "weak",
+    "useful": [
+      0,
+      1,
+    ],
+  },
+  "dst": false,
+  "horoscope": {
+    "age": 58,
+    "decadal": "NhâmThân@6",
+    "yearly": "BínhNgọ",
+  },
+  "lunar": "1969/6/7",
+  "lunarForChart": "1969/6/7",
+  "pillars": [
+    "己酉",
+    "辛未",
+    "丙申",
+    null,
+  ],
+  "solarCorrectionMin": -62.9,
+  "warnings": [
+    "TIME_UNKNOWN",
+  ],
+  "ziwei": {
+    "body": "tiantongMaj",
+    "confidence": "low",
+    "five": "water2nd",
+    "palaces": [
+      "parentsPalace:寅:tanlangMaj*sihuaQuan",
+      "spiritPalace:卯:tianjiMaj+jumenMaj",
+      "propertyPalace:辰:ziweiMaj+tianxiangMaj",
+      "careerPalace:巳:tianliangMaj*sihuaKe",
+      "friendsPalace:午:qishaMaj",
+      "surfacePalace:未:",
+      "healthPalace:申:lianzhenMaj",
+      "wealthPalace:酉:",
+      "childrenPalace:戌:pojunMaj",
+      "spousePalace:亥:tiantongMaj",
+      "siblingsPalace:子:wuquMaj*sihuaLu+tianfuMaj",
+      "soulPalace:丑:taiyangMaj+taiyinMaj",
+    ],
+    "patterns": [
+      "riYueTongGong",
+    ],
+    "soul": "jumenMaj",
+    "soulBranch": "chouEarthly",
+    "timeIndex": 6,
+  },
+  "zone": "Asia/Ho_Chi_Minh",
+}
+`;
+
+exports[`golden: daily content determinism (2026-10-10) > almanac vn/cn, tarot daily, iching cast, sky 1`] = `
+{
+  "cnLunar": "2026/9/1",
+  "iching": {
+    "changing": [
+      2,
+      5,
+    ],
+    "lines": [
+      8,
+      6,
+      8,
+      8,
+      6,
+      7,
+    ],
+    "primary": 23,
+    "relating": 59,
+  },
+  "personalOx": {
+    "clashesWithUser": false,
+    "favorableElementDay": true,
+    "harmsUser": false,
+    "luckyColor": {
+      "hex": "#D64545",
+      "label": "Đỏ, hồng",
+    },
+    "luckyNumbers": [
+      1,
+      4,
+    ],
+    "reasons": [
+      "huangdao",
+      "useful_element_day",
+    ],
+    "score": 5,
+  },
+  "pick": [
+    "2026-10-03:11",
+    "2026-10-10:9",
+    "2026-10-23:8",
+    "2026-10-13:6",
+    "2026-10-14:6",
+  ],
+  "sky": {
+    "moon": "libra",
+    "phase": "new",
+    "retro": [
+      "venus",
+      "saturn",
+      "uranus",
+      "neptune",
+      "pluto",
+    ],
+    "sun": "libra",
+  },
+  "tarotCommon": [
+    "pentacles-14r",
+  ],
+  "tarotThree": [
+    "[object Object]:swords-07r",
+    "[object Object]:swords-02",
+    "[object Object]:major-08",
+  ],
+  "vn": {
+    "day": "丁巳",
+    "goodHours": [
+      "辛丑",
+      "甲辰",
+      "丙午",
+      "丁未",
+      "庚戌",
+      "辛亥",
+      "壬子",
+    ],
+    "huangdao": true,
+    "ji": [
+      "上梁",
+      "作灶",
+      "伐木",
+      "出行",
+      "安葬",
+      "安门",
+      "理发",
+    ],
+    "lunar": "2026/9/1",
+    "xiu": "柳",
+    "yi": [
+      "嫁娶",
+      "求嗣",
+      "纳采",
+      "进人口",
+      "纳财",
+      "结网",
+      "纳畜",
+      "牧养",
+      "会亲友",
+    ],
+    "zhixing": "危",
+  },
+}
+`;
+
+exports[`golden: western engines per profile > au-sydney 1`] = `
+{
+  "asc": 315.9,
+  "aspects": 11,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 13,
+    "value": 4,
+  },
+  "mc": 219.61,
+  "moon": "aries",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 4,
+    "value": 4,
+  },
+  "retro": [
+    "jupiter",
+    "saturn",
+    "northNode",
+  ],
+  "rising": "aquarius",
+  "sun": "capricorn",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > br-southern 1`] = `
+{
+  "asc": 46.26,
+  "aspects": 11,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 19,
+    "value": 1,
+  },
+  "mc": 318.88,
+  "moon": "pisces",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 7,
+    "value": 7,
+  },
+  "retro": [
+    "saturn",
+    "northNode",
+  ],
+  "rising": "taurus",
+  "sun": "scorpio",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > cn-1900 1`] = `
+{
+  "asc": 348.1,
+  "aspects": 9,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 15,
+    "value": 6,
+  },
+  "mc": 263.58,
+  "moon": "aquarius",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 5,
+    "value": 5,
+  },
+  "retro": [
+    "neptune",
+    "pluto",
+    "northNode",
+  ],
+  "rising": "pisces",
+  "sun": "aquarius",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > cn-lichun-after 1`] = `
+{
+  "asc": 273.91,
+  "aspects": 12,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 7,
+    "value": 7,
+  },
+  "mc": 207.43,
+  "moon": "virgo",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 9,
+    "value": 9,
+  },
+  "retro": [
+    "jupiter",
+    "uranus",
+    "northNode",
+  ],
+  "rising": "capricorn",
+  "sun": "aquarius",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > cn-lichun-before 1`] = `
+{
+  "asc": 254.01,
+  "aspects": 12,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 7,
+    "value": 7,
+  },
+  "mc": 183.16,
+  "moon": "virgo",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 9,
+    "value": 9,
+  },
+  "retro": [
+    "jupiter",
+    "uranus",
+    "northNode",
+  ],
+  "rising": "sagittarius",
+  "sun": "aquarius",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > cn-tet-1985 1`] = `
+{
+  "asc": 354.52,
+  "aspects": 15,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 9,
+    "value": 9,
+  },
+  "mc": 267.06,
+  "moon": "aquarius",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 7,
+    "value": 7,
+  },
+  "retro": [
+    "northNode",
+  ],
+  "rising": "pisces",
+  "sun": "aquarius",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > fi-high-lat 1`] = `
+{
+  "asc": 70.15,
+  "aspects": 10,
+  "lifePath": {
+    "isMaster": true,
+    "unreduced": 11,
+    "value": 11,
+  },
+  "mc": 292.03,
+  "moon": "gemini",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 3,
+    "value": 3,
+  },
+  "retro": [
+    "jupiter",
+    "uranus",
+    "neptune",
+    "pluto",
+    "northNode",
+  ],
+  "rising": "gemini",
+  "sun": "gemini",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > jp-shichu 1`] = `
+{
+  "asc": 166.24,
+  "aspects": 13,
+  "lifePath": {
+    "isMaster": true,
+    "unreduced": 29,
+    "value": 11,
+  },
+  "mc": 74.73,
+  "moon": "capricorn",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 10,
+    "value": 1,
+  },
+  "retro": [
+    "uranus",
+    "neptune",
+    "pluto",
+    "northNode",
+  ],
+  "rising": "virgo",
+  "sun": "taurus",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > kr-saju 1`] = `
+{
+  "asc": 87.42,
+  "aspects": 11,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 25,
+    "value": 7,
+  },
+  "mc": 335.94,
+  "moon": "scorpio",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 2,
+    "value": 2,
+  },
+  "retro": [
+    "mars",
+    "neptune",
+    "northNode",
+  ],
+  "rising": "gemini",
+  "sun": "virgo",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > no-tz 1`] = `
+{
+  "asc": 258.37,
+  "aspects": 11,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 5,
+    "value": 5,
+  },
+  "mc": 173.82,
+  "moon": "scorpio",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 5,
+    "value": 5,
+  },
+  "retro": [
+    "venus",
+    "jupiter",
+    "uranus",
+    "neptune",
+    "northNode",
+  ],
+  "rising": "sagittarius",
+  "sun": "libra",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > tw-late-zi 1`] = `
+{
+  "asc": 62.57,
+  "aspects": 11,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 15,
+    "value": 6,
+  },
+  "mc": 317.91,
+  "moon": "gemini",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 8,
+    "value": 8,
+  },
+  "retro": [
+    "saturn",
+    "uranus",
+    "neptune",
+    "northNode",
+  ],
+  "rising": "gemini",
+  "sun": "leo",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > uk-winter 1`] = `
+{
+  "asc": 24.01,
+  "aspects": 10,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 4,
+    "value": 4,
+  },
+  "mc": 279.49,
+  "moon": "scorpio",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 5,
+    "value": 5,
+  },
+  "retro": [
+    "saturn",
+    "northNode",
+  ],
+  "rising": "aries",
+  "sun": "capricorn",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > us-dst 1`] = `
+{
+  "asc": 97.48,
+  "aspects": 15,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 12,
+    "value": 3,
+  },
+  "mc": 345.3,
+  "moon": "capricorn",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 5,
+    "value": 5,
+  },
+  "retro": [
+    "mercury",
+    "saturn",
+    "uranus",
+    "neptune",
+    "pluto",
+    "northNode",
+  ],
+  "rising": "cancer",
+  "sun": "taurus",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > us-dst-change-day 1`] = `
+{
+  "asc": 280.24,
+  "aspects": 11,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 12,
+    "value": 3,
+  },
+  "mc": 209.94,
+  "moon": "pisces",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 7,
+    "value": 7,
+  },
+  "retro": [
+    "northNode",
+  ],
+  "rising": "capricorn",
+  "sun": "pisces",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > vn-1997-ref 1`] = `
+{
+  "asc": 4.73,
+  "aspects": 15,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 17,
+    "value": 8,
+  },
+  "mc": 273.32,
+  "moon": "libra",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 3,
+    "value": 3,
+  },
+  "retro": [
+    "mercury",
+    "northNode",
+  ],
+  "rising": "aries",
+  "sun": "capricorn",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > vn-2007-boundary 1`] = `
+{
+  "asc": 226.45,
+  "aspects": 12,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 19,
+    "value": 1,
+  },
+  "mc": 138.19,
+  "moon": "aquarius",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 4,
+    "value": 4,
+  },
+  "retro": [
+    "mercury",
+    "saturn",
+    "northNode",
+  ],
+  "rising": "scorpio",
+  "sun": "aquarius",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > vn-early-zi 1`] = `
+{
+  "asc": 253.93,
+  "aspects": 16,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 19,
+    "value": 1,
+  },
+  "mc": 165.97,
+  "moon": "gemini",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 7,
+    "value": 7,
+  },
+  "retro": [
+    "jupiter",
+    "saturn",
+    "northNode",
+  ],
+  "rising": "sagittarius",
+  "sun": "pisces",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > vn-leap-2023 1`] = `
+{
+  "asc": 8.84,
+  "aspects": 9,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 17,
+    "value": 8,
+  },
+  "mc": 276.22,
+  "moon": "taurus",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 4,
+    "value": 4,
+  },
+  "retro": [
+    "northNode",
+  ],
+  "rising": "aries",
+  "sun": "aries",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > vn-tet-1985 1`] = `
+{
+  "asc": 2.52,
+  "aspects": 15,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 9,
+    "value": 9,
+  },
+  "mc": 271.95,
+  "moon": "aquarius",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 7,
+    "value": 7,
+  },
+  "retro": [
+    "northNode",
+  ],
+  "rising": "aries",
+  "sun": "aquarius",
+  "warnings": [],
+}
+`;
+
+exports[`golden: western engines per profile > vn-time-unknown 1`] = `
+{
+  "asc": 192.7,
+  "aspects": 21,
+  "lifePath": {
+    "isMaster": false,
+    "unreduced": 16,
+    "value": 7,
+  },
+  "mc": 102.53,
+  "moon": "virgo",
+  "personalDay": {
+    "isMaster": false,
+    "unreduced": 3,
+    "value": 3,
+  },
+  "retro": [
+    "neptune",
+    "northNode",
+  ],
+  "rising": null,
+  "sun": "cancer",
+  "warnings": [],
+}
+`;
