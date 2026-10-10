@@ -2,7 +2,7 @@
  * Programmatic migrator. Applies the SQL files drizzle-kit generated into ./drizzle, then —
  * only on a real Postgres — `drizzle/rls.sql` (Supabase RLS policies; PGlite has no roles/JWT).
  *
- *   pnpm --filter @findme/api db:migrate          # uses DATABASE_URL from .env
+ *   pnpm --filter @findme/api db:migrate          # scripts/db-migrate.ts, uses DATABASE_URL from .env
  */
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -26,15 +26,4 @@ export async function runMigrations(opts: { db: Db; driver: DbDriver; raw: unkno
 export async function applyRls(db: Db): Promise<void> {
   const text = await readFile(`${migrationsFolder}/rls.sql`, 'utf8');
   await db.execute(sql.raw(text));
-}
-
-const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
-if (isMain) {
-  const { config } = await import('dotenv');
-  config();
-  const { createDb } = await import('./client.js');
-  const handle = await createDb(process.env.DATABASE_URL);
-  await handle.migrate();
-  console.log(`migrations applied (${handle.driver})`);
-  await handle.close();
 }

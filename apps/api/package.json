@@ -12,7 +12,7 @@
     "test": "vitest run",
     "lint": "tsc -p tsconfig.json --noEmit",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "tsx src/db/migrate.ts",
+    "db:migrate": "tsx scripts/db-migrate.ts",
     "gen:openapi": "tsx scripts/gen-openapi.ts && pnpm --filter @findme/api-client gen"
   },
   "dependencies": {

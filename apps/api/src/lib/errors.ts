@@ -18,6 +18,6 @@ export const notImplemented = (what: string) => new AppError(501, 'not_implement
 /** 402 body is always `{ reason, paywall: true, ...extra }` so the clients can route to the paywall. */
 export class PaywallError extends AppError {
   constructor(reason: string, extra: Record<string, unknown> = {}) {
-    super(402, reason, `payment required: ${reason}`, { paywall: true, ...extra });
+    super(402, reason, `payment required: ${reason}`, { reason, paywall: true, ...extra });
   }
 }
