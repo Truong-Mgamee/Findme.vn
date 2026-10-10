@@ -1,0 +1,53 @@
+{
+  "name": "@findme/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Findme REST API (Fastify 5 + Zod + Drizzle). Engines run in-process; Postgres via pg or PGlite.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "gen:openapi": "tsx scripts/gen-openapi.ts && pnpm --filter @findme/api-client gen"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@fastify/cors": "^11.3.1",
+    "@fastify/helmet": "^13.1.2",
+    "@fastify/rate-limit": "^11.2.1",
+    "@fastify/swagger": "^9.9.2",
+    "@fastify/swagger-ui": "^6.1.2",
+    "@findme/engine-almanac": "workspace:*",
+    "@findme/engine-astro": "workspace:*",
+    "@findme/engine-bazi": "workspace:*",
+    "@findme/engine-calendar": "workspace:*",
+    "@findme/engine-core": "workspace:*",
+    "@findme/engine-numerology": "workspace:*",
+    "@findme/engine-ziwei": "workspace:*",
+    "@findme/i18n": "workspace:*",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.45.4",
+    "fastify": "^5.12.5",
+    "fastify-type-provider-zod": "^4.0.2",
+    "ioredis": "^5.6.1",
+    "jose": "^6.2.12",
+    "nanoid": "^5.1.5",
+    "pg": "^8.23.1",
+    "pino": "^10.4.0",
+    "pino-pretty": "^13.2.0",
+    "tsx": "^4.23.15",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/pg": "^8.23.1",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

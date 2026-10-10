@@ -8,6 +8,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./schemas": "./src/schemas.ts",
+    "./atoms": "./src/atoms/index.ts",
     "./tarot/*": "./tarot/*",
     "./iching/*": "./iching/*"
   },
@@ -16,8 +17,20 @@
     "typecheck": "tsc -p tsconfig.json",
     "test": "vitest run",
     "validate": "vitest run test/validate.test.ts",
-    "lint": "tsc -p tsconfig.json --noEmit"
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "keys:manifest": "tsx scripts/keys-manifest.ts",
+    "coverage": "tsx scripts/coverage.ts",
+    "draft": "tsx scripts/draft.ts"
   },
-  "dependencies": {"zod": "^3.24.0"},
-  "devDependencies": { "typescript": "^5.7.0", "vitest": "^3.0.0", "@types/node": "^22.10.0" }
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
+    "@findme/engine-almanac": "workspace:*",
+    "@findme/engine-astro": "workspace:*",
+    "@findme/engine-bazi": "workspace:*",
+    "@findme/engine-core": "workspace:*",
+    "@findme/engine-numerology": "workspace:*",
+    "@findme/engine-ziwei": "workspace:*",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": { "@types/node": "^22.10.0", "tsx": "^4.23.0", "typescript": "^5.7.0", "vitest": "^3.0.0" }
 }

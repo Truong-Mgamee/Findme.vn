@@ -161,13 +161,37 @@ importers:
 
   packages/content:
     dependencies:
+      '@anthropic-ai/sdk':
+        specifier: ^0.80.0
+        version: 0.80.0(zod@4.6.5)
+      '@findme/engine-almanac':
+        specifier: workspace:*
+        version: link:../engine-almanac
+      '@findme/engine-astro':
+        specifier: workspace:*
+        version: link:../engine-astro
+      '@findme/engine-bazi':
+        specifier: workspace:*
+        version: link:../engine-bazi
+      '@findme/engine-core':
+        specifier: workspace:*
+        version: link:../engine-core
+      '@findme/engine-numerology':
+        specifier: workspace:*
+        version: link:../engine-numerology
+      '@findme/engine-ziwei':
+        specifier: workspace:*
+        version: link:../engine-ziwei
       zod:
-        specifier: ^3.24.0
-        version: 3.25.76
+        specifier: ^4.1.0
+        version: 4.6.5
     devDependencies:
       '@types/node':
         specifier: ^22.10.0
         version: 22.20.5
+      tsx:
+        specifier: ^4.23.0
+        version: 4.23.15
       typescript:
         specifier: ^5.7.0
         version: 5.9.3
