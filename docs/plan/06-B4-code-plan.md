@@ -1,5 +1,7 @@
 # B4 – Plan code chi tiết (code được ngay)
 
+> **Trạng thái thực thi:** xem [CHANGELOG.md](CHANGELOG.md). M0 và phần lớn M1 đã có code + test trong repo này.
+
 > Giả định đội: 1 PM (Trường) + Claude Code làm dev chính + 1 reviewer content VN/EN. Sprint 1 tuần. Mọi ticket có **Definition of Done** và prompt tương ứng trong `docs/prompts/`.
 
 ## 0. Review lại kế hoạch (check trước khi code)
