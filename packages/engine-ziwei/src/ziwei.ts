@@ -215,7 +215,7 @@ export function detectPatterns(palaces: PalaceView[]): ZiweiPattern[] {
   if (has(soulKeys, MAJOR.lianzhen, MAJOR.tanlang)) add('lianTanTongGong', [MAJOR.lianzhen, MAJOR.tanlang]);
   if (has(soulKeys, MINOR.wenchang, MINOR.wenqu)) add('changQuTongGong', [MINOR.wenchang, MINOR.wenqu]);
   if (flankKeys[0]!.has(MINOR.wenchang) && flankKeys[1]!.has(MINOR.wenqu) || flankKeys[0]!.has(MINOR.wenqu) && flankKeys[1]!.has(MINOR.wenchang)) add('changQuJiaMing', [MINOR.wenchang, MINOR.wenqu]);
-  if (trioKeys.has(MINOR.tianma) && (trioKeys.has(MINOR.lucun) || trio.some((p) => p.majorStars.some((s) => s.mutagen?.key === 'luMutagen' || s.mutagen?.name === '祿' || s.mutagen?.name === '禄')))) add('luMaJiaoChi', [MINOR.lucun, MINOR.tianma]);
+  if (trioKeys.has(MINOR.tianma) && (trioKeys.has(MINOR.lucun) || trio.some((p) => p.majorStars.some((s) => s.mutagen?.key === 'sihuaLu' || s.mutagen?.key === 'luMutagen' || s.mutagen?.name === '祿' || s.mutagen?.name === '禄')))) add('luMaJiaoChi', [MINOR.lucun, MINOR.tianma]);
   if (soulKeys.has(MAJOR.tanlang) && (soulKeys.has(MINOR.huoxing) || soulKeys.has(MINOR.lingxing))) add('huoLingTan', [MAJOR.tanlang, soulKeys.has(MINOR.huoxing) ? MINOR.huoxing : MINOR.lingxing]);
   if (flankKeys[0]!.has(MINOR.qingyang) && flankKeys[1]!.has(MINOR.tuoluo) || flankKeys[0]!.has(MINOR.tuoluo) && flankKeys[1]!.has(MINOR.qingyang)) add('yangTuoJiaMing', [MINOR.qingyang, MINOR.tuoluo]);
   if (has(soulKeys, MINOR.dikong, MINOR.dijie)) add('kongJieTongGong', [MINOR.dikong, MINOR.dijie]);
