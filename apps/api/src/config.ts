@@ -28,6 +28,29 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v === undefined || v === 'true' || v === '1'),
+  /** AI composer: requires ANTHROPIC_API_KEY; when disabled, readings fall back to atom templates */
+  AI_ENABLED: z
+    .string()
+    .optional()
+    .transform((v) => v === undefined || v === 'true' || v === '1'),
+  ANTHROPIC_API_KEY: z.string().optional(),
+  AI_MODEL_READING: z.string().default('claude-opus-5-5'),
+  AI_MODEL_DAILY: z.string().default('claude-haiku-5-5'),
+  /** per-user daily AI budget guard (USD) */
+  AI_USER_DAILY_BUDGET_USD: z.coerce.number().positive().default(0.5),
+  /** shared secret for /v1/admin/* (X-Admin-Token). Unset → admin routes return 503. */
+  ADMIN_TOKEN: z.string().min(12).optional(),
+  /** run the Daily Oracle generator hourly inside the API process (single-instance deployments) */
+  DAILY_JOB_ENABLED: z
+    .string()
+    .optional()
+    .transform((v) => v === 'true' || v === '1'),
+  /** Expo push endpoint; unset → push jobs log only */
+  EXPO_PUSH_URL: z.string().default('https://exp.host/--/api/v2/push/send'),
+  PUSH_ENABLED: z
+    .string()
+    .optional()
+    .transform((v) => v === 'true' || v === '1'),
 });
 
 export type Env = z.infer<typeof EnvSchema>;

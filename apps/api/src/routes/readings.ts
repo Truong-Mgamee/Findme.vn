@@ -8,6 +8,7 @@ import { currentUser } from '../plugins/auth.js';
 import { requireEntitlement } from '../plugins/entitlement.js';
 import { debitCredits } from '../services/entitlements.js';
 import { redactBirth, runReadingEngine } from '../services/engines.js';
+import { composeForReading } from '../services/ai.js';
 import { loadProfile } from '../services/profiles.js';
 import { CreateReadingSchema, ErrorSchema, IdParams, PaywallSchema, ReadingSchema } from './schemas.js';
 
@@ -73,7 +74,8 @@ export const readingRoutes: FastifyPluginAsyncZod = async (app) => {
     {
       schema: {
         tags: ['readings'],
-        summary: 'SSE: `engine_summary` then `done` (AI composer events `section`/`delta` arrive in P8)',
+        summary: 'SSE: `engine_summary` → (`delta`…) → `section` × n → `done`. Narrative is composed once and cached on the reading.',
+        description: 'Events: `engine_summary` {atomKeys, confidence}; `delta` {text} raw streamed model text (only on first composition with AI enabled); `section` {index,title,body,atomRefs}; `summary`, `actions`, `caveats`, `disclaimer`; `done` {readingId, model, usedFallbackTemplate}; `error` {message}.',
         security: sec,
         params: IdParams,
         produces: ['text/event-stream'],
@@ -89,9 +91,27 @@ export const readingRoutes: FastifyPluginAsyncZod = async (app) => {
       const send = (event: string, data: unknown) => res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
       const engine = (r.engineJson ?? {}) as { engine?: string; atomKeys?: string[]; confidence?: string; warnings?: unknown[] };
       send('engine_summary', { readingId: r.id, kind: r.kind, engine: engine.engine ?? null, atomKeys: engine.atomKeys ?? [], confidence: engine.confidence ?? null, warnings: engine.warnings ?? [] });
-      // TODO(P8): stream reading-composer output (summary/sections/actions/caveats) as `section` + `delta` events.
-      send('done', { readingId: r.id, ai: r.aiJson ? 'ready' : 'pending' });
-      res.end();
+      try {
+        let narrative = r.aiJson as (Record<string, unknown> & { meta?: { model?: string | null; usedFallbackTemplate?: boolean } }) | null;
+        let meta = narrative?.meta ?? null;
+        if (!narrative) {
+          const out = await composeForReading(app, r, { day: localDate(req.tz), onDelta: (t) => send('delta', { text: t }) });
+          narrative = out.reading as unknown as Record<string, unknown>;
+          meta = { model: out.model, usedFallbackTemplate: out.usedFallbackTemplate };
+        }
+        const n = narrative as unknown as { summary: string; sections: Array<{ title: string; body: string; atomRefs: string[] }>; actions: string[]; caveats: string[]; disclaimer: string };
+        send('summary', { text: n.summary });
+        n.sections.forEach((s, index) => send('section', { index, ...s }));
+        send('actions', { items: n.actions });
+        send('caveats', { items: n.caveats });
+        send('disclaimer', { text: n.disclaimer });
+        send('done', { readingId: r.id, model: meta?.model ?? null, usedFallbackTemplate: meta?.usedFallbackTemplate ?? true });
+      } catch (err) {
+        req.log.error({ err }, 'reading stream failed');
+        send('error', { message: 'composition failed' });
+      } finally {
+        res.end();
+      }
     },
   );
 };

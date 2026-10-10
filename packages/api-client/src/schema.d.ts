@@ -1293,7 +1293,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** SSE: `engine_summary` then `done` (AI composer events `section`/`delta` arrive in P8) */
+        /**
+         * SSE: `engine_summary` → (`delta`…) → `section` × n → `done`. Narrative is composed once and cached on the reading.
+         * @description Events: `engine_summary` {atomKeys, confidence}; `delta` {text} raw streamed model text (only on first composition with AI enabled); `section` {index,title,body,atomRefs}; `summary`, `actions`, `caveats`, `disclaimer`; `done` {readingId, model, usedFallbackTemplate}; `error` {message}.
+         */
         get: {
             parameters: {
                 query?: never;
@@ -1316,6 +1319,599 @@ export interface paths {
                             message?: string;
                         } & {
                             [key: string]: unknown;
+                        };
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/ai/ask": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Ask the AI guide a follow-up question grounded on your core facts and (optionally) a reading
+         * @description Free users get 3 questions per local day; Plus is unlimited. Answers are grounded on stored engine facts only.
+         */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": {
+                        question: string;
+                        /** Format: uuid */
+                        readingId?: string;
+                    };
+                };
+            };
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            text: string;
+                            quotaLeft: number | null;
+                            model: string | null;
+                        };
+                    };
+                };
+                /** @description 402 paywall */
+                402: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            error: string;
+                            reason: string;
+                            /** @enum {boolean} */
+                            paywall: true;
+                            message?: string;
+                        } & {
+                            [key: string]: unknown;
+                        };
+                    };
+                };
+                /** @description Error envelope */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            error: string;
+                            message?: string;
+                        } & {
+                            [key: string]: unknown;
+                        };
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/admin/atoms": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** List content atoms (latest version per key+locale unless includeVersions) */
+        get: {
+            parameters: {
+                query?: {
+                    tradition?: "ziwei" | "bazi" | "almanac" | "tarot" | "iching" | "numerology" | "astro";
+                    locale?: "vi" | "en" | "es" | "pt-BR" | "ja" | "ko" | "zh-TW" | "zh-CN" | "hi" | "th" | "id" | "fr" | "de";
+                    status?: "draft" | "reviewed" | "published" | "archived";
+                    q?: string;
+                    page?: number;
+                    pageSize?: number;
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            items: {
+                                id: string;
+                                tradition: string;
+                                key: string;
+                                locale: string;
+                                title: string;
+                                bodyMd: string;
+                                tone: string | null;
+                                sourceRef: string | null;
+                                author: string | null;
+                                reviewer: string | null;
+                                status: string;
+                                version: number;
+                                updatedAt: string;
+                            }[];
+                            total: number;
+                            page: number;
+                            pageSize: number;
+                        };
+                    };
+                };
+            };
+        };
+        put?: never;
+        /** Create a new version of an atom (version = max+1) */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": {
+                        /** @enum {string} */
+                        tradition: "ziwei" | "bazi" | "almanac" | "tarot" | "iching" | "numerology" | "astro";
+                        key: string;
+                        /** @enum {string} */
+                        locale: "vi" | "en" | "es" | "pt-BR" | "ja" | "ko" | "zh-TW" | "zh-CN" | "hi" | "th" | "id" | "fr" | "de";
+                        title: string;
+                        body_md: string;
+                        tone?: string | null;
+                        source_ref?: string | null;
+                        author?: string | null;
+                        reviewer?: string | null;
+                        /**
+                         * @default draft
+                         * @enum {string}
+                         */
+                        status?: "draft" | "reviewed" | "published" | "archived";
+                    };
+                };
+            };
+            responses: {
+                /** @description Default Response */
+                201: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            id: string;
+                            tradition: string;
+                            key: string;
+                            locale: string;
+                            title: string;
+                            bodyMd: string;
+                            tone: string | null;
+                            sourceRef: string | null;
+                            author: string | null;
+                            reviewer: string | null;
+                            status: string;
+                            version: number;
+                            updatedAt: string;
+                        };
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/admin/atoms/{id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** One atom (any status) */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            id: string;
+                            tradition: string;
+                            key: string;
+                            locale: string;
+                            title: string;
+                            bodyMd: string;
+                            tone: string | null;
+                            sourceRef: string | null;
+                            author: string | null;
+                            reviewer: string | null;
+                            status: string;
+                            version: number;
+                            updatedAt: string;
+                        };
+                    };
+                };
+                /** @description Error envelope */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            error: string;
+                            message?: string;
+                        } & {
+                            [key: string]: unknown;
+                        };
+                    };
+                };
+            };
+        };
+        /** Edit title/body/status/reviewer in place */
+        put: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path: {
+                    id: string;
+                };
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": {
+                        title?: string;
+                        bodyMd?: string;
+                        /** @enum {string} */
+                        status?: "draft" | "reviewed" | "published" | "archived";
+                        reviewer?: string;
+                        tone?: string;
+                    };
+                };
+            };
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            id: string;
+                            tradition: string;
+                            key: string;
+                            locale: string;
+                            title: string;
+                            bodyMd: string;
+                            tone: string | null;
+                            sourceRef: string | null;
+                            author: string | null;
+                            reviewer: string | null;
+                            status: string;
+                            version: number;
+                            updatedAt: string;
+                        };
+                    };
+                };
+                /** @description Error envelope */
+                404: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            error: string;
+                            message?: string;
+                        } & {
+                            [key: string]: unknown;
+                        };
+                    };
+                };
+            };
+        };
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/admin/atoms/import": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Bulk upsert atoms (JSONL rows from packages/content). Upsert by id; keeps existing status unless overwriteStatus */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": {
+                        atoms: {
+                            id?: string;
+                            /** @enum {string} */
+                            tradition: "ziwei" | "bazi" | "almanac" | "tarot" | "iching" | "numerology" | "astro";
+                            key: string;
+                            /** @enum {string} */
+                            locale: "vi" | "en" | "es" | "pt-BR" | "ja" | "ko" | "zh-TW" | "zh-CN" | "hi" | "th" | "id" | "fr" | "de";
+                            title: string;
+                            body_md: string;
+                            tone?: string | null;
+                            source_ref?: string | null;
+                            author?: string | null;
+                            reviewer?: string | null;
+                            /**
+                             * @default draft
+                             * @enum {string}
+                             */
+                            status?: "draft" | "reviewed" | "published" | "archived";
+                            /** @default 1 */
+                            version?: number;
+                        }[];
+                        /** @default false */
+                        overwriteStatus?: boolean;
+                    };
+                };
+            };
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            inserted: number;
+                            updated: number;
+                        };
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/admin/coverage": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Atom counts per tradition × locale × status */
+        get: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            rows: {
+                                tradition: string;
+                                locale: string;
+                                total: number;
+                                draft: number;
+                                reviewed: number;
+                                published: number;
+                            }[];
+                        };
+                    };
+                };
+            };
+        };
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/admin/glossary/import": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Bulk upsert glossary rows */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": {
+                        rows: {
+                            termKey: string;
+                            /** @enum {string} */
+                            locale: "vi" | "en" | "es" | "pt-BR" | "ja" | "ko" | "zh-TW" | "zh-CN" | "hi" | "th" | "id" | "fr" | "de";
+                            term: string;
+                            note?: string | null;
+                        }[];
+                    };
+                };
+            };
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            upserted: number;
+                        };
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/admin/jobs/daily-oracle": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Run the Daily Oracle generator now for a date and locales (idempotent upsert) */
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody: {
+                content: {
+                    "application/json": {
+                        date: string;
+                        /**
+                         * @default [
+                         *       "vi",
+                         *       "en"
+                         *     ]
+                         */
+                        locales?: ("vi" | "en" | "es" | "pt-BR" | "ja" | "ko" | "zh-TW" | "zh-CN" | "hi" | "th" | "id" | "fr" | "de")[];
+                        /** @default false */
+                        force?: boolean;
+                    };
+                };
+            };
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            date: string;
+                            generated: number;
+                            skipped: number;
+                            costUsd: number;
+                            ai: boolean;
+                        };
+                    };
+                };
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/v1/admin/daily-content": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Preview generated Daily Oracle rows */
+        get: {
+            parameters: {
+                query: {
+                    date: string;
+                    locale?: "vi" | "en" | "es" | "pt-BR" | "ja" | "ko" | "zh-TW" | "zh-CN" | "hi" | "th" | "id" | "fr" | "de";
+                };
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: never;
+            responses: {
+                /** @description Default Response */
+                200: {
+                    headers: {
+                        [name: string]: unknown;
+                    };
+                    content: {
+                        "application/json": {
+                            rows: {
+                                date: string;
+                                locale: string;
+                                segmentKey: string;
+                                payload: {
+                                    [key: string]: unknown;
+                                };
+                            }[];
                         };
                     };
                 };

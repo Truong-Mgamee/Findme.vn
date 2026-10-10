@@ -22,6 +22,8 @@ import { readingRoutes } from './routes/readings.js';
 import { contentRoutes } from './routes/content.js';
 import { entitlementRoutes } from './routes/entitlements.js';
 import { webhookRoutes } from './routes/webhooks.js';
+import { aiRoutes } from './routes/ai.js';
+import { adminRoutes } from './routes/admin.js';
 
 export const API_VERSION = '0.1.0';
 
@@ -102,6 +104,7 @@ export async function buildApp(opts: BuildOptions = {}): Promise<FastifyInstance
         { name: 'content' },
         { name: 'billing' },
         { name: 'webhooks' },
+        { name: 'admin', description: 'Content ops; X-Admin-Token' },
       ],
       components: { securitySchemes: { bearerAuth: { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' } } },
     },
@@ -143,6 +146,8 @@ export async function buildApp(opts: BuildOptions = {}): Promise<FastifyInstance
       await v1.register(almanacPickRoutes);
       await v1.register(todayRoutes);
       await v1.register(readingRoutes);
+      await v1.register(aiRoutes);
+      await v1.register(adminRoutes);
       await v1.register(contentRoutes);
       await v1.register(entitlementRoutes);
       await v1.register(webhookRoutes);

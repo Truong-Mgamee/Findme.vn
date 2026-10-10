@@ -13,7 +13,9 @@
     "lint": "tsc -p tsconfig.json --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx scripts/db-migrate.ts",
-    "gen:openapi": "tsx scripts/gen-openapi.ts && pnpm --filter @findme/api-client gen"
+    "gen:openapi": "tsx scripts/gen-openapi.ts && pnpm --filter @findme/api-client gen",
+    "job:daily": "tsx scripts/daily-job.ts",
+    "content:seed": "tsx scripts/seed-content.ts"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.8",
@@ -42,7 +44,11 @@
     "pino": "^10.4.0",
     "pino-pretty": "^13.2.0",
     "tsx": "^4.23.15",
-    "zod": "^3.24.0"
+    "zod": "^3.24.0",
+    "@findme/ai-composer": "workspace:*",
+    "@findme/content": "workspace:*",
+    "@findme/engine-tarot": "workspace:*",
+    "@findme/engine-iching": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

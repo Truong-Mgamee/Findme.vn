@@ -2402,10 +2402,11 @@
     },
     "/v1/readings/{id}/stream": {
       "get": {
-        "summary": "SSE: `engine_summary` then `done` (AI composer events `section`/`delta` arrive in P8)",
+        "summary": "SSE: `engine_summary` → (`delta`…) → `section` × n → `done`. Narrative is composed once and cached on the reading.",
         "tags": [
           "readings"
         ],
+        "description": "Events: `engine_summary` {atomKeys, confidence}; `delta` {text} raw streamed model text (only on first composition with AI enabled); `section` {index,title,body,atomRefs}; `summary`, `actions`, `caveats`, `disclaimer`; `done` {readingId, model, usedFallbackTemplate}; `error` {message}.",
         "parameters": [
           {
             "schema": {
@@ -2442,6 +2443,1285 @@
                   ],
                   "additionalProperties": true,
                   "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/ai/ask": {
+      "post": {
+        "summary": "Ask the AI guide a follow-up question grounded on your core facts and (optionally) a reading",
+        "tags": [
+          "readings"
+        ],
+        "description": "Free users get 3 questions per local day; Plus is unlimited. Answers are grounded on stored engine facts only.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "question": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 600
+                  },
+                  "readingId": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "required": [
+                  "question"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "quotaLeft": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "model": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "quotaLeft",
+                    "model"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "402 paywall",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "paywall": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error",
+                    "reason",
+                    "paywall"
+                  ],
+                  "additionalProperties": true,
+                  "description": "402 paywall"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/atoms": {
+      "get": {
+        "summary": "List content atoms (latest version per key+locale unless includeVersions)",
+        "tags": [
+          "admin"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ziwei",
+                "bazi",
+                "almanac",
+                "tarot",
+                "iching",
+                "numerology",
+                "astro"
+              ]
+            },
+            "in": "query",
+            "name": "tradition",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vi",
+                "en",
+                "es",
+                "pt-BR",
+                "ja",
+                "ko",
+                "zh-TW",
+                "zh-CN",
+                "hi",
+                "th",
+                "id",
+                "fr",
+                "de"
+              ]
+            },
+            "in": "query",
+            "name": "locale",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "draft",
+                "reviewed",
+                "published",
+                "archived"
+              ]
+            },
+            "in": "query",
+            "name": "status",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "in": "query",
+            "name": "q",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            },
+            "in": "query",
+            "name": "page",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "default": 50
+            },
+            "in": "query",
+            "name": "pageSize",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "tradition": {
+                            "type": "string"
+                          },
+                          "key": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "bodyMd": {
+                            "type": "string"
+                          },
+                          "tone": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "sourceRef": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "author": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "reviewer": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "status": {
+                            "type": "string"
+                          },
+                          "version": {
+                            "type": "integer"
+                          },
+                          "updatedAt": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "tradition",
+                          "key",
+                          "locale",
+                          "title",
+                          "bodyMd",
+                          "tone",
+                          "sourceRef",
+                          "author",
+                          "reviewer",
+                          "status",
+                          "version",
+                          "updatedAt"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "total": {
+                      "type": "integer"
+                    },
+                    "page": {
+                      "type": "integer"
+                    },
+                    "pageSize": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "items",
+                    "total",
+                    "page",
+                    "pageSize"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new version of an atom (version = max+1)",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tradition": {
+                    "type": "string",
+                    "enum": [
+                      "ziwei",
+                      "bazi",
+                      "almanac",
+                      "tarot",
+                      "iching",
+                      "numerology",
+                      "astro"
+                    ]
+                  },
+                  "key": {
+                    "type": "string",
+                    "minLength": 3
+                  },
+                  "locale": {
+                    "type": "string",
+                    "enum": [
+                      "vi",
+                      "en",
+                      "es",
+                      "pt-BR",
+                      "ja",
+                      "ko",
+                      "zh-TW",
+                      "zh-CN",
+                      "hi",
+                      "th",
+                      "id",
+                      "fr",
+                      "de"
+                    ]
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "body_md": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "tone": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "source_ref": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "author": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "reviewer": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "draft",
+                      "reviewed",
+                      "published",
+                      "archived"
+                    ],
+                    "default": "draft"
+                  }
+                },
+                "required": [
+                  "tradition",
+                  "key",
+                  "locale",
+                  "title",
+                  "body_md"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "tradition": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "bodyMd": {
+                      "type": "string"
+                    },
+                    "tone": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "sourceRef": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "author": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "tradition",
+                    "key",
+                    "locale",
+                    "title",
+                    "bodyMd",
+                    "tone",
+                    "sourceRef",
+                    "author",
+                    "reviewer",
+                    "status",
+                    "version",
+                    "updatedAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/atoms/{id}": {
+      "get": {
+        "summary": "One atom (any status)",
+        "tags": [
+          "admin"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "tradition": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "bodyMd": {
+                      "type": "string"
+                    },
+                    "tone": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "sourceRef": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "author": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "tradition",
+                    "key",
+                    "locale",
+                    "title",
+                    "bodyMd",
+                    "tone",
+                    "sourceRef",
+                    "author",
+                    "reviewer",
+                    "status",
+                    "version",
+                    "updatedAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Edit title/body/status/reviewer in place",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "bodyMd": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "draft",
+                      "reviewed",
+                      "published",
+                      "archived"
+                    ]
+                  },
+                  "reviewer": {
+                    "type": "string"
+                  },
+                  "tone": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "tradition": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "bodyMd": {
+                      "type": "string"
+                    },
+                    "tone": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "sourceRef": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "author": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "tradition",
+                    "key",
+                    "locale",
+                    "title",
+                    "bodyMd",
+                    "tone",
+                    "sourceRef",
+                    "author",
+                    "reviewer",
+                    "status",
+                    "version",
+                    "updatedAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/atoms/import": {
+      "post": {
+        "summary": "Bulk upsert atoms (JSONL rows from packages/content). Upsert by id; keeps existing status unless overwriteStatus",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "atoms": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "tradition": {
+                          "type": "string",
+                          "enum": [
+                            "ziwei",
+                            "bazi",
+                            "almanac",
+                            "tarot",
+                            "iching",
+                            "numerology",
+                            "astro"
+                          ]
+                        },
+                        "key": {
+                          "type": "string",
+                          "minLength": 3
+                        },
+                        "locale": {
+                          "type": "string",
+                          "enum": [
+                            "vi",
+                            "en",
+                            "es",
+                            "pt-BR",
+                            "ja",
+                            "ko",
+                            "zh-TW",
+                            "zh-CN",
+                            "hi",
+                            "th",
+                            "id",
+                            "fr",
+                            "de"
+                          ]
+                        },
+                        "title": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "body_md": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "tone": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "source_ref": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "author": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "reviewer": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "draft",
+                            "reviewed",
+                            "published",
+                            "archived"
+                          ],
+                          "default": "draft"
+                        },
+                        "version": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "default": 1
+                        }
+                      },
+                      "required": [
+                        "tradition",
+                        "key",
+                        "locale",
+                        "title",
+                        "body_md"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1,
+                    "maxItems": 2000
+                  },
+                  "overwriteStatus": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                },
+                "required": [
+                  "atoms"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "inserted": {
+                      "type": "integer"
+                    },
+                    "updated": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "inserted",
+                    "updated"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/coverage": {
+      "get": {
+        "summary": "Atom counts per tradition × locale × status",
+        "tags": [
+          "admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "rows": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "tradition": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "total": {
+                            "type": "integer"
+                          },
+                          "draft": {
+                            "type": "integer"
+                          },
+                          "reviewed": {
+                            "type": "integer"
+                          },
+                          "published": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "tradition",
+                          "locale",
+                          "total",
+                          "draft",
+                          "reviewed",
+                          "published"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "rows"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/glossary/import": {
+      "post": {
+        "summary": "Bulk upsert glossary rows",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "rows": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "termKey": {
+                          "type": "string"
+                        },
+                        "locale": {
+                          "type": "string",
+                          "enum": [
+                            "vi",
+                            "en",
+                            "es",
+                            "pt-BR",
+                            "ja",
+                            "ko",
+                            "zh-TW",
+                            "zh-CN",
+                            "hi",
+                            "th",
+                            "id",
+                            "fr",
+                            "de"
+                          ]
+                        },
+                        "term": {
+                          "type": "string"
+                        },
+                        "note": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "termKey",
+                        "locale",
+                        "term"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1,
+                    "maxItems": 5000
+                  }
+                },
+                "required": [
+                  "rows"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "upserted": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "upserted"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/jobs/daily-oracle": {
+      "post": {
+        "summary": "Run the Daily Oracle generator now for a date and locales (idempotent upsert)",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "locales": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "vi",
+                        "en",
+                        "es",
+                        "pt-BR",
+                        "ja",
+                        "ko",
+                        "zh-TW",
+                        "zh-CN",
+                        "hi",
+                        "th",
+                        "id",
+                        "fr",
+                        "de"
+                      ]
+                    },
+                    "default": [
+                      "vi",
+                      "en"
+                    ]
+                  },
+                  "force": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                },
+                "required": [
+                  "date"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "type": "string"
+                    },
+                    "generated": {
+                      "type": "integer"
+                    },
+                    "skipped": {
+                      "type": "integer"
+                    },
+                    "costUsd": {
+                      "type": "number"
+                    },
+                    "ai": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "date",
+                    "generated",
+                    "skipped",
+                    "costUsd",
+                    "ai"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/daily-content": {
+      "get": {
+        "summary": "Preview generated Daily Oracle rows",
+        "tags": [
+          "admin"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "date",
+            "required": true
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vi",
+                "en",
+                "es",
+                "pt-BR",
+                "ja",
+                "ko",
+                "zh-TW",
+                "zh-CN",
+                "hi",
+                "th",
+                "id",
+                "fr",
+                "de"
+              ]
+            },
+            "in": "query",
+            "name": "locale",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "rows": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "date": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "segmentKey": {
+                            "type": "string"
+                          },
+                          "payload": {
+                            "type": "object",
+                            "additionalProperties": {}
+                          }
+                        },
+                        "required": [
+                          "date",
+                          "locale",
+                          "segmentKey",
+                          "payload"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "rows"
+                  ],
+                  "additionalProperties": false
                 }
               }
             }
@@ -2835,6 +4115,10 @@
     },
     {
       "name": "webhooks"
+    },
+    {
+      "name": "admin",
+      "description": "Content ops; X-Admin-Token"
     }
   ]
 }
