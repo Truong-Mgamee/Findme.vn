@@ -1,0 +1,100 @@
+{
+  "_meta": {
+    "draft": true,
+    "pseudo": true,
+    "generatedFrom": "en.json"
+  },
+  "common": {
+    "appName": "[Fïñdmë · ·]",
+    "continue": "[Cøñtïñüë · ·]",
+    "back": "[Båçk ·]",
+    "skip": "[Skïp ·]",
+    "save": "[Såvë ·]",
+    "cancel": "[Cåñçël · ·]",
+    "retry": "[Rëtrÿ ·]",
+    "loading": "[Løådïñg… · ·]",
+    "errorGeneric": "[Sømëthïñg wëñt wrøñg. Plëåsë trÿ ågåïñ. · · · · · · ·]",
+    "disclaimer": "[Rëådïñgs årë før rëflëçtïøñ åñd ïñspïråtïøñ. Thëÿ årë ñøt mëdïçål, lëgål ør fïñåñçïål ådvïçë. · · · · · · · · · · · · · · · · ·]",
+    "plusBadge": "[Plüs ·]",
+    "freeTodayBadge": "[Frëë tødåÿ · ·]"
+  },
+  "onboarding": {
+    "locale": {
+      "title": "[Chøøsë ÿøür låñgüågë · · · ·]",
+      "subtitle": "[Yøü çåñ çhåñgë thïs åñÿtïmë. · · · · ·]"
+    },
+    "pack": {
+      "title": "[Whåt wøüld ÿøü lïkë tø ëxplørë? · · · · · ·]",
+      "eastAsia": "[Ëåst Åsïåñ: Zï Wëï, Føür Pïllårs, Ålmåñåç, Ï Chïñg · · · · · · · · ·]",
+      "western": "[Wëstërñ: Tårøt, Nümërøløgÿ, Åstrøløgÿ · · · · · · ·]",
+      "both": "[Bøth ·]"
+    },
+    "birth": {
+      "title": "[Whëñ wërë ÿøü børñ? · · · ·]",
+      "date": "[Dåtë øf bïrth · · ·]",
+      "time": "[Tïmë øf bïrth · · ·]",
+      "timeUnknown": "[Ï døñ't kñøw mÿ bïrth tïmë · · · · ·]",
+      "timeUnknownHint": "[Zï Wëï åñd høür-pïllår rësülts wïll bë åpprøxïmåtë. · · · · · · · · ·]",
+      "place": "[Plåçë øf bïrth · · ·]",
+      "placeHint": "[Üsëd før tïmë zøñë åñd trüë sølår tïmë. · · · · · · ·]",
+      "gender": "[Gëñdër · ·]"
+    },
+    "insights": {
+      "title": "[Thïs ïs ÿøü · ·]",
+      "subtitle": "[Thrëë thïñgs ÿøür çhårt såÿs · · · · ·]"
+    },
+    "dailyTime": {
+      "title": "[Whëñ shøüld ÿøür Dåïlÿ Øråçlë årrïvë? · · · · · · ·]",
+      "enablePush": "[Sëñd më å dåïlÿ ñøtïfïçåtïøñ · · · · ·]"
+    },
+    "firstReading": {
+      "title": "[Yøür fïrst füll rëådïñg · · · · ·]",
+      "subtitle": "[Øñ üs. Ït tåkës åbøüt å mïñütë. · · · · · ·]"
+    }
+  },
+  "today": {
+    "title": "[Tødåÿ ·]",
+    "streak": "[{count, plural, one {# day streak} øthër {# day streak}} · ·]",
+    "luckyNumber": "[Lüçkÿ ñümbër · · ·]",
+    "luckyColor": "[Lüçkÿ çølør · ·]",
+    "goodHours": "[Gøød høürs · ·]",
+    "doToday": "[Fåvøråblë tødåÿ · · ·]",
+    "avoidToday": "[Åvøïd tødåÿ · ·]",
+    "cardOfDay": "[Cård øf thë dåÿ · · ·]",
+    "personalDay": "[Përsøñål dåÿ {number} · · ·]",
+    "askMore": "[Åsk mørë · ·]",
+    "share": "[Shårë ·]"
+  },
+  "explore": {
+    "title": "[Ëxplørë · ·]",
+    "ziwei": "[Zï Wëï Døü Shü çhårt · · · ·]",
+    "bazi": "[Føür Pïllårs · · ·]",
+    "almanac": "[Ålmåñåç & dåtë pïçkër · · · ·]",
+    "iching": "[Ï Chïñg · ·]",
+    "tarot": "[Tårøt ·]",
+    "numerology": "[Nümërøløgÿ · ·]",
+    "compat": "[Cømpåtïbïlïtÿ · · ·]",
+    "astro": "[Bïrth çhårt · ·]"
+  },
+  "paywall": {
+    "title": "[Gø dëëpër wïth Plüs · · · ·]",
+    "weekly": "[Wëëklÿ · ·]",
+    "monthly": "[Møñthlÿ · ·]",
+    "yearly": "[Yëårlÿ · ·]",
+    "bestValue": "[Bëst vålüë · ·]",
+    "trialCta": "[Stårt 7-dåÿ frëë trïål · · · ·]",
+    "renewNotice": "[Rëñëws åütømåtïçållÿ åt {price} për {period} åftër thë trïål. Cåñçël åñÿtïmë ïñ ÿøür størë sëttïñgs. · · · · · · · · · · · · · · ·]",
+    "useCredit": "[Üsë 1 çrëdït ïñstëåd · · · ·]",
+    "restore": "[Rëstørë pürçhåsës · · ·]"
+  },
+  "settings": {
+    "title": "[Sëttïñgs · ·]",
+    "language": "[Låñgüågë · ·]",
+    "calendarStandard": "[Lüñår çålëñdår ståñdård · · · · ·]",
+    "profiles": "[Prøfïlës · ·]",
+    "subscription": "[Sübsçrïptïøñ · · ·]",
+    "privacy": "[Prïvåçÿ & dåtå · · ·]",
+    "deleteData": "[Dëlëtë mÿ dåtå · · ·]",
+    "about": "[Åbøüt ·]"
+  }
+}

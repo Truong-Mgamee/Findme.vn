@@ -1,0 +1,4559 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Findme API",
+    "version": "0.1.0",
+    "description": "Compute-then-explain API: deterministic engines (Zi Wei, Bazi, almanac, numerology, astrology) behind a guest-first REST surface. Headers: `Authorization: Bearer <guest JWT>`, `X-Locale`, `Accept-Language`, `X-Tz`."
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {}
+  },
+  "paths": {
+    "/v1/healthz": {
+      "get": {
+        "summary": "Liveness",
+        "tags": [
+          "system"
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "driver": {
+                      "type": "string"
+                    },
+                    "store": {
+                      "type": "string"
+                    },
+                    "uptimeSec": {
+                      "type": "number"
+                    },
+                    "version": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ok",
+                    "driver",
+                    "store",
+                    "uptimeSec",
+                    "version"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/metrics": {
+      "get": {
+        "summary": "JSON counters (prom-client later)",
+        "tags": [
+          "system"
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/auth/guest": {
+      "post": {
+        "summary": "Create a guest user and return a 180-day Bearer JWT",
+        "tags": [
+          "auth"
+        ],
+        "description": "locale/country/traditionPack/calendarStandard come from the body, else X-Locale / Accept-Language / X-Tz headers and @findme/i18n defaults.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "locale": {
+                        "type": "string",
+                        "enum": [
+                          "vi",
+                          "en",
+                          "es",
+                          "pt-BR",
+                          "ja",
+                          "ko",
+                          "zh-TW",
+                          "zh-CN",
+                          "hi",
+                          "th",
+                          "id",
+                          "fr",
+                          "de"
+                        ]
+                      },
+                      "country": {
+                        "type": "string",
+                        "minLength": 2,
+                        "maxLength": 2
+                      },
+                      "traditionPack": {
+                        "type": "string",
+                        "enum": [
+                          "eastAsia",
+                          "western",
+                          "both"
+                        ]
+                      },
+                      "calendarStandard": {
+                        "type": "string",
+                        "enum": [
+                          "vn",
+                          "cn",
+                          "kr",
+                          "jp"
+                        ]
+                      },
+                      "tz": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    },
+                    "tokenType": {
+                      "type": "string",
+                      "enum": [
+                        "Bearer"
+                      ]
+                    },
+                    "expiresInDays": {
+                      "type": "number"
+                    },
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "format": "uuid"
+                        },
+                        "authUid": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locale": {
+                          "type": "string",
+                          "enum": [
+                            "vi",
+                            "en",
+                            "es",
+                            "pt-BR",
+                            "ja",
+                            "ko",
+                            "zh-TW",
+                            "zh-CN",
+                            "hi",
+                            "th",
+                            "id",
+                            "fr",
+                            "de"
+                          ]
+                        },
+                        "country": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "traditionPack": {
+                          "type": "string",
+                          "enum": [
+                            "eastAsia",
+                            "western",
+                            "both"
+                          ]
+                        },
+                        "calendarStandard": {
+                          "type": "string",
+                          "enum": [
+                            "vn",
+                            "cn",
+                            "kr",
+                            "jp"
+                          ]
+                        },
+                        "tz": {
+                          "type": "string"
+                        },
+                        "dailyHour": {
+                          "type": "integer"
+                        },
+                        "pushEnabled": {
+                          "type": "boolean"
+                        },
+                        "createdAt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "authUid",
+                        "locale",
+                        "country",
+                        "traditionPack",
+                        "calendarStandard",
+                        "tz",
+                        "dailyHour",
+                        "pushEnabled",
+                        "createdAt"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "token",
+                    "tokenType",
+                    "expiresInDays",
+                    "user"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/auth/link": {
+      "post": {
+        "summary": "Link the guest to a Supabase account (501 until SUPABASE_JWT_SECRET is configured)",
+        "tags": [
+          "auth"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "supabaseAccessToken": {
+                    "type": "string",
+                    "minLength": 10
+                  }
+                },
+                "required": [
+                  "supabaseAccessToken"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    },
+                    "tokenType": {
+                      "type": "string",
+                      "enum": [
+                        "Bearer"
+                      ]
+                    },
+                    "expiresInDays": {
+                      "type": "number"
+                    },
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "format": "uuid"
+                        },
+                        "authUid": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locale": {
+                          "type": "string",
+                          "enum": [
+                            "vi",
+                            "en",
+                            "es",
+                            "pt-BR",
+                            "ja",
+                            "ko",
+                            "zh-TW",
+                            "zh-CN",
+                            "hi",
+                            "th",
+                            "id",
+                            "fr",
+                            "de"
+                          ]
+                        },
+                        "country": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "traditionPack": {
+                          "type": "string",
+                          "enum": [
+                            "eastAsia",
+                            "western",
+                            "both"
+                          ]
+                        },
+                        "calendarStandard": {
+                          "type": "string",
+                          "enum": [
+                            "vn",
+                            "cn",
+                            "kr",
+                            "jp"
+                          ]
+                        },
+                        "tz": {
+                          "type": "string"
+                        },
+                        "dailyHour": {
+                          "type": "integer"
+                        },
+                        "pushEnabled": {
+                          "type": "boolean"
+                        },
+                        "createdAt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "authUid",
+                        "locale",
+                        "country",
+                        "traditionPack",
+                        "calendarStandard",
+                        "tz",
+                        "dailyHour",
+                        "pushEnabled",
+                        "createdAt"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "merged": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "token",
+                    "tokenType",
+                    "expiresInDays",
+                    "user",
+                    "merged"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/me": {
+      "get": {
+        "summary": "Current user settings",
+        "tags": [
+          "me"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "authUid": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "locale": {
+                      "type": "string",
+                      "enum": [
+                        "vi",
+                        "en",
+                        "es",
+                        "pt-BR",
+                        "ja",
+                        "ko",
+                        "zh-TW",
+                        "zh-CN",
+                        "hi",
+                        "th",
+                        "id",
+                        "fr",
+                        "de"
+                      ]
+                    },
+                    "country": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "traditionPack": {
+                      "type": "string",
+                      "enum": [
+                        "eastAsia",
+                        "western",
+                        "both"
+                      ]
+                    },
+                    "calendarStandard": {
+                      "type": "string",
+                      "enum": [
+                        "vn",
+                        "cn",
+                        "kr",
+                        "jp"
+                      ]
+                    },
+                    "tz": {
+                      "type": "string"
+                    },
+                    "dailyHour": {
+                      "type": "integer"
+                    },
+                    "pushEnabled": {
+                      "type": "boolean"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "authUid",
+                    "locale",
+                    "country",
+                    "traditionPack",
+                    "calendarStandard",
+                    "tz",
+                    "dailyHour",
+                    "pushEnabled",
+                    "createdAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update locale / tradition pack / calendar standard / tz / daily hour",
+        "tags": [
+          "me"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "locale": {
+                    "type": "string",
+                    "enum": [
+                      "vi",
+                      "en",
+                      "es",
+                      "pt-BR",
+                      "ja",
+                      "ko",
+                      "zh-TW",
+                      "zh-CN",
+                      "hi",
+                      "th",
+                      "id",
+                      "fr",
+                      "de"
+                    ]
+                  },
+                  "country": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 2
+                  },
+                  "traditionPack": {
+                    "type": "string",
+                    "enum": [
+                      "eastAsia",
+                      "western",
+                      "both"
+                    ]
+                  },
+                  "calendarStandard": {
+                    "type": "string",
+                    "enum": [
+                      "vn",
+                      "cn",
+                      "kr",
+                      "jp"
+                    ]
+                  },
+                  "tz": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "dailyHour": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 23
+                  },
+                  "pushEnabled": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "authUid": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "locale": {
+                      "type": "string",
+                      "enum": [
+                        "vi",
+                        "en",
+                        "es",
+                        "pt-BR",
+                        "ja",
+                        "ko",
+                        "zh-TW",
+                        "zh-CN",
+                        "hi",
+                        "th",
+                        "id",
+                        "fr",
+                        "de"
+                      ]
+                    },
+                    "country": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "traditionPack": {
+                      "type": "string",
+                      "enum": [
+                        "eastAsia",
+                        "western",
+                        "both"
+                      ]
+                    },
+                    "calendarStandard": {
+                      "type": "string",
+                      "enum": [
+                        "vn",
+                        "cn",
+                        "kr",
+                        "jp"
+                      ]
+                    },
+                    "tz": {
+                      "type": "string"
+                    },
+                    "dailyHour": {
+                      "type": "integer"
+                    },
+                    "pushEnabled": {
+                      "type": "boolean"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "authUid",
+                    "locale",
+                    "country",
+                    "traditionPack",
+                    "calendarStandard",
+                    "tz",
+                    "dailyHour",
+                    "pushEnabled",
+                    "createdAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Hard-delete the user and every owned row (profiles, readings, credits, …)",
+        "tags": [
+          "me"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "enum": [
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profiles": {
+      "post": {
+        "summary": "Create a birth profile (server encrypts birth data, computes core_json + 3 insights)",
+        "tags": [
+          "profiles"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "birth": {
+                    "type": "object",
+                    "properties": {
+                      "date": {
+                        "type": "string",
+                        "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                      },
+                      "time": {
+                        "type": "string",
+                        "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+                      },
+                      "timeUnknown": {
+                        "type": "boolean"
+                      },
+                      "gender": {
+                        "type": "string",
+                        "enum": [
+                          "male",
+                          "female",
+                          "other"
+                        ]
+                      },
+                      "place": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 120
+                          },
+                          "lat": {
+                            "type": "number",
+                            "minimum": -90,
+                            "maximum": 90
+                          },
+                          "lng": {
+                            "type": "number",
+                            "minimum": -180,
+                            "maximum": 180
+                          },
+                          "tz": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "country": {
+                            "type": "string",
+                            "minLength": 2,
+                            "maxLength": 2
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "lat",
+                          "lng"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "useTrueSolarTime": {
+                        "type": "boolean"
+                      },
+                      "calendarStandard": {
+                        "type": "string",
+                        "enum": [
+                          "vn",
+                          "cn",
+                          "kr",
+                          "jp"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "date",
+                      "timeUnknown",
+                      "gender",
+                      "place"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 60
+                  },
+                  "isSelf": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "fullName": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 120
+                  }
+                },
+                "required": [
+                  "birth"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "isSelf": {
+                      "type": "boolean"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "core": {
+                      "type": "object",
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "insights": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "body": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "key",
+                          "title"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "birthSummary": {
+                      "type": "object",
+                      "properties": {
+                        "gender": {
+                          "type": "string",
+                          "enum": [
+                            "male",
+                            "female",
+                            "other"
+                          ]
+                        },
+                        "timeUnknown": {
+                          "type": "boolean"
+                        },
+                        "placeName": {
+                          "type": "string"
+                        },
+                        "calendarStandard": {
+                          "type": "string",
+                          "enum": [
+                            "vn",
+                            "cn",
+                            "kr",
+                            "jp"
+                          ]
+                        },
+                        "hasName": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "gender",
+                        "timeUnknown",
+                        "placeName",
+                        "calendarStandard",
+                        "hasName"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "birth": {
+                      "type": "object",
+                      "additionalProperties": {}
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label",
+                    "isSelf",
+                    "createdAt",
+                    "core",
+                    "insights",
+                    "birthSummary"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "List my profiles",
+        "tags": [
+          "profiles"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "profiles": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "format": "uuid"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "isSelf": {
+                            "type": "boolean"
+                          },
+                          "createdAt": {
+                            "type": "string"
+                          },
+                          "core": {
+                            "type": "object",
+                            "additionalProperties": {},
+                            "description": "Engine output (see @findme/engine-* types)"
+                          },
+                          "insights": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "key": {
+                                  "type": "string"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "body": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "key",
+                                "title"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "birthSummary": {
+                            "type": "object",
+                            "properties": {
+                              "gender": {
+                                "type": "string",
+                                "enum": [
+                                  "male",
+                                  "female",
+                                  "other"
+                                ]
+                              },
+                              "timeUnknown": {
+                                "type": "boolean"
+                              },
+                              "placeName": {
+                                "type": "string"
+                              },
+                              "calendarStandard": {
+                                "type": "string",
+                                "enum": [
+                                  "vn",
+                                  "cn",
+                                  "kr",
+                                  "jp"
+                                ]
+                              },
+                              "hasName": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "gender",
+                              "timeUnknown",
+                              "placeName",
+                              "calendarStandard",
+                              "hasName"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "birth": {
+                            "type": "object",
+                            "additionalProperties": {}
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "label",
+                          "isSelf",
+                          "createdAt",
+                          "core",
+                          "insights",
+                          "birthSummary"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "profiles"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profiles/{id}": {
+      "get": {
+        "summary": "Get a profile (owner may request the decrypted birth input with ?includeBirth=true)",
+        "tags": [
+          "profiles"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "boolean",
+              "default": false
+            },
+            "in": "query",
+            "name": "includeBirth",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "isSelf": {
+                      "type": "boolean"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "core": {
+                      "type": "object",
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "insights": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "body": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "key",
+                          "title"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "birthSummary": {
+                      "type": "object",
+                      "properties": {
+                        "gender": {
+                          "type": "string",
+                          "enum": [
+                            "male",
+                            "female",
+                            "other"
+                          ]
+                        },
+                        "timeUnknown": {
+                          "type": "boolean"
+                        },
+                        "placeName": {
+                          "type": "string"
+                        },
+                        "calendarStandard": {
+                          "type": "string",
+                          "enum": [
+                            "vn",
+                            "cn",
+                            "kr",
+                            "jp"
+                          ]
+                        },
+                        "hasName": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "gender",
+                        "timeUnknown",
+                        "placeName",
+                        "calendarStandard",
+                        "hasName"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "birth": {
+                      "type": "object",
+                      "additionalProperties": {}
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "label",
+                    "isSelf",
+                    "createdAt",
+                    "core",
+                    "insights",
+                    "birthSummary"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a profile and its readings",
+        "tags": [
+          "profiles"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "enum": [
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profiles/{id}/ziwei": {
+      "get": {
+        "summary": "Zi Wei Dou Shu chart (12 palaces, localized) + horoscope for a date",
+        "tags": [
+          "engines"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "default",
+                "zhongzhou",
+                "quanshu",
+                "khamThienTuHoa"
+              ],
+              "default": "default"
+            },
+            "in": "query",
+            "name": "school",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            "in": "query",
+            "name": "date",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "chart": {
+                      "type": "object",
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "horoscope": {
+                      "type": "object",
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "atomKeys": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "chart",
+                    "horoscope",
+                    "atomKeys"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profiles/{id}/bazi": {
+      "get": {
+        "summary": "Bazi: four pillars, ten gods, luck periods, annual luck",
+        "tags": [
+          "engines"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Engine output (see @findme/engine-* types)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {},
+                  "description": "Engine output (see @findme/engine-* types)"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profiles/{id}/numerology": {
+      "get": {
+        "summary": "Numerology (Pythagorean): life path, name numbers, cycles",
+        "tags": [
+          "engines"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Engine output (see @findme/engine-* types)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {},
+                  "description": "Engine output (see @findme/engine-* types)"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/profiles/{id}/astro": {
+      "get": {
+        "summary": "Western natal chart (planets, houses, aspects)",
+        "tags": [
+          "engines"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "placidus",
+                "whole"
+              ],
+              "default": "placidus"
+            },
+            "in": "query",
+            "name": "houses",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Engine output (see @findme/engine-* types)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {},
+                  "description": "Engine output (see @findme/engine-* types)"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/almanac": {
+      "get": {
+        "summary": "Public day almanac (黄历 / lịch ngày) for a national calendar standard",
+        "tags": [
+          "almanac"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            "in": "query",
+            "name": "date",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vn",
+                "cn",
+                "kr",
+                "jp"
+              ]
+            },
+            "in": "query",
+            "name": "std",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vi",
+                "en",
+                "es",
+                "pt-BR",
+                "ja",
+                "ko",
+                "zh-TW",
+                "zh-CN",
+                "hi",
+                "th",
+                "id",
+                "fr",
+                "de"
+              ]
+            },
+            "in": "query",
+            "name": "locale",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Engine output (see @findme/engine-* types)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {},
+                  "description": "Engine output (see @findme/engine-* types)"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/almanac/pick": {
+      "post": {
+        "summary": "Date Picker: rank days in a window for a task, avoiding clashes with the given profiles (Plus or 1 credit)",
+        "tags": [
+          "almanac"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "task": {
+                    "type": "string",
+                    "enum": [
+                      "wedding",
+                      "opening",
+                      "moving",
+                      "contract",
+                      "travel",
+                      "groundbreaking",
+                      "haircut",
+                      "pray",
+                      "burial",
+                      "study"
+                    ]
+                  },
+                  "from": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "to": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "profileIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "maxItems": 4,
+                    "default": []
+                  },
+                  "std": {
+                    "type": "string",
+                    "enum": [
+                      "vn",
+                      "cn",
+                      "kr",
+                      "jp"
+                    ]
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 31,
+                    "default": 10
+                  },
+                  "payWith": {
+                    "type": "string",
+                    "enum": [
+                      "credit"
+                    ]
+                  }
+                },
+                "required": [
+                  "task",
+                  "from",
+                  "to"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "readingId": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "paidBy": {
+                      "type": "string"
+                    },
+                    "ranked": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": {},
+                        "description": "Engine output (see @findme/engine-* types)"
+                      }
+                    }
+                  },
+                  "required": [
+                    "readingId",
+                    "paidBy",
+                    "ranked"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "402 paywall",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "paywall": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error",
+                    "reason",
+                    "paywall"
+                  ],
+                  "additionalProperties": true,
+                  "description": "402 paywall"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/today": {
+      "get": {
+        "summary": "Daily Oracle: daily_content segments for the user + personalised almanac / personal day / sky + streak",
+        "tags": [
+          "today"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Engine output (see @findme/engine-* types)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {},
+                  "description": "Engine output (see @findme/engine-* types)"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/readings": {
+      "post": {
+        "summary": "Create a deep reading: engine runs synchronously; AI narrative streams later via /readings/:id/stream",
+        "tags": [
+          "readings"
+        ],
+        "description": "Payment: first deep reading is free (free_first), then Plus subscription, then `payWith:\"credit\"` (1 credit, debited transactionally). Otherwise 402 `{reason, paywall:true}`. tarot_spread / iching return 501 until their engines land.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "ziwei_full",
+                      "bazi_luck",
+                      "numerology_full",
+                      "compatibility",
+                      "almanac_pick",
+                      "tarot_spread",
+                      "iching"
+                    ]
+                  },
+                  "profileId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "partnerProfileId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "params": {
+                    "type": "object",
+                    "additionalProperties": {},
+                    "default": {}
+                  },
+                  "payWith": {
+                    "type": "string",
+                    "enum": [
+                      "credit"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind",
+                  "profileId"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "kind": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "profileId": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "uuid"
+                    },
+                    "partnerProfileId": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "uuid"
+                    },
+                    "paidBy": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "input": {
+                      "type": "object",
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "engine": {
+                      "type": [
+                        "object",
+                        "null"
+                      ],
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "ai": {
+                      "type": [
+                        "object",
+                        "null"
+                      ],
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "kind",
+                    "locale",
+                    "profileId",
+                    "partnerProfileId",
+                    "paidBy",
+                    "createdAt",
+                    "input",
+                    "engine",
+                    "ai"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "402 paywall",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "paywall": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error",
+                    "reason",
+                    "paywall"
+                  ],
+                  "additionalProperties": true,
+                  "description": "402 paywall"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "My readings (newest first)",
+        "tags": [
+          "readings"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            },
+            "in": "query",
+            "name": "limit",
+            "required": false
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "readings": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "format": "uuid"
+                          },
+                          "kind": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "profileId": {
+                            "type": [
+                              "string",
+                              "null"
+                            ],
+                            "format": "uuid"
+                          },
+                          "partnerProfileId": {
+                            "type": [
+                              "string",
+                              "null"
+                            ],
+                            "format": "uuid"
+                          },
+                          "paidBy": {
+                            "type": "string"
+                          },
+                          "createdAt": {
+                            "type": "string"
+                          },
+                          "input": {
+                            "type": "object",
+                            "additionalProperties": {},
+                            "description": "Engine output (see @findme/engine-* types)"
+                          },
+                          "engine": {
+                            "type": [
+                              "object",
+                              "null"
+                            ],
+                            "additionalProperties": {},
+                            "description": "Engine output (see @findme/engine-* types)"
+                          },
+                          "ai": {
+                            "type": [
+                              "object",
+                              "null"
+                            ],
+                            "additionalProperties": {},
+                            "description": "Engine output (see @findme/engine-* types)"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "kind",
+                          "locale",
+                          "profileId",
+                          "partnerProfileId",
+                          "paidBy",
+                          "createdAt",
+                          "input",
+                          "engine",
+                          "ai"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "readings"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/readings/{id}": {
+      "get": {
+        "summary": "One reading",
+        "tags": [
+          "readings"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "format": "uuid"
+                    },
+                    "kind": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "profileId": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "uuid"
+                    },
+                    "partnerProfileId": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "format": "uuid"
+                    },
+                    "paidBy": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "input": {
+                      "type": "object",
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "engine": {
+                      "type": [
+                        "object",
+                        "null"
+                      ],
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    },
+                    "ai": {
+                      "type": [
+                        "object",
+                        "null"
+                      ],
+                      "additionalProperties": {},
+                      "description": "Engine output (see @findme/engine-* types)"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "kind",
+                    "locale",
+                    "profileId",
+                    "partnerProfileId",
+                    "paidBy",
+                    "createdAt",
+                    "input",
+                    "engine",
+                    "ai"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/readings/{id}/stream": {
+      "get": {
+        "summary": "SSE: `engine_summary` → (`delta`…) → `section` × n → `done`. Narrative is composed once and cached on the reading.",
+        "tags": [
+          "readings"
+        ],
+        "description": "Events: `engine_summary` {atomKeys, confidence}; `delta` {text} raw streamed model text (only on first composition with AI enabled); `section` {index,title,body,atomRefs}; `summary`, `actions`, `caveats`, `disclaimer`; `done` {readingId, model, usedFallbackTemplate}; `error` {message}.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "text/event-stream": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/ai/ask": {
+      "post": {
+        "summary": "Ask the AI guide a follow-up question grounded on your core facts and (optionally) a reading",
+        "tags": [
+          "readings"
+        ],
+        "description": "Free users get 3 questions per local day; Plus is unlimited. Answers are grounded on stored engine facts only.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "question": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 600
+                  },
+                  "readingId": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "required": [
+                  "question"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "quotaLeft": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "model": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "quotaLeft",
+                    "model"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "402 paywall",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "paywall": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error",
+                    "reason",
+                    "paywall"
+                  ],
+                  "additionalProperties": true,
+                  "description": "402 paywall"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/atoms": {
+      "get": {
+        "summary": "List content atoms (latest version per key+locale unless includeVersions)",
+        "tags": [
+          "admin"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ziwei",
+                "bazi",
+                "almanac",
+                "tarot",
+                "iching",
+                "numerology",
+                "astro"
+              ]
+            },
+            "in": "query",
+            "name": "tradition",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vi",
+                "en",
+                "es",
+                "pt-BR",
+                "ja",
+                "ko",
+                "zh-TW",
+                "zh-CN",
+                "hi",
+                "th",
+                "id",
+                "fr",
+                "de"
+              ]
+            },
+            "in": "query",
+            "name": "locale",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "draft",
+                "reviewed",
+                "published",
+                "archived"
+              ]
+            },
+            "in": "query",
+            "name": "status",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "in": "query",
+            "name": "q",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            },
+            "in": "query",
+            "name": "page",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200,
+              "default": 50
+            },
+            "in": "query",
+            "name": "pageSize",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "tradition": {
+                            "type": "string"
+                          },
+                          "key": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "bodyMd": {
+                            "type": "string"
+                          },
+                          "tone": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "sourceRef": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "author": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "reviewer": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "status": {
+                            "type": "string"
+                          },
+                          "version": {
+                            "type": "integer"
+                          },
+                          "updatedAt": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "tradition",
+                          "key",
+                          "locale",
+                          "title",
+                          "bodyMd",
+                          "tone",
+                          "sourceRef",
+                          "author",
+                          "reviewer",
+                          "status",
+                          "version",
+                          "updatedAt"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "total": {
+                      "type": "integer"
+                    },
+                    "page": {
+                      "type": "integer"
+                    },
+                    "pageSize": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "items",
+                    "total",
+                    "page",
+                    "pageSize"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new version of an atom (version = max+1)",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tradition": {
+                    "type": "string",
+                    "enum": [
+                      "ziwei",
+                      "bazi",
+                      "almanac",
+                      "tarot",
+                      "iching",
+                      "numerology",
+                      "astro"
+                    ]
+                  },
+                  "key": {
+                    "type": "string",
+                    "minLength": 3
+                  },
+                  "locale": {
+                    "type": "string",
+                    "enum": [
+                      "vi",
+                      "en",
+                      "es",
+                      "pt-BR",
+                      "ja",
+                      "ko",
+                      "zh-TW",
+                      "zh-CN",
+                      "hi",
+                      "th",
+                      "id",
+                      "fr",
+                      "de"
+                    ]
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "body_md": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "tone": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "source_ref": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "author": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "reviewer": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "draft",
+                      "reviewed",
+                      "published",
+                      "archived"
+                    ],
+                    "default": "draft"
+                  }
+                },
+                "required": [
+                  "tradition",
+                  "key",
+                  "locale",
+                  "title",
+                  "body_md"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "tradition": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "bodyMd": {
+                      "type": "string"
+                    },
+                    "tone": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "sourceRef": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "author": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "tradition",
+                    "key",
+                    "locale",
+                    "title",
+                    "bodyMd",
+                    "tone",
+                    "sourceRef",
+                    "author",
+                    "reviewer",
+                    "status",
+                    "version",
+                    "updatedAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/atoms/{id}": {
+      "get": {
+        "summary": "One atom (any status)",
+        "tags": [
+          "admin"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "tradition": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "bodyMd": {
+                      "type": "string"
+                    },
+                    "tone": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "sourceRef": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "author": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "tradition",
+                    "key",
+                    "locale",
+                    "title",
+                    "bodyMd",
+                    "tone",
+                    "sourceRef",
+                    "author",
+                    "reviewer",
+                    "status",
+                    "version",
+                    "updatedAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Edit title/body/status/reviewer in place",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "bodyMd": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "draft",
+                      "reviewed",
+                      "published",
+                      "archived"
+                    ]
+                  },
+                  "reviewer": {
+                    "type": "string"
+                  },
+                  "tone": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "tradition": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "bodyMd": {
+                      "type": "string"
+                    },
+                    "tone": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "sourceRef": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "author": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "integer"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "tradition",
+                    "key",
+                    "locale",
+                    "title",
+                    "bodyMd",
+                    "tone",
+                    "sourceRef",
+                    "author",
+                    "reviewer",
+                    "status",
+                    "version",
+                    "updatedAt"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/atoms/import": {
+      "post": {
+        "summary": "Bulk upsert atoms (JSONL rows from packages/content). Upsert by id; keeps existing status unless overwriteStatus",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "atoms": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "tradition": {
+                          "type": "string",
+                          "enum": [
+                            "ziwei",
+                            "bazi",
+                            "almanac",
+                            "tarot",
+                            "iching",
+                            "numerology",
+                            "astro"
+                          ]
+                        },
+                        "key": {
+                          "type": "string",
+                          "minLength": 3
+                        },
+                        "locale": {
+                          "type": "string",
+                          "enum": [
+                            "vi",
+                            "en",
+                            "es",
+                            "pt-BR",
+                            "ja",
+                            "ko",
+                            "zh-TW",
+                            "zh-CN",
+                            "hi",
+                            "th",
+                            "id",
+                            "fr",
+                            "de"
+                          ]
+                        },
+                        "title": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "body_md": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "tone": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "source_ref": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "author": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "reviewer": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "draft",
+                            "reviewed",
+                            "published",
+                            "archived"
+                          ],
+                          "default": "draft"
+                        },
+                        "version": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "default": 1
+                        }
+                      },
+                      "required": [
+                        "tradition",
+                        "key",
+                        "locale",
+                        "title",
+                        "body_md"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1,
+                    "maxItems": 2000
+                  },
+                  "overwriteStatus": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                },
+                "required": [
+                  "atoms"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "inserted": {
+                      "type": "integer"
+                    },
+                    "updated": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "inserted",
+                    "updated"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/coverage": {
+      "get": {
+        "summary": "Atom counts per tradition × locale × status",
+        "tags": [
+          "admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "rows": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "tradition": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "total": {
+                            "type": "integer"
+                          },
+                          "draft": {
+                            "type": "integer"
+                          },
+                          "reviewed": {
+                            "type": "integer"
+                          },
+                          "published": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "tradition",
+                          "locale",
+                          "total",
+                          "draft",
+                          "reviewed",
+                          "published"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "rows"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/glossary/import": {
+      "post": {
+        "summary": "Bulk upsert glossary rows",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "rows": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "termKey": {
+                          "type": "string"
+                        },
+                        "locale": {
+                          "type": "string",
+                          "enum": [
+                            "vi",
+                            "en",
+                            "es",
+                            "pt-BR",
+                            "ja",
+                            "ko",
+                            "zh-TW",
+                            "zh-CN",
+                            "hi",
+                            "th",
+                            "id",
+                            "fr",
+                            "de"
+                          ]
+                        },
+                        "term": {
+                          "type": "string"
+                        },
+                        "note": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "termKey",
+                        "locale",
+                        "term"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 1,
+                    "maxItems": 5000
+                  }
+                },
+                "required": [
+                  "rows"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "upserted": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "upserted"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/jobs/daily-oracle": {
+      "post": {
+        "summary": "Run the Daily Oracle generator now for a date and locales (idempotent upsert)",
+        "tags": [
+          "admin"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "locales": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "vi",
+                        "en",
+                        "es",
+                        "pt-BR",
+                        "ja",
+                        "ko",
+                        "zh-TW",
+                        "zh-CN",
+                        "hi",
+                        "th",
+                        "id",
+                        "fr",
+                        "de"
+                      ]
+                    },
+                    "default": [
+                      "vi",
+                      "en"
+                    ]
+                  },
+                  "force": {
+                    "type": "boolean",
+                    "default": false
+                  }
+                },
+                "required": [
+                  "date"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "type": "string"
+                    },
+                    "generated": {
+                      "type": "integer"
+                    },
+                    "skipped": {
+                      "type": "integer"
+                    },
+                    "costUsd": {
+                      "type": "number"
+                    },
+                    "ai": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "date",
+                    "generated",
+                    "skipped",
+                    "costUsd",
+                    "ai"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/admin/daily-content": {
+      "get": {
+        "summary": "Preview generated Daily Oracle rows",
+        "tags": [
+          "admin"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "date",
+            "required": true
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vi",
+                "en",
+                "es",
+                "pt-BR",
+                "ja",
+                "ko",
+                "zh-TW",
+                "zh-CN",
+                "hi",
+                "th",
+                "id",
+                "fr",
+                "de"
+              ]
+            },
+            "in": "query",
+            "name": "locale",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "rows": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "date": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "segmentKey": {
+                            "type": "string"
+                          },
+                          "payload": {
+                            "type": "object",
+                            "additionalProperties": {}
+                          }
+                        },
+                        "required": [
+                          "date",
+                          "locale",
+                          "segmentKey",
+                          "payload"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "rows"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/billing/products": {
+      "get": {
+        "summary": "Products available for web checkout (configured Stripe prices)",
+        "tags": [
+          "billing"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "products": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string"
+                          },
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "subscription",
+                              "credits"
+                            ]
+                          },
+                          "credits": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "key",
+                          "kind",
+                          "credits"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "products"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/billing/checkout": {
+      "post": {
+        "summary": "Create a Stripe Checkout session for a subscription or credit pack (501 when Stripe is not configured)",
+        "tags": [
+          "billing"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "product": {
+                    "type": "string",
+                    "enum": [
+                      "plus_weekly",
+                      "plus_monthly",
+                      "plus_yearly",
+                      "credits_1",
+                      "credits_5",
+                      "credits_15"
+                    ]
+                  },
+                  "successPath": {
+                    "type": "string",
+                    "default": "/app/billing/success"
+                  },
+                  "cancelPath": {
+                    "type": "string",
+                    "default": "/app/paywall"
+                  }
+                },
+                "required": [
+                  "product"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "url": {
+                      "type": "string"
+                    },
+                    "sessionId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url",
+                    "sessionId"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/billing/portal": {
+      "post": {
+        "summary": "Stripe Customer Portal link (manage/cancel). 501 when not configured",
+        "tags": [
+          "billing"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "customerId": {
+                    "type": "string"
+                  },
+                  "returnPath": {
+                    "type": "string",
+                    "default": "/app/settings"
+                  }
+                },
+                "required": [
+                  "customerId"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "url": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "url"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Error envelope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ],
+                  "additionalProperties": true,
+                  "description": "Error envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/me/push-token": {
+      "post": {
+        "summary": "Register an Expo/Web push token and enable daily push",
+        "tags": [
+          "me"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "minLength": 10,
+                    "maxLength": 512
+                  },
+                  "platform": {
+                    "type": "string",
+                    "enum": [
+                      "ios",
+                      "android",
+                      "web"
+                    ]
+                  }
+                },
+                "required": [
+                  "token",
+                  "platform"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "tokens": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "ok",
+                    "tokens"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove a push token (disables daily push when none remain)",
+        "tags": [
+          "me"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "token"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "tokens": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "ok",
+                    "tokens"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/content/atoms": {
+      "get": {
+        "summary": "Published content atoms by key (fallback locale → en); public, CDN-cacheable",
+        "tags": [
+          "content"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            },
+            "in": "query",
+            "name": "keys",
+            "required": true,
+            "description": "comma-separated, max 50"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "vi",
+                "en",
+                "es",
+                "pt-BR",
+                "ja",
+                "ko",
+                "zh-TW",
+                "zh-CN",
+                "hi",
+                "th",
+                "id",
+                "fr",
+                "de"
+              ]
+            },
+            "in": "query",
+            "name": "locale",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "locale": {
+                      "type": "string"
+                    },
+                    "atoms": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "key": {
+                            "type": "string"
+                          },
+                          "locale": {
+                            "type": "string"
+                          },
+                          "tradition": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "bodyMd": {
+                            "type": "string"
+                          },
+                          "tone": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "version": {
+                            "type": "integer"
+                          },
+                          "fallback": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "key",
+                          "locale",
+                          "tradition",
+                          "title",
+                          "bodyMd",
+                          "tone",
+                          "version",
+                          "fallback"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "missing": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "locale",
+                    "atoms",
+                    "missing"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/entitlements": {
+      "get": {
+        "summary": "Active subscriptions, credit balance, unlocked features",
+        "tags": [
+          "billing"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "subscriptions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "product": {
+                            "type": "string"
+                          },
+                          "status": {
+                            "type": "string"
+                          },
+                          "source": {
+                            "type": "string"
+                          },
+                          "expiresAt": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "trial": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "product",
+                          "status",
+                          "source",
+                          "expiresAt",
+                          "trial"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "credits": {
+                      "type": "integer"
+                    },
+                    "features": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "freeFirstReadingAvailable": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "subscriptions",
+                    "credits",
+                    "features",
+                    "freeFirstReadingAvailable"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/webhooks/revenuecat": {
+      "post": {
+        "summary": "RevenueCat webhook (subscriptions + credit packs)",
+        "tags": [
+          "webhooks"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "event": {
+                    "type": "object",
+                    "additionalProperties": {}
+                  }
+                },
+                "required": [
+                  "event"
+                ],
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "received": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "duplicate": {
+                      "type": "boolean"
+                    },
+                    "applied": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "received",
+                    "duplicate",
+                    "applied"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/webhooks/stripe": {
+      "post": {
+        "summary": "Stripe webhook (checkout.session.completed → credits/one-off; customer.subscription.* → entitlements)",
+        "tags": [
+          "webhooks"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "object",
+                    "properties": {
+                      "object": {
+                        "type": "object",
+                        "additionalProperties": {}
+                      }
+                    },
+                    "required": [
+                      "object"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "id",
+                  "type",
+                  "data"
+                ],
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "received": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "duplicate": {
+                      "type": "boolean"
+                    },
+                    "applied": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "received",
+                    "duplicate",
+                    "applied"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "system"
+    },
+    {
+      "name": "auth"
+    },
+    {
+      "name": "me"
+    },
+    {
+      "name": "profiles"
+    },
+    {
+      "name": "engines",
+      "description": "Raw engine output per profile"
+    },
+    {
+      "name": "almanac"
+    },
+    {
+      "name": "today",
+      "description": "Daily Oracle"
+    },
+    {
+      "name": "readings"
+    },
+    {
+      "name": "content"
+    },
+    {
+      "name": "billing"
+    },
+    {
+      "name": "webhooks"
+    },
+    {
+      "name": "admin",
+      "description": "Content ops; X-Admin-Token"
+    }
+  ]
+}

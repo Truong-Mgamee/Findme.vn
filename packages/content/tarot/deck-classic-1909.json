@@ -1,0 +1,1799 @@
+{
+  "deck": "classic-1909",
+  "cards": [
+    {
+      "id": "major-00",
+      "arcana": "major",
+      "suit": null,
+      "number": 0,
+      "name_en": "The Fool",
+      "keywords_upright": [
+        "new beginnings",
+        "innocence",
+        "spontaneity",
+        "leap of faith"
+      ],
+      "keywords_reversed": [
+        "recklessness",
+        "naivety",
+        "hesitation",
+        "poor judgment"
+      ],
+      "element": "air",
+      "astrology": "Uranus",
+      "image": "classic-1909/major-00.webp",
+      "waite_pd_excerpt": "Waite reads the card as folly, extravagance and intoxication with life, a free spirit setting out without counting the cost. Reversed it points to negligence, carelessness and a choice made without thought."
+    },
+    {
+      "id": "major-01",
+      "arcana": "major",
+      "suit": null,
+      "number": 1,
+      "name_en": "The Magician",
+      "keywords_upright": [
+        "willpower",
+        "skill",
+        "manifestation",
+        "resourcefulness"
+      ],
+      "keywords_reversed": [
+        "manipulation",
+        "trickery",
+        "untapped talent",
+        "illusion"
+      ],
+      "element": "air",
+      "astrology": "Mercury",
+      "image": "classic-1909/major-01.webp",
+      "waite_pd_excerpt": "For Waite the Magician means skill, diplomacy and self-confidence, the will directed toward a goal; it can also hint at subtlety or sickness. Reversed it becomes the physician, the mountebank, mental unease and disgrace."
+    },
+    {
+      "id": "major-02",
+      "arcana": "major",
+      "suit": null,
+      "number": 2,
+      "name_en": "The High Priestess",
+      "keywords_upright": [
+        "intuition",
+        "mystery",
+        "inner knowledge",
+        "stillness"
+      ],
+      "keywords_reversed": [
+        "hidden agendas",
+        "secrets withheld",
+        "disconnection",
+        "surface knowledge"
+      ],
+      "element": "water",
+      "astrology": "Moon",
+      "image": "classic-1909/major-02.webp",
+      "waite_pd_excerpt": "Waite calls her secrets, mystery and the future still unrevealed, the silent and wise woman who interests the querent. Reversed she signals passion, moral or physical ardour, conceit and shallow knowledge."
+    },
+    {
+      "id": "major-03",
+      "arcana": "major",
+      "suit": null,
+      "number": 3,
+      "name_en": "The Empress",
+      "keywords_upright": [
+        "abundance",
+        "nurturing",
+        "fertility",
+        "creativity"
+      ],
+      "keywords_reversed": [
+        "dependence",
+        "creative block",
+        "smothering",
+        "neglect"
+      ],
+      "element": "earth",
+      "astrology": "Venus",
+      "image": "classic-1909/major-03.webp",
+      "waite_pd_excerpt": "Waite associates the Empress with fruitfulness, initiative, action, long days and the unknown made clear; she is also doubt and difficulty resolved. Reversed she suggests light, truth and the unravelling of tangled matters, or public rejoicing, though some readers see vacillation."
+    },
+    {
+      "id": "major-04",
+      "arcana": "major",
+      "suit": null,
+      "number": 4,
+      "name_en": "The Emperor",
+      "keywords_upright": [
+        "authority",
+        "structure",
+        "stability",
+        "leadership"
+      ],
+      "keywords_reversed": [
+        "tyranny",
+        "rigidity",
+        "loss of control",
+        "immaturity"
+      ],
+      "element": "fire",
+      "astrology": "Aries",
+      "image": "classic-1909/major-04.webp",
+      "waite_pd_excerpt": "In Waite the Emperor stands for stability, power, protection and realisation, a great person, aid, reason and conviction. Reversed he indicates benevolence, compassion and credit, but also confusion to enemies and obstruction."
+    },
+    {
+      "id": "major-05",
+      "arcana": "major",
+      "suit": null,
+      "number": 5,
+      "name_en": "The Hierophant",
+      "keywords_upright": [
+        "tradition",
+        "spiritual guidance",
+        "conformity",
+        "institutions"
+      ],
+      "keywords_reversed": [
+        "rebellion",
+        "dogma questioned",
+        "unconventionality",
+        "bad counsel"
+      ],
+      "element": "earth",
+      "astrology": "Taurus",
+      "image": "classic-1909/major-05.webp",
+      "waite_pd_excerpt": "Waite reads the Hierophant as marriage, alliance, captivity and servitude; by another account, mercy, goodness and inspiration, the person to whom the querent turns. Reversed it is society, good understanding, concord, over-kindness and weakness."
+    },
+    {
+      "id": "major-06",
+      "arcana": "major",
+      "suit": null,
+      "number": 6,
+      "name_en": "The Lovers",
+      "keywords_upright": [
+        "love",
+        "union",
+        "values",
+        "choice"
+      ],
+      "keywords_reversed": [
+        "disharmony",
+        "imbalance",
+        "misaligned values",
+        "temptation"
+      ],
+      "element": "air",
+      "astrology": "Gemini",
+      "image": "classic-1909/major-06.webp",
+      "waite_pd_excerpt": "Waite gives the Lovers as attraction, love and beauty, trials overcome. Reversed it signals failure and foolish designs; another account reads it as marriage frustrated and contrarieties of every kind."
+    },
+    {
+      "id": "major-07",
+      "arcana": "major",
+      "suit": null,
+      "number": 7,
+      "name_en": "The Chariot",
+      "keywords_upright": [
+        "determination",
+        "victory",
+        "control",
+        "drive"
+      ],
+      "keywords_reversed": [
+        "lack of direction",
+        "aggression",
+        "obstacles",
+        "loss of control"
+      ],
+      "element": "water",
+      "astrology": "Cancer",
+      "image": "classic-1909/major-07.webp",
+      "waite_pd_excerpt": "For Waite the Chariot means succour, providence, war, triumph, presumption and vengeance, trouble in some readings. Reversed it points to riot, quarrel, dispute, litigation and defeat."
+    },
+    {
+      "id": "major-08",
+      "arcana": "major",
+      "suit": null,
+      "number": 8,
+      "name_en": "Strength",
+      "keywords_upright": [
+        "courage",
+        "inner strength",
+        "patience",
+        "compassion"
+      ],
+      "keywords_reversed": [
+        "self-doubt",
+        "weakness",
+        "insecurity",
+        "raw emotion"
+      ],
+      "element": "fire",
+      "astrology": "Leo",
+      "image": "classic-1909/major-08.webp",
+      "waite_pd_excerpt": "Waite assigns Strength to power, energy, action and courage, magnanimity and complete success with honours. Reversed it shows despotism, abuse of power, weakness, discord and sometimes disgrace."
+    },
+    {
+      "id": "major-09",
+      "arcana": "major",
+      "suit": null,
+      "number": 9,
+      "name_en": "The Hermit",
+      "keywords_upright": [
+        "introspection",
+        "solitude",
+        "inner guidance",
+        "wisdom"
+      ],
+      "keywords_reversed": [
+        "isolation",
+        "loneliness",
+        "withdrawal",
+        "paranoia"
+      ],
+      "element": "earth",
+      "astrology": "Virgo",
+      "image": "classic-1909/major-09.webp",
+      "waite_pd_excerpt": "Waite reads the Hermit as prudence and circumspection, but also treason, dissimulation, roguery and corruption. Reversed it means concealment, disguise, policy, fear and unreasoned caution."
+    },
+    {
+      "id": "major-10",
+      "arcana": "major",
+      "suit": null,
+      "number": 10,
+      "name_en": "Wheel of Fortune",
+      "keywords_upright": [
+        "change",
+        "cycles",
+        "destiny",
+        "turning point"
+      ],
+      "keywords_reversed": [
+        "bad luck",
+        "resistance to change",
+        "setbacks",
+        "broken cycle"
+      ],
+      "element": "fire",
+      "astrology": "Jupiter",
+      "image": "classic-1909/major-10.webp",
+      "waite_pd_excerpt": "Waite calls the Wheel destiny, fortune, success, elevation, luck and felicity. Reversed it means increase, abundance and superfluity."
+    },
+    {
+      "id": "major-11",
+      "arcana": "major",
+      "suit": null,
+      "number": 11,
+      "name_en": "Justice",
+      "keywords_upright": [
+        "fairness",
+        "truth",
+        "accountability",
+        "law"
+      ],
+      "keywords_reversed": [
+        "injustice",
+        "dishonesty",
+        "bias",
+        "avoiding accountability"
+      ],
+      "element": "air",
+      "astrology": "Libra",
+      "image": "classic-1909/major-11.webp",
+      "waite_pd_excerpt": "Waite gives Justice as equity, rightness, probity and executive power, triumph of the deserving side in law. Reversed it is law in all its departments, legal complications, bigotry, bias and excessive severity."
+    },
+    {
+      "id": "major-12",
+      "arcana": "major",
+      "suit": null,
+      "number": 12,
+      "name_en": "The Hanged Man",
+      "keywords_upright": [
+        "surrender",
+        "suspension",
+        "new perspective",
+        "sacrifice"
+      ],
+      "keywords_reversed": [
+        "stalling",
+        "resistance",
+        "martyrdom",
+        "indecision"
+      ],
+      "element": "water",
+      "astrology": "Neptune",
+      "image": "classic-1909/major-12.webp",
+      "waite_pd_excerpt": "Waite describes the Hanged Man as wisdom, circumspection, discernment, trials, sacrifice, intuition, divination and prophecy. Reversed it stands for selfishness, the crowd and the body politic."
+    },
+    {
+      "id": "major-13",
+      "arcana": "major",
+      "suit": null,
+      "number": 13,
+      "name_en": "Death",
+      "keywords_upright": [
+        "endings",
+        "transformation",
+        "transition",
+        "release"
+      ],
+      "keywords_reversed": [
+        "resistance to change",
+        "stagnation",
+        "fear of endings",
+        "decay"
+      ],
+      "element": "water",
+      "astrology": "Scorpio",
+      "image": "classic-1909/major-13.webp",
+      "waite_pd_excerpt": "Waite reads Death as end, mortality, destruction and corruption; for a man the loss of a benefactor, for a woman many contrarieties, for a maid failure of marriage projects. Reversed it means inertia, sleep, lethargy, petrifaction, somnambulism and hope destroyed."
+    },
+    {
+      "id": "major-14",
+      "arcana": "major",
+      "suit": null,
+      "number": 14,
+      "name_en": "Temperance",
+      "keywords_upright": [
+        "balance",
+        "moderation",
+        "patience",
+        "harmony"
+      ],
+      "keywords_reversed": [
+        "excess",
+        "imbalance",
+        "impatience",
+        "discord"
+      ],
+      "element": "fire",
+      "astrology": "Sagittarius",
+      "image": "classic-1909/major-14.webp",
+      "waite_pd_excerpt": "For Waite Temperance signifies economy, moderation, frugality, management and accommodation. Reversed it concerns churches, religions, sects and the priesthood, sometimes a querent set to marry a priest; also disunion, unfortunate combinations and competing interests."
+    },
+    {
+      "id": "major-15",
+      "arcana": "major",
+      "suit": null,
+      "number": 15,
+      "name_en": "The Devil",
+      "keywords_upright": [
+        "bondage",
+        "materialism",
+        "temptation",
+        "shadow self"
+      ],
+      "keywords_reversed": [
+        "release",
+        "breaking free",
+        "detachment",
+        "reclaiming power"
+      ],
+      "element": "earth",
+      "astrology": "Capricorn",
+      "image": "classic-1909/major-15.webp",
+      "waite_pd_excerpt": "Waite assigns the Devil to ravage, violence, vehemence, extraordinary efforts, force and fatality, that which is predestined but not for this reason evil. Reversed it is evil fatality, weakness, pettiness and blindness."
+    },
+    {
+      "id": "major-16",
+      "arcana": "major",
+      "suit": null,
+      "number": 16,
+      "name_en": "The Tower",
+      "keywords_upright": [
+        "sudden upheaval",
+        "revelation",
+        "collapse",
+        "awakening"
+      ],
+      "keywords_reversed": [
+        "disaster avoided",
+        "fear of change",
+        "delayed collapse",
+        "lingering crisis"
+      ],
+      "element": "fire",
+      "astrology": "Mars",
+      "image": "classic-1909/major-16.webp",
+      "waite_pd_excerpt": "Waite reads the Tower as misery, distress, indigence, adversity, calamity, disgrace, deception and ruin; it is a card in particular of unforeseen catastrophe. Reversed it is the same in a lesser degree, with oppression, imprisonment and tyranny."
+    },
+    {
+      "id": "major-17",
+      "arcana": "major",
+      "suit": null,
+      "number": 17,
+      "name_en": "The Star",
+      "keywords_upright": [
+        "hope",
+        "renewal",
+        "inspiration",
+        "serenity"
+      ],
+      "keywords_reversed": [
+        "despair",
+        "lost faith",
+        "discouragement",
+        "disconnection"
+      ],
+      "element": "air",
+      "astrology": "Aquarius",
+      "image": "classic-1909/major-17.webp",
+      "waite_pd_excerpt": "Waite calls the Star loss, theft, privation and abandonment, yet another reading is hope and bright prospects. Reversed it means arrogance, haughtiness and impotence."
+    },
+    {
+      "id": "major-18",
+      "arcana": "major",
+      "suit": null,
+      "number": 18,
+      "name_en": "The Moon",
+      "keywords_upright": [
+        "illusion",
+        "intuition",
+        "fear",
+        "the unconscious"
+      ],
+      "keywords_reversed": [
+        "confusion lifting",
+        "release of fear",
+        "deception exposed",
+        "instability"
+      ],
+      "element": "water",
+      "astrology": "Pisces",
+      "image": "classic-1909/major-18.webp",
+      "waite_pd_excerpt": "For Waite the Moon means hidden enemies, danger, calumny, darkness, terror, deception, occult forces and error. Reversed it signals instability, inconstancy, silence and lesser degrees of deception and error."
+    },
+    {
+      "id": "major-19",
+      "arcana": "major",
+      "suit": null,
+      "number": 19,
+      "name_en": "The Sun",
+      "keywords_upright": [
+        "joy",
+        "success",
+        "vitality",
+        "clarity"
+      ],
+      "keywords_reversed": [
+        "temporary gloom",
+        "overconfidence",
+        "delayed happiness",
+        "lack of clarity"
+      ],
+      "element": "fire",
+      "astrology": "Sun",
+      "image": "classic-1909/major-19.webp",
+      "waite_pd_excerpt": "Waite assigns the Sun to material happiness, fortunate marriage and contentment. Reversed it carries the same meanings in a lesser sense."
+    },
+    {
+      "id": "major-20",
+      "arcana": "major",
+      "suit": null,
+      "number": 20,
+      "name_en": "Judgement",
+      "keywords_upright": [
+        "awakening",
+        "reckoning",
+        "renewal",
+        "calling"
+      ],
+      "keywords_reversed": [
+        "self-doubt",
+        "refusal to learn",
+        "harsh judgment",
+        "indecision"
+      ],
+      "element": "fire",
+      "astrology": "Pluto",
+      "image": "classic-1909/major-20.webp",
+      "waite_pd_excerpt": "Waite reads Judgement as change of position, renewal and outcome; another account speaks of a lawsuit that is lost. Reversed it is weakness, pusillanimity, simplicity, deliberation, decision and sentence."
+    },
+    {
+      "id": "major-21",
+      "arcana": "major",
+      "suit": null,
+      "number": 21,
+      "name_en": "The World",
+      "keywords_upright": [
+        "completion",
+        "fulfilment",
+        "integration",
+        "travel"
+      ],
+      "keywords_reversed": [
+        "incompletion",
+        "lack of closure",
+        "delays",
+        "shortcuts"
+      ],
+      "element": "earth",
+      "astrology": "Saturn",
+      "image": "classic-1909/major-21.webp",
+      "waite_pd_excerpt": "Waite gives the World as assured success, recompense, voyage, route, emigration, flight and change of place. Reversed it is inertia, fixity, stagnation and permanence."
+    },
+    {
+      "id": "wands-01",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 1,
+      "name_en": "Ace of Wands",
+      "keywords_upright": [
+        "inspiration",
+        "new venture",
+        "creative spark",
+        "potential"
+      ],
+      "keywords_reversed": [
+        "false start",
+        "delays",
+        "lack of direction",
+        "creative block"
+      ],
+      "element": "fire",
+      "astrology": "Root of Fire",
+      "image": "classic-1909/wands-01.webp",
+      "waite_pd_excerpt": "Waite reads the Ace of Wands as creation, invention, enterprise and the powers that result in these, a beginning, birth, family or origin, and the source of enterprises. Reversed it is fall, decadence, ruin, perdition and a clouded joy."
+    },
+    {
+      "id": "wands-02",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 2,
+      "name_en": "Two of Wands",
+      "keywords_upright": [
+        "planning",
+        "future vision",
+        "decisions",
+        "discovery"
+      ],
+      "keywords_reversed": [
+        "fear of the unknown",
+        "lack of planning",
+        "playing safe",
+        "restlessness"
+      ],
+      "element": "fire",
+      "astrology": "Mars in Aries",
+      "image": "classic-1909/wands-02.webp",
+      "waite_pd_excerpt": "Waite sees in the Two of Wands riches, fortune and magnificence, yet also the sadness of one who holds the world and finds it empty; physical suffering, disease, chagrin and sadness are listed. Reversed it means surprise, wonder, enchantment, emotion, trouble and fear."
+    },
+    {
+      "id": "wands-03",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 3,
+      "name_en": "Three of Wands",
+      "keywords_upright": [
+        "expansion",
+        "foresight",
+        "progress",
+        "overseas opportunities"
+      ],
+      "keywords_reversed": [
+        "obstacles",
+        "delays",
+        "lack of foresight",
+        "frustration"
+      ],
+      "element": "fire",
+      "astrology": "Sun in Aries",
+      "image": "classic-1909/wands-03.webp",
+      "waite_pd_excerpt": "Waite calls the Three of Wands established strength, enterprise, effort, trade, commerce and discovery; the merchant watches his ships come in. Reversed it is the end of troubles, suspension or cessation of adversity, toil and disappointment."
+    },
+    {
+      "id": "wands-04",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 4,
+      "name_en": "Four of Wands",
+      "keywords_upright": [
+        "celebration",
+        "harmony",
+        "homecoming",
+        "milestones"
+      ],
+      "keywords_reversed": [
+        "transition",
+        "lack of support",
+        "home conflict",
+        "instability"
+      ],
+      "element": "fire",
+      "astrology": "Venus in Aries",
+      "image": "classic-1909/wands-04.webp",
+      "waite_pd_excerpt": "For Waite the Four of Wands means country life, a haven of refuge, a harvest home, repose, concord, harmony, prosperity, peace and the perfected work of these. Reversed it reads as prosperity, increase, felicity, beauty and embellishment unchanged."
+    },
+    {
+      "id": "wands-05",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 5,
+      "name_en": "Five of Wands",
+      "keywords_upright": [
+        "competition",
+        "conflict",
+        "tension",
+        "rivalry"
+      ],
+      "keywords_reversed": [
+        "avoiding conflict",
+        "resolution",
+        "inner struggle",
+        "compromise"
+      ],
+      "element": "fire",
+      "astrology": "Saturn in Leo",
+      "image": "classic-1909/wands-05.webp",
+      "waite_pd_excerpt": "Waite reads the Five of Wands as imitation, sham fight, the strenuous competition and struggle of the search after riches and fortune, also gold, gain and opulence. Reversed it means litigation, disputes, trickery and contradiction."
+    },
+    {
+      "id": "wands-06",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 6,
+      "name_en": "Six of Wands",
+      "keywords_upright": [
+        "victory",
+        "recognition",
+        "progress",
+        "confidence"
+      ],
+      "keywords_reversed": [
+        "egotism",
+        "fall from grace",
+        "lack of recognition",
+        "delays"
+      ],
+      "element": "fire",
+      "astrology": "Jupiter in Leo",
+      "image": "classic-1909/wands-06.webp",
+      "waite_pd_excerpt": "Waite gives the Six of Wands as a victor triumphing, great news, expectation crowned with its own desire, the crown of hope. Reversed it is apprehension, fear of a victorious enemy, treachery, disloyalty and indefinite delay."
+    },
+    {
+      "id": "wands-07",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 7,
+      "name_en": "Seven of Wands",
+      "keywords_upright": [
+        "perseverance",
+        "defence",
+        "standing ground",
+        "challenge"
+      ],
+      "keywords_reversed": [
+        "overwhelm",
+        "giving up",
+        "exhaustion",
+        "yielding"
+      ],
+      "element": "fire",
+      "astrology": "Mars in Leo",
+      "image": "classic-1909/wands-07.webp",
+      "waite_pd_excerpt": "Waite reads the Seven of Wands as valour, a card of success in discussion, business negotiation, barter and competition, the man holding a position of vantage. Reversed it means perplexity, embarrassments, anxiety and a caution against indecision."
+    },
+    {
+      "id": "wands-08",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 8,
+      "name_en": "Eight of Wands",
+      "keywords_upright": [
+        "swift action",
+        "movement",
+        "news",
+        "momentum"
+      ],
+      "keywords_reversed": [
+        "delays",
+        "frustration",
+        "scattered energy",
+        "resisting change"
+      ],
+      "element": "fire",
+      "astrology": "Mercury in Sagittarius",
+      "image": "classic-1909/wands-08.webp",
+      "waite_pd_excerpt": "For Waite the Eight of Wands means activity in undertakings, the path of such activity, swiftness as of an express messenger, great haste, great hope, speed towards an assured end, and the arrows of love. Reversed it is the arrow of jealousy, internal dispute, stings of conscience and quarrels."
+    },
+    {
+      "id": "wands-09",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 9,
+      "name_en": "Nine of Wands",
+      "keywords_upright": [
+        "resilience",
+        "persistence",
+        "boundaries",
+        "last stand"
+      ],
+      "keywords_reversed": [
+        "exhaustion",
+        "paranoia",
+        "stubbornness",
+        "defensiveness"
+      ],
+      "element": "fire",
+      "astrology": "Moon in Sagittarius",
+      "image": "classic-1909/wands-09.webp",
+      "waite_pd_excerpt": "Waite reads the Nine of Wands as strength in opposition, the figure ready to meet attack; the card signifies delay, suspension and adjournment. Reversed it indicates obstacles, adversity and calamity."
+    },
+    {
+      "id": "wands-10",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 10,
+      "name_en": "Ten of Wands",
+      "keywords_upright": [
+        "burden",
+        "responsibility",
+        "overextension",
+        "hard work"
+      ],
+      "keywords_reversed": [
+        "release",
+        "delegation",
+        "collapse under strain",
+        "avoiding responsibility"
+      ],
+      "element": "fire",
+      "astrology": "Saturn in Sagittarius",
+      "image": "classic-1909/wands-10.webp",
+      "waite_pd_excerpt": "Waite calls the Ten of Wands oppression, fortune, gain and success together with the weight they bring; if a lawsuit is pending there will be certain loss. Reversed it is contrarieties, difficulties, intrigues and their analogies."
+    },
+    {
+      "id": "wands-11",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 11,
+      "name_en": "Page of Wands",
+      "keywords_upright": [
+        "enthusiasm",
+        "exploration",
+        "messages",
+        "free spirit"
+      ],
+      "keywords_reversed": [
+        "bad news",
+        "indecision",
+        "immaturity",
+        "setbacks"
+      ],
+      "element": "fire",
+      "astrology": "Earth of Fire",
+      "image": "classic-1909/wands-11.webp",
+      "waite_pd_excerpt": "Waite reads the Page of Wands as a dark young man, faithful, a lover, an envoy or postman; beside a man he bears favourable testimony, and a dangerous rival if followed by the Page of Cups. Reversed it is anecdotes, announcements, evil news, indecision and instability."
+    },
+    {
+      "id": "wands-12",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 12,
+      "name_en": "Knight of Wands",
+      "keywords_upright": [
+        "adventure",
+        "passion",
+        "energy",
+        "impulsiveness"
+      ],
+      "keywords_reversed": [
+        "haste",
+        "frustration",
+        "recklessness",
+        "delays"
+      ],
+      "element": "fire",
+      "astrology": "Fire of Fire",
+      "image": "classic-1909/wands-12.webp",
+      "waite_pd_excerpt": "Waite describes the Knight of Wands as departure, absence, flight, emigration, a dark young man friendly, change of residence. Reversed it is rupture, division, interruption and discord."
+    },
+    {
+      "id": "wands-13",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 13,
+      "name_en": "Queen of Wands",
+      "keywords_upright": [
+        "confidence",
+        "warmth",
+        "independence",
+        "determination"
+      ],
+      "keywords_reversed": [
+        "jealousy",
+        "insecurity",
+        "demanding nature",
+        "selfishness"
+      ],
+      "element": "fire",
+      "astrology": "Water of Fire",
+      "image": "classic-1909/wands-13.webp",
+      "waite_pd_excerpt": "For Waite the Queen of Wands is a dark woman, countrywoman, friendly, chaste, loving, honourable; near a man she signifies love of money or success in business. Reversed she is good, economical, obliging and serviceable, but may also signify opposition, jealousy, deceit and infidelity."
+    },
+    {
+      "id": "wands-14",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 14,
+      "name_en": "King of Wands",
+      "keywords_upright": [
+        "leadership",
+        "vision",
+        "boldness",
+        "entrepreneurship"
+      ],
+      "keywords_reversed": [
+        "impulsiveness",
+        "arrogance",
+        "ruthlessness",
+        "high expectations"
+      ],
+      "element": "fire",
+      "astrology": "Air of Fire",
+      "image": "classic-1909/wands-14.webp",
+      "waite_pd_excerpt": "Waite reads the King of Wands as a dark man, friendly, countryman, generally married, honest and conscientious; the card signifies honesty and may mean news of an unexpected heritage. Reversed he is good but severe, austere yet tolerant."
+    },
+    {
+      "id": "cups-01",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 1,
+      "name_en": "Ace of Cups",
+      "keywords_upright": [
+        "love",
+        "new feelings",
+        "compassion",
+        "emotional openness"
+      ],
+      "keywords_reversed": [
+        "blocked emotions",
+        "emptiness",
+        "repressed feelings",
+        "self-love needed"
+      ],
+      "element": "water",
+      "astrology": "Root of Water",
+      "image": "classic-1909/cups-01.webp",
+      "waite_pd_excerpt": "Waite calls the Ace of Cups the house of the true heart, joy, content, abode, nourishment, abundance, fertility and holy table. Reversed it is the house of the false heart, mutation, instability and revolution."
+    },
+    {
+      "id": "cups-02",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 2,
+      "name_en": "Two of Cups",
+      "keywords_upright": [
+        "partnership",
+        "mutual attraction",
+        "connection",
+        "harmony"
+      ],
+      "keywords_reversed": [
+        "imbalance",
+        "break-up",
+        "tension",
+        "miscommunication"
+      ],
+      "element": "water",
+      "astrology": "Venus in Cancer",
+      "image": "classic-1909/cups-02.webp",
+      "waite_pd_excerpt": "For Waite the Two of Cups means love, passion, friendship, affinity, union, concord, sympathy and the interrelation of the sexes, together with the desire that is not in nature but by which nature is sanctified. He gives no reversed meaning; later tradition reads disharmony."
+    },
+    {
+      "id": "cups-03",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 3,
+      "name_en": "Three of Cups",
+      "keywords_upright": [
+        "celebration",
+        "friendship",
+        "community",
+        "creativity"
+      ],
+      "keywords_reversed": [
+        "overindulgence",
+        "gossip",
+        "isolation",
+        "third-party trouble"
+      ],
+      "element": "water",
+      "astrology": "Mercury in Cancer",
+      "image": "classic-1909/cups-03.webp",
+      "waite_pd_excerpt": "Waite reads the Three of Cups as the conclusion of any matter in plenty, perfection and merriment, happy issue, victory, fulfilment, solace and healing. Reversed it is expedition, dispatch, achievement and end, also excess in physical enjoyment."
+    },
+    {
+      "id": "cups-04",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 4,
+      "name_en": "Four of Cups",
+      "keywords_upright": [
+        "apathy",
+        "contemplation",
+        "discontent",
+        "missed opportunity"
+      ],
+      "keywords_reversed": [
+        "renewed interest",
+        "awareness",
+        "acceptance",
+        "new possibilities"
+      ],
+      "element": "water",
+      "astrology": "Moon in Cancer",
+      "image": "classic-1909/cups-04.webp",
+      "waite_pd_excerpt": "Waite calls the Four of Cups weariness, disgust, aversion and imaginary vexations, as if the wine of the world had only brought satiety; another wine is offered yet brings no consolation. Reversed it is novelty, presage, new instruction and new relations."
+    },
+    {
+      "id": "cups-05",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 5,
+      "name_en": "Five of Cups",
+      "keywords_upright": [
+        "loss",
+        "grief",
+        "regret",
+        "disappointment"
+      ],
+      "keywords_reversed": [
+        "acceptance",
+        "moving on",
+        "forgiveness",
+        "finding hope"
+      ],
+      "element": "water",
+      "astrology": "Mars in Scorpio",
+      "image": "classic-1909/cups-05.webp",
+      "waite_pd_excerpt": "Waite reads the Five of Cups as a card of loss, but something remains over; three have been taken yet two are left; a card of inheritance, patrimony and transmission, though not answering to expectations, and sometimes marriage with bitterness or frustration. Reversed it means news, alliances, affinity, consanguinity, ancestry, return and false projects."
+    },
+    {
+      "id": "cups-06",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 6,
+      "name_en": "Six of Cups",
+      "keywords_upright": [
+        "nostalgia",
+        "childhood",
+        "innocence",
+        "reunion"
+      ],
+      "keywords_reversed": [
+        "living in the past",
+        "moving forward",
+        "unrealistic memories",
+        "leaving home"
+      ],
+      "element": "water",
+      "astrology": "Sun in Scorpio",
+      "image": "classic-1909/cups-06.webp",
+      "waite_pd_excerpt": "For Waite the Six of Cups is a card of the past and of memories, looking back as on childhood, happiness, enjoyment coming from the past, things that have vanished; another reading gives new relations, new knowledge and a new environment. Reversed it is the future, renewal and that which will come to pass presently."
+    },
+    {
+      "id": "cups-07",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 7,
+      "name_en": "Seven of Cups",
+      "keywords_upright": [
+        "choices",
+        "illusion",
+        "fantasy",
+        "wishful thinking"
+      ],
+      "keywords_reversed": [
+        "clarity",
+        "determination",
+        "focus",
+        "decision made"
+      ],
+      "element": "water",
+      "astrology": "Venus in Scorpio",
+      "image": "classic-1909/cups-07.webp",
+      "waite_pd_excerpt": "Waite reads the Seven of Cups as fairy favours, images of reflection, sentiment, imagination and things seen in the glass of contemplation, some attainment in these degrees but nothing permanent or substantial. Reversed it is desire, will, determination and project."
+    },
+    {
+      "id": "cups-08",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 8,
+      "name_en": "Eight of Cups",
+      "keywords_upright": [
+        "walking away",
+        "disillusionment",
+        "seeking deeper meaning",
+        "withdrawal"
+      ],
+      "keywords_reversed": [
+        "fear of change",
+        "stagnation",
+        "aimless drifting",
+        "return"
+      ],
+      "element": "water",
+      "astrology": "Saturn in Pisces",
+      "image": "classic-1909/cups-08.webp",
+      "waite_pd_excerpt": "Waite gives the Eight of Cups as the decline of a matter, or that a matter thought important is really of slight consequence, either for good or evil; also giving joy, mildness, timidity, honour and modesty. Reversed it is great joy, happiness and feasting."
+    },
+    {
+      "id": "cups-09",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 9,
+      "name_en": "Nine of Cups",
+      "keywords_upright": [
+        "contentment",
+        "satisfaction",
+        "wishes fulfilled",
+        "gratitude"
+      ],
+      "keywords_reversed": [
+        "smugness",
+        "dissatisfaction",
+        "materialism",
+        "unfulfilled wishes"
+      ],
+      "element": "water",
+      "astrology": "Jupiter in Pisces",
+      "image": "classic-1909/cups-09.webp",
+      "waite_pd_excerpt": "Waite calls the Nine of Cups concord, contentment and physical well-being, also victory, success and advantage, satisfaction for the querent. Reversed it is truth, loyalty and liberty, but also mistakes and imperfections."
+    },
+    {
+      "id": "cups-10",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 10,
+      "name_en": "Ten of Cups",
+      "keywords_upright": [
+        "lasting happiness",
+        "family harmony",
+        "fulfilment",
+        "alignment"
+      ],
+      "keywords_reversed": [
+        "broken family",
+        "disconnection",
+        "unrealised dreams",
+        "conflict at home"
+      ],
+      "element": "water",
+      "astrology": "Mars in Pisces",
+      "image": "classic-1909/cups-10.webp",
+      "waite_pd_excerpt": "For Waite the Ten of Cups means contentment and repose of the whole heart, the perfection of human love and friendship; if with several picture cards, a person taking charge of the querent’s interests; also the town or country of residence. Reversed it is repose of the false heart, indignation and violence."
+    },
+    {
+      "id": "cups-11",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 11,
+      "name_en": "Page of Cups",
+      "keywords_upright": [
+        "creative messages",
+        "intuition",
+        "sensitivity",
+        "curiosity"
+      ],
+      "keywords_reversed": [
+        "emotional immaturity",
+        "creative block",
+        "insecurity",
+        "escapism"
+      ],
+      "element": "water",
+      "astrology": "Earth of Water",
+      "image": "classic-1909/cups-11.webp",
+      "waite_pd_excerpt": "Waite reads the Page of Cups as a fair young man impelled to render service, a studious youth, news, message, application, reflection and meditation, directed to business. Reversed he is taste, inclination, attachment, seduction, deception and artifice."
+    },
+    {
+      "id": "cups-12",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 12,
+      "name_en": "Knight of Cups",
+      "keywords_upright": [
+        "romance",
+        "charm",
+        "proposals",
+        "imagination"
+      ],
+      "keywords_reversed": [
+        "moodiness",
+        "unrealistic expectations",
+        "jealousy",
+        "disappointment"
+      ],
+      "element": "water",
+      "astrology": "Fire of Water",
+      "image": "classic-1909/cups-12.webp",
+      "waite_pd_excerpt": "For Waite the Knight of Cups is arrival, approach, sometimes that of a messenger, advances, proposition, demeanour, invitation and incitement. Reversed he is trickery, artifice, subtlety, swindling, duplicity and fraud."
+    },
+    {
+      "id": "cups-13",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 13,
+      "name_en": "Queen of Cups",
+      "keywords_upright": [
+        "compassion",
+        "emotional security",
+        "intuition",
+        "nurturing"
+      ],
+      "keywords_reversed": [
+        "emotional insecurity",
+        "co-dependency",
+        "martyrdom",
+        "manipulation"
+      ],
+      "element": "water",
+      "astrology": "Water of Water",
+      "image": "classic-1909/cups-13.webp",
+      "waite_pd_excerpt": "Waite calls the Queen of Cups good, fair woman, honest and devoted, who will do service to the querent; loving intelligence and hence the gift of vision, success, happiness, pleasure, wisdom and virtue. Reversed she is a distinguished woman but not to be trusted, perversity, vice, dishonour and depravity."
+    },
+    {
+      "id": "cups-14",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 14,
+      "name_en": "King of Cups",
+      "keywords_upright": [
+        "emotional balance",
+        "diplomacy",
+        "wisdom",
+        "generosity"
+      ],
+      "keywords_reversed": [
+        "emotional manipulation",
+        "moodiness",
+        "volatility",
+        "coldness"
+      ],
+      "element": "water",
+      "astrology": "Air of Water",
+      "image": "classic-1909/cups-14.webp",
+      "waite_pd_excerpt": "Waite reads the King of Cups as a fair man, man of business, law or divinity, responsible, disposed to oblige the querent; also equity, art and science, including those who profess science, law and art, creative intelligence. Reversed he is a dishonest, double-dealing man, roguery, exaction, injustice, vice, scandal and loss."
+    },
+    {
+      "id": "swords-01",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 1,
+      "name_en": "Ace of Swords",
+      "keywords_upright": [
+        "clarity",
+        "breakthrough",
+        "truth",
+        "mental force"
+      ],
+      "keywords_reversed": [
+        "confusion",
+        "misused power",
+        "brutality",
+        "clouded judgment"
+      ],
+      "element": "air",
+      "astrology": "Root of Air",
+      "image": "classic-1909/swords-01.webp",
+      "waite_pd_excerpt": "Waite reads the Ace of Swords as triumph, the excessive degree in everything, conquest and triumph of force; a card of great force in love as well as in hatred. Reversed it is the same results but disastrous, conception, childbirth, augmentation and multiplicity."
+    },
+    {
+      "id": "swords-02",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 2,
+      "name_en": "Two of Swords",
+      "keywords_upright": [
+        "stalemate",
+        "difficult choice",
+        "denial",
+        "truce"
+      ],
+      "keywords_reversed": [
+        "indecision lifted",
+        "information revealed",
+        "overwhelm",
+        "release"
+      ],
+      "element": "air",
+      "astrology": "Moon in Libra",
+      "image": "classic-1909/swords-02.webp",
+      "waite_pd_excerpt": "Waite gives the Two of Swords as conformity and the equipoise it suggests, courage, friendship, concord in a state of arms; another reading gives tenderness, affection and intimacy. Reversed it is imposture, falsehood, duplicity and disloyalty."
+    },
+    {
+      "id": "swords-03",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 3,
+      "name_en": "Three of Swords",
+      "keywords_upright": [
+        "heartbreak",
+        "sorrow",
+        "painful truth",
+        "separation"
+      ],
+      "keywords_reversed": [
+        "healing",
+        "forgiveness",
+        "releasing pain",
+        "recovery"
+      ],
+      "element": "air",
+      "astrology": "Saturn in Libra",
+      "image": "classic-1909/swords-03.webp",
+      "waite_pd_excerpt": "Waite reads the Three of Swords as removal, absence, delay, division, rupture, dispersion and all that the design signifies naturally, being too simple and obvious to need specific enumeration. Reversed it is mental alienation, error, loss, distraction, disorder and confusion."
+    },
+    {
+      "id": "swords-04",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 4,
+      "name_en": "Four of Swords",
+      "keywords_upright": [
+        "rest",
+        "recuperation",
+        "contemplation",
+        "retreat"
+      ],
+      "keywords_reversed": [
+        "restlessness",
+        "burnout",
+        "renewed activity",
+        "awakening"
+      ],
+      "element": "air",
+      "astrology": "Jupiter in Libra",
+      "image": "classic-1909/swords-04.webp",
+      "waite_pd_excerpt": "For Waite the Four of Swords means vigilance, retreat, solitude, hermit’s repose, exile, tomb and coffin, the last being what the design suggests. Reversed it is wise administration, circumspection, economy, avarice, precaution and testament."
+    },
+    {
+      "id": "swords-05",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 5,
+      "name_en": "Five of Swords",
+      "keywords_upright": [
+        "conflict",
+        "defeat",
+        "winning at a cost",
+        "hostility"
+      ],
+      "keywords_reversed": [
+        "reconciliation",
+        "remorse",
+        "lingering resentment",
+        "making amends"
+      ],
+      "element": "air",
+      "astrology": "Venus in Aquarius",
+      "image": "classic-1909/swords-05.webp",
+      "waite_pd_excerpt": "Waite reads the Five of Swords as degradation, destruction, revocation, infamy, dishonour and loss, with the variants and analogues of these. Reversed it is the same, also burial and obsequies."
+    },
+    {
+      "id": "swords-06",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 6,
+      "name_en": "Six of Swords",
+      "keywords_upright": [
+        "transition",
+        "moving on",
+        "passage",
+        "calmer waters"
+      ],
+      "keywords_reversed": [
+        "stuck in the past",
+        "unfinished business",
+        "resistance",
+        "emotional baggage"
+      ],
+      "element": "air",
+      "astrology": "Mercury in Aquarius",
+      "image": "classic-1909/swords-06.webp",
+      "waite_pd_excerpt": "For Waite the Six of Swords means journey by water, route, way, envoy, commissionary and expedient. Reversed it is declaration, confession, publicity; one account says it is a proposal of love."
+    },
+    {
+      "id": "swords-07",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 7,
+      "name_en": "Seven of Swords",
+      "keywords_upright": [
+        "deception",
+        "strategy",
+        "stealth",
+        "getting away with it"
+      ],
+      "keywords_reversed": [
+        "confession",
+        "conscience",
+        "exposure",
+        "coming clean"
+      ],
+      "element": "air",
+      "astrology": "Moon in Aquarius",
+      "image": "classic-1909/swords-07.webp",
+      "waite_pd_excerpt": "Waite calls the Seven of Swords design, attempt, wish, hope, confidence, also quarrelling, a plan that may fail, and annoyance; the design is uncertain in its import. Reversed it is good advice, counsel, instruction, slander and babbling."
+    },
+    {
+      "id": "swords-08",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 8,
+      "name_en": "Eight of Swords",
+      "keywords_upright": [
+        "restriction",
+        "feeling trapped",
+        "self-imposed limits",
+        "victim mindset"
+      ],
+      "keywords_reversed": [
+        "release",
+        "new perspective",
+        "freedom",
+        "taking control"
+      ],
+      "element": "air",
+      "astrology": "Jupiter in Gemini",
+      "image": "classic-1909/swords-08.webp",
+      "waite_pd_excerpt": "Waite reads the Eight of Swords as bad news, violent chagrin, crisis, censure, power in trammels, conflict, calumny and also sickness. Reversed it is disquiet, difficulty, opposition, accident, treachery, the unforeseen and fatality."
+    },
+    {
+      "id": "swords-09",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 9,
+      "name_en": "Nine of Swords",
+      "keywords_upright": [
+        "anxiety",
+        "nightmares",
+        "guilt",
+        "despair"
+      ],
+      "keywords_reversed": [
+        "hope returning",
+        "facing fears",
+        "recovery",
+        "release of worry"
+      ],
+      "element": "air",
+      "astrology": "Mars in Gemini",
+      "image": "classic-1909/swords-09.webp",
+      "waite_pd_excerpt": "For Waite the Nine of Swords means death, failure, miscarriage, delay, deception, disappointment and despair. Reversed it is imprisonment, suspicion, doubt, reasonable fear and shame."
+    },
+    {
+      "id": "swords-10",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 10,
+      "name_en": "Ten of Swords",
+      "keywords_upright": [
+        "painful ending",
+        "rock bottom",
+        "betrayal",
+        "collapse"
+      ],
+      "keywords_reversed": [
+        "recovery",
+        "regeneration",
+        "resisting an ending",
+        "survival"
+      ],
+      "element": "air",
+      "astrology": "Sun in Gemini",
+      "image": "classic-1909/swords-10.webp",
+      "waite_pd_excerpt": "Waite reads the Ten of Swords as whatsoever is intimated by the design: pain, affliction, tears, sadness and desolation, though it is not especially a card of violent death. Reversed it is advantage, profit, success, favour, but none of these permanent; also power and authority."
+    },
+    {
+      "id": "swords-11",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 11,
+      "name_en": "Page of Swords",
+      "keywords_upright": [
+        "curiosity",
+        "vigilance",
+        "new ideas",
+        "mental agility"
+      ],
+      "keywords_reversed": [
+        "gossip",
+        "hasty words",
+        "defensiveness",
+        "scattered thinking"
+      ],
+      "element": "air",
+      "astrology": "Earth of Air",
+      "image": "classic-1909/swords-11.webp",
+      "waite_pd_excerpt": "Waite reads the Page of Swords as authority, overseeing, secret service, vigilance, spying, examination and the qualities thereto belonging. Reversed it is the more evil side of these qualities, what is unforeseen, an unprepared state, sickness is also intimated."
+    },
+    {
+      "id": "swords-12",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 12,
+      "name_en": "Knight of Swords",
+      "keywords_upright": [
+        "ambition",
+        "directness",
+        "swift action",
+        "intellectual drive"
+      ],
+      "keywords_reversed": [
+        "recklessness",
+        "aggression",
+        "impatience",
+        "burnout"
+      ],
+      "element": "air",
+      "astrology": "Fire of Air",
+      "image": "classic-1909/swords-12.webp",
+      "waite_pd_excerpt": "For Waite the Knight of Swords means skill, bravery, capacity, defence, address, enmity, wrath, war, destruction, opposition, resistance and ruin; there is therefore a sense in which the card signifies death, but it carries this meaning only in proximity to other cards of fatality. Reversed it is imprudence, incapacity and extravagance."
+    },
+    {
+      "id": "swords-13",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 13,
+      "name_en": "Queen of Swords",
+      "keywords_upright": [
+        "independence",
+        "clear boundaries",
+        "honesty",
+        "sharp perception"
+      ],
+      "keywords_reversed": [
+        "coldness",
+        "bitterness",
+        "cruelty",
+        "isolation"
+      ],
+      "element": "air",
+      "astrology": "Water of Air",
+      "image": "classic-1909/swords-13.webp",
+      "waite_pd_excerpt": "Waite calls the Queen of Swords widowhood, female sadness and embarrassment, absence, sterility, mourning, privation and separation. Reversed she is malice, bigotry, artifice, prudery, bale and deceit."
+    },
+    {
+      "id": "swords-14",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 14,
+      "name_en": "King of Swords",
+      "keywords_upright": [
+        "authority",
+        "intellect",
+        "truth",
+        "discipline"
+      ],
+      "keywords_reversed": [
+        "tyranny",
+        "manipulation",
+        "cruelty",
+        "abuse of power"
+      ],
+      "element": "air",
+      "astrology": "Air of Air",
+      "image": "classic-1909/swords-14.webp",
+      "waite_pd_excerpt": "Waite reads the King of Swords as whatsoever arises out of the idea of judgment and all its connexions: power, command, authority, militant intelligence, law and offices of the crown. Reversed he is cruelty, perversity, barbarity, perfidy and evil intention."
+    },
+    {
+      "id": "pentacles-01",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 1,
+      "name_en": "Ace of Pentacles",
+      "keywords_upright": [
+        "new opportunity",
+        "prosperity",
+        "manifestation",
+        "security"
+      ],
+      "keywords_reversed": [
+        "missed opportunity",
+        "greed",
+        "poor planning",
+        "instability"
+      ],
+      "element": "earth",
+      "astrology": "Root of Earth",
+      "image": "classic-1909/pentacles-01.webp",
+      "waite_pd_excerpt": "Waite reads the Ace of Pentacles as perfect contentment, felicity, ecstasy, also speedy intelligence and gold. Reversed it is the evil side of wealth, bad intelligence, also great riches; in any case it shows prosperity and comfortable material conditions."
+    },
+    {
+      "id": "pentacles-02",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 2,
+      "name_en": "Two of Pentacles",
+      "keywords_upright": [
+        "balance",
+        "adaptability",
+        "juggling priorities",
+        "flexibility"
+      ],
+      "keywords_reversed": [
+        "overwhelm",
+        "disorganisation",
+        "imbalance",
+        "financial stress"
+      ],
+      "element": "earth",
+      "astrology": "Jupiter in Capricorn",
+      "image": "classic-1909/pentacles-02.webp",
+      "waite_pd_excerpt": "For Waite the Two of Pentacles means gaiety and recreation on one hand, and on the other news and messages in writing, obstacles, agitation, trouble and embroilment. Reversed it is enforced gaiety, simulated enjoyment, literal sense, handwriting, composition and letters of exchange."
+    },
+    {
+      "id": "pentacles-03",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 3,
+      "name_en": "Three of Pentacles",
+      "keywords_upright": [
+        "teamwork",
+        "craftsmanship",
+        "skill",
+        "recognition"
+      ],
+      "keywords_reversed": [
+        "lack of teamwork",
+        "mediocrity",
+        "disorganisation",
+        "poor workmanship"
+      ],
+      "element": "earth",
+      "astrology": "Mars in Capricorn",
+      "image": "classic-1909/pentacles-03.webp",
+      "waite_pd_excerpt": "Waite calls the Three of Pentacles the craftsman, skilled labour, usually shown as a card of nobility, aristocracy, renown and glory. Reversed it is mediocrity in work and otherwise, puerility, pettiness and weakness."
+    },
+    {
+      "id": "pentacles-04",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 4,
+      "name_en": "Four of Pentacles",
+      "keywords_upright": [
+        "security",
+        "control",
+        "saving",
+        "conservatism"
+      ],
+      "keywords_reversed": [
+        "greed",
+        "letting go",
+        "financial insecurity",
+        "generosity"
+      ],
+      "element": "earth",
+      "astrology": "Sun in Capricorn",
+      "image": "classic-1909/pentacles-04.webp",
+      "waite_pd_excerpt": "Waite reads the Four of Pentacles as the surety of possessions, cleaving to that which one has, gift, legacy and inheritance. Reversed it is suspense, delay and opposition."
+    },
+    {
+      "id": "pentacles-05",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 5,
+      "name_en": "Five of Pentacles",
+      "keywords_upright": [
+        "hardship",
+        "poverty",
+        "isolation",
+        "insecurity"
+      ],
+      "keywords_reversed": [
+        "recovery",
+        "spiritual growth",
+        "improving finances",
+        "finding help"
+      ],
+      "element": "earth",
+      "astrology": "Mercury in Taurus",
+      "image": "classic-1909/pentacles-05.webp",
+      "waite_pd_excerpt": "For Waite the Five of Pentacles foretells material trouble above all, whether in the form of destitution or otherwise; for some it is a card of love and lovers, wife, husband, friend, mistress, also concordance and affinities. Reversed it is disorder, chaos, ruin, discord and profligacy."
+    },
+    {
+      "id": "pentacles-06",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 6,
+      "name_en": "Six of Pentacles",
+      "keywords_upright": [
+        "generosity",
+        "charity",
+        "sharing wealth",
+        "receiving help"
+      ],
+      "keywords_reversed": [
+        "debt",
+        "strings attached",
+        "selfishness",
+        "one-sided giving"
+      ],
+      "element": "earth",
+      "astrology": "Moon in Taurus",
+      "image": "classic-1909/pentacles-06.webp",
+      "waite_pd_excerpt": "Waite reads the Six of Pentacles as presents, gifts, gratification, another account says attention, vigilance, now is the accepted time and present prosperity. Reversed it is desire, cupidity, envy, jealousy and illusion."
+    },
+    {
+      "id": "pentacles-07",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 7,
+      "name_en": "Seven of Pentacles",
+      "keywords_upright": [
+        "patience",
+        "long-term view",
+        "assessment",
+        "investment"
+      ],
+      "keywords_reversed": [
+        "impatience",
+        "lack of reward",
+        "wasted effort",
+        "poor investment"
+      ],
+      "element": "earth",
+      "astrology": "Saturn in Taurus",
+      "image": "classic-1909/pentacles-07.webp",
+      "waite_pd_excerpt": "Waite calls the Seven of Pentacles money, business, barter, but one reading gives altercation and quarrels, another innocence, ingenuity and purgation. Reversed it is cause for anxiety regarding money which it may be proposed to lend."
+    },
+    {
+      "id": "pentacles-08",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 8,
+      "name_en": "Eight of Pentacles",
+      "keywords_upright": [
+        "diligence",
+        "skill development",
+        "craftsmanship",
+        "focus"
+      ],
+      "keywords_reversed": [
+        "perfectionism",
+        "lack of ambition",
+        "dull work",
+        "cutting corners"
+      ],
+      "element": "earth",
+      "astrology": "Sun in Virgo",
+      "image": "classic-1909/pentacles-08.webp",
+      "waite_pd_excerpt": "For Waite the Eight of Pentacles means work, employment, commission, craftsmanship, skill in craft and business, perhaps in the preparatory stage. Reversed it is voided ambition, vanity, cupidity, exaction and usury; it may also signify the possession of skill in the sense of the ingenious mind turned to cunning and intrigue."
+    },
+    {
+      "id": "pentacles-09",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 9,
+      "name_en": "Nine of Pentacles",
+      "keywords_upright": [
+        "abundance",
+        "self-sufficiency",
+        "luxury",
+        "independence"
+      ],
+      "keywords_reversed": [
+        "over-dependence",
+        "financial setbacks",
+        "superficiality",
+        "living beyond means"
+      ],
+      "element": "earth",
+      "astrology": "Venus in Virgo",
+      "image": "classic-1909/pentacles-09.webp",
+      "waite_pd_excerpt": "Waite reads the Nine of Pentacles as prudence, safety, success, accomplishment, certitude and discernment. Reversed it is roguery, deception, voided project and bad faith."
+    },
+    {
+      "id": "pentacles-10",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 10,
+      "name_en": "Ten of Pentacles",
+      "keywords_upright": [
+        "legacy",
+        "wealth",
+        "family",
+        "long-term security"
+      ],
+      "keywords_reversed": [
+        "family disputes",
+        "financial loss",
+        "broken tradition",
+        "instability"
+      ],
+      "element": "earth",
+      "astrology": "Mercury in Virgo",
+      "image": "classic-1909/pentacles-10.webp",
+      "waite_pd_excerpt": "Waite reads the Ten of Pentacles as gain, riches, family matters, archives, extraction and the abode of a family. Reversed it is chance, fatality, loss, robbery, games of hazard, sometimes gift, dowry and pension."
+    },
+    {
+      "id": "pentacles-11",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 11,
+      "name_en": "Page of Pentacles",
+      "keywords_upright": [
+        "studiousness",
+        "new skills",
+        "ambition",
+        "practical news"
+      ],
+      "keywords_reversed": [
+        "procrastination",
+        "lack of progress",
+        "unrealistic goals",
+        "wasted potential"
+      ],
+      "element": "earth",
+      "astrology": "Earth of Earth",
+      "image": "classic-1909/pentacles-11.webp",
+      "waite_pd_excerpt": "For Waite the Page of Pentacles means application, study, scholarship, reflection, another reading says news, messages and the bringer thereof, also rule and management. Reversed it is prodigality, dissipation, liberality, luxury and unfavourable news."
+    },
+    {
+      "id": "pentacles-12",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 12,
+      "name_en": "Knight of Pentacles",
+      "keywords_upright": [
+        "reliability",
+        "hard work",
+        "routine",
+        "steady progress"
+      ],
+      "keywords_reversed": [
+        "boredom",
+        "stagnation",
+        "laziness",
+        "obsessive perfectionism"
+      ],
+      "element": "earth",
+      "astrology": "Fire of Earth",
+      "image": "classic-1909/pentacles-12.webp",
+      "waite_pd_excerpt": "Waite reads the Knight of Pentacles as utility, serviceableness, interest, responsibility, rectitude, all on the normal and external plane. Reversed he is inertia, idleness, repose of that kind, stagnation, also placidity, discouragement and carelessness."
+    },
+    {
+      "id": "pentacles-13",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 13,
+      "name_en": "Queen of Pentacles",
+      "keywords_upright": [
+        "nurturing",
+        "practicality",
+        "abundance",
+        "down-to-earth care"
+      ],
+      "keywords_reversed": [
+        "self-neglect",
+        "work-life imbalance",
+        "smothering",
+        "financial dependence"
+      ],
+      "element": "earth",
+      "astrology": "Water of Earth",
+      "image": "classic-1909/pentacles-13.webp",
+      "waite_pd_excerpt": "For Waite the Queen of Pentacles means opulence, generosity, magnificence, security and liberty. Reversed she is evil, suspicion, suspense, fear and mistrust."
+    },
+    {
+      "id": "pentacles-14",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 14,
+      "name_en": "King of Pentacles",
+      "keywords_upright": [
+        "wealth",
+        "business acumen",
+        "security",
+        "leadership"
+      ],
+      "keywords_reversed": [
+        "greed",
+        "materialism",
+        "stubbornness",
+        "corruption"
+      ],
+      "element": "earth",
+      "astrology": "Air of Earth",
+      "image": "classic-1909/pentacles-14.webp",
+      "waite_pd_excerpt": "Waite reads the King of Pentacles as valour, realising intelligence, business and normal intellectual aptitude, sometimes mathematical gifts and attainments of this kind, success in these paths. Reversed he is vice, weakness, ugliness, perversity, corruption and peril."
+    }
+  ]
+}

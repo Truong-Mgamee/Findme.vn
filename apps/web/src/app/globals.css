@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-night: #0b1020;
+  --color-night-2: #141b33;
+  --color-gold: #d4a84b;
+  --color-gold-2: #f0cf7a;
+  --color-ink: #1c1a17;
+  --color-paper: #faf7f0;
+  --color-jade: #2e8b57;
+  --color-vermilion: #d64545;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-serif: 'Noto Serif', 'Times New Roman', Georgia, serif;
+}
+
+html { color-scheme: light; }
+body { @apply bg-paper text-ink antialiased; }
+
+.prose-md h2 { @apply mt-6 mb-2 text-xl font-semibold; }
+.prose-md h3 { @apply mt-4 mb-1 text-lg font-semibold; }
+.prose-md p { @apply my-2 leading-relaxed; }
+.prose-md ul { @apply my-2 list-disc pl-5; }
+.prose-md ol { @apply my-2 list-decimal pl-5; }
+.prose-md blockquote { @apply my-2 border-l-4 border-gold pl-3 italic; }
+.prose-md code { @apply rounded bg-black/5 px-1 font-mono text-sm; }
+
+.diff-add { @apply bg-green-100 text-green-900; }
+.diff-del { @apply bg-red-100 text-red-900 line-through; }

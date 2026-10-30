@@ -1,0 +1,30 @@
+{
+  "name": "@findme/i18n",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit && node scripts/lint-keys.mjs",
+    "lint:keys": "node scripts/lint-keys.mjs",
+    "i18n:pseudo": "node scripts/pseudo-locale.mjs",
+    "i18n:draft": "node scripts/draft-locale.mjs"
+  },
+  "dependencies": {
+    "@findme/engine-core": "workspace:*",
+    "intl-messageformat": "^10.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0",
+    "@types/node": "^22.10.0",
+    "@anthropic-ai/sdk": "^0.80.0"
+  }
+}

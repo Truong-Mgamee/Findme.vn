@@ -1,0 +1,10 @@
+{
+  "extends": "../../tooling/tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM"],
+    "types": ["node", "jest", "react"],
+    "allowJs": false
+  },
+  "include": ["src", "test"]
+}

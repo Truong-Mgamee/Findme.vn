@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 377" width="220" height="377" role="img" aria-label="Tarot card placeholder">
+  <rect width="220" height="377" rx="14" fill="#0b1020"/>
+  <rect x="10" y="10" width="200" height="357" rx="10" fill="none" stroke="#d4a84b" stroke-width="2"/>
+  <circle cx="110" cy="150" r="46" fill="none" stroke="#f0cf7a" stroke-width="2"/>
+  <path d="M110 104 l14 32 34 4 -26 23 8 34 -30 -18 -30 18 8 -34 -26 -23 34 -4z" fill="#d4a84b" opacity="0.85"/>
+  <g fill="#f0cf7a" opacity="0.5"><circle cx="40" cy="60" r="2"/><circle cx="180" cy="80" r="1.5"/><circle cx="60" cy="300" r="1.5"/><circle cx="170" cy="320" r="2"/></g>
+</svg>

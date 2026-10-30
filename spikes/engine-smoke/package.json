@@ -1,0 +1,14 @@
+{
+  "name": "@findme/spike-engine-smoke",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Smoke test chứng minh 4 engine mã nguồn mở (MIT/ISC) chạy được: iztro (Tử Vi), lunar-typescript (Bát Tự/Lịch), lunar-date-vn (lịch âm VN), astronomy-engine (thiên văn). Xem docs/03-data-sources.md mục 6.",
+  "scripts": { "start": "node engine-smoke.mjs" },
+  "dependencies": {
+    "astronomy-engine": "2.1.19",
+    "iztro": "2.6.1",
+    "lunar-date-vn": "1.0.6",
+    "lunar-typescript": "1.8.6"
+  }
+}

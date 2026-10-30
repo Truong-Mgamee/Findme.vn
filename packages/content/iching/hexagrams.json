@@ -1,0 +1,2565 @@
+{
+  "source": "James Legge, The Yî King (Sacred Books of the East XVI, 1882; 2nd ed. 1899), paraphrased; Chinese names from the received text",
+  "hexagrams": [
+    {
+      "number": 1,
+      "name_zh": "乾",
+      "name_pinyin": "Qián",
+      "name_en": "Khien",
+      "name_en_modern": "The Creative",
+      "lines_binary": "111111",
+      "upper_trigram": "qian",
+      "lower_trigram": "qian",
+      "judgment_en": "The Creative brings great and originating success; it is advantageous to be firm and correct.",
+      "image_en": "Heaven moves with unceasing strength; the superior person likewise nerves himself to ceaseless activity.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The dragon lies hidden in the deep; it is not the time to act."
+        },
+        {
+          "position": 2,
+          "text_en": "The dragon appears in the field; it will be advantageous to meet the great person."
+        },
+        {
+          "position": 3,
+          "text_en": "The superior person is active all day and still watchful at nightfall; the position is perilous but there will be no mistake."
+        },
+        {
+          "position": 4,
+          "text_en": "The dragon seems to be leaping up yet still in the deep; there will be no mistake."
+        },
+        {
+          "position": 5,
+          "text_en": "The dragon is on the wing in the sky; it will be advantageous to meet the great person."
+        },
+        {
+          "position": 6,
+          "text_en": "The dragon has flown too high and exceeded its proper limits; there will be occasion for repentance."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 2,
+      "name_zh": "坤",
+      "name_pinyin": "Kūn",
+      "name_en": "Khwăn",
+      "name_en_modern": "The Receptive",
+      "lines_binary": "000000",
+      "upper_trigram": "kun",
+      "lower_trigram": "kun",
+      "judgment_en": "The Receptive brings great and originating success through the firmness of a mare; if the superior person takes the lead he goes astray, but if he follows he finds his proper lord, and friends are found in the south-west and lost in the north-east.",
+      "image_en": "The earth carries all things in its capacious receptivity; the superior person with large virtue supports people and things.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Treading on hoarfrost, one knows that solid ice is soon to come."
+        },
+        {
+          "position": 2,
+          "text_en": "Straight, square and great, one accomplishes everything without purposeful effort."
+        },
+        {
+          "position": 3,
+          "text_en": "One keeps one’s excellence under restraint while serving the king, claiming no success but bringing the work to completion."
+        },
+        {
+          "position": 4,
+          "text_en": "A sack tied up: no blame and no praise."
+        },
+        {
+          "position": 5,
+          "text_en": "The yellow lower garment; there will be great good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Dragons fighting in the wild, their blood purple and yellow."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 3,
+      "name_zh": "屯",
+      "name_pinyin": "Zhūn",
+      "name_en": "Kun",
+      "name_en_modern": "Difficulty at the Beginning",
+      "lines_binary": "100010",
+      "upper_trigram": "kan",
+      "lower_trigram": "zhen",
+      "judgment_en": "Difficulty at the Beginning brings great success through firm correctness; do not seek to move in any direction, but it is advantageous to appoint feudal princes (helpers).",
+      "image_en": "Clouds and thunder form the image of initial difficulty; the superior person brings order out of confusion by adjusting his measures as in sorting threads.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Hesitation and obstacle at the threshold; it is advantageous to remain firm and correct and to appoint helpers."
+        },
+        {
+          "position": 2,
+          "text_en": "One is distressed and obliged to return; the horses of the chariot turn back, yet the suitor is not a robber but seeks a union, and the maiden refuses until ten years pass."
+        },
+        {
+          "position": 3,
+          "text_en": "One follows deer without a forester and only loses himself in the forest; the superior person sees it is better to give up, for going forward brings regret."
+        },
+        {
+          "position": 4,
+          "text_en": "The horses of the chariot turn back, yet if one seeks the union, advancing brings good fortune and nothing but advantage."
+        },
+        {
+          "position": 5,
+          "text_en": "Difficulty in dispensing the rich favours one would bestow; firmness in small things brings good fortune, in great things misfortune."
+        },
+        {
+          "position": 6,
+          "text_en": "The horses of the chariot turn back and tears of blood flow in streams."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 4,
+      "name_zh": "蒙",
+      "name_pinyin": "Méng",
+      "name_en": "Măng",
+      "name_en_modern": "Youthful Folly",
+      "lines_binary": "010001",
+      "upper_trigram": "gen",
+      "lower_trigram": "kan",
+      "judgment_en": "Youthful Folly brings success: it is not I who seek the youthful and inexperienced, but they who seek me; at the first divination I instruct, but if they ask a second and third time it is troublesome and I do not answer; firm correctness is advantageous.",
+      "image_en": "A spring issuing at the foot of a mountain; the superior person strives to be resolute in his conduct and to nourish his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "To dispel ignorance it is advantageous to apply discipline, yet to keep using fetters leads to regret."
+        },
+        {
+          "position": 2,
+          "text_en": "One bears with the ignorant kindly; to take a wife brings good fortune, and the son can manage the household."
+        },
+        {
+          "position": 3,
+          "text_en": "Do not marry the woman who sees a man of wealth and loses possession of herself; nothing is advantageous."
+        },
+        {
+          "position": 4,
+          "text_en": "Entangled in ignorance, one will have occasion for regret."
+        },
+        {
+          "position": 5,
+          "text_en": "The simplicity of a youth who seeks instruction brings good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "In punishing ignorance one should ward off wrongdoing rather than commit it."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 5,
+      "name_zh": "需",
+      "name_pinyin": "Xū",
+      "name_en": "Hsü",
+      "name_en_modern": "Waiting",
+      "lines_binary": "111010",
+      "upper_trigram": "kan",
+      "lower_trigram": "qian",
+      "judgment_en": "Waiting with sincerity brings brilliant success; firm correctness brings good fortune, and it is advantageous to cross the great stream.",
+      "image_en": "Clouds ascend to the sky in the image of waiting; the superior person eats, drinks, feasts and enjoys himself as if nothing troubled him.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Waiting in the distant border; it is well to persist, and there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "Waiting on the sand; there will be some small talk against you, but in the end good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "Waiting in the mud brings on the approach of robbers."
+        },
+        {
+          "position": 4,
+          "text_en": "Waiting in the place of blood; one gets out of the pit."
+        },
+        {
+          "position": 5,
+          "text_en": "Waiting amid wine and food; firm correctness brings good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "One enters the pit and three uninvited guests arrive; receive them with respect and in the end there will be good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 6,
+      "name_zh": "訟",
+      "name_pinyin": "Sòng",
+      "name_en": "Sung",
+      "name_en_modern": "Conflict",
+      "lines_binary": "010111",
+      "upper_trigram": "qian",
+      "lower_trigram": "kan",
+      "judgment_en": "In Conflict one is sincere yet meets obstruction; a cautious halt midway brings good fortune, pressing to the end misfortune; it is advantageous to see the great person but not to cross the great stream.",
+      "image_en": "Heaven and water move away from each other in the image of conflict; the superior person considers the beginning carefully in all his undertakings.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One does not perpetuate the matter in dispute; there is a little talk, but the end is fortunate."
+        },
+        {
+          "position": 2,
+          "text_en": "Unequal to the contest, one retires and hides among three hundred households of his village, avoiding calamity."
+        },
+        {
+          "position": 3,
+          "text_en": "One lives on the ancient virtue of his family; firmness amid peril brings good fortune in the end, and in the king’s service claims no merit."
+        },
+        {
+          "position": 4,
+          "text_en": "Unequal to the contest, one returns to the study of the heavenly ordinance, changes his wish and rests in firmness; good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "Contending before the one who decides with great justice; there will be great good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Even if one is awarded a leather belt of honour, it will be stripped away three times in a morning."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 7,
+      "name_zh": "師",
+      "name_pinyin": "Shī",
+      "name_en": "Sze",
+      "name_en_modern": "The Army",
+      "lines_binary": "010000",
+      "upper_trigram": "kun",
+      "lower_trigram": "kan",
+      "judgment_en": "The Army needs firm correctness and a leader of age and experience; then there will be good fortune and no error.",
+      "image_en": "Water in the midst of the earth is the image of the army; the superior person nourishes and educates the people and collects multitudes.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The host sets out according to the rules; if these are not good, there will be misfortune."
+        },
+        {
+          "position": 2,
+          "text_en": "The leader is in the midst of the host; good fortune, no error, and the king thrice confers favours."
+        },
+        {
+          "position": 3,
+          "text_en": "The host may carry corpses in its wagons; misfortune."
+        },
+        {
+          "position": 4,
+          "text_en": "The host retreats and encamps on the left; there is no error."
+        },
+        {
+          "position": 5,
+          "text_en": "There are birds in the fields and it is advantageous to seize them, yet if the eldest son leads and younger ones carry corpses, firmness brings misfortune."
+        },
+        {
+          "position": 6,
+          "text_en": "The great ruler delivers his charge, founding states and enfeoffing clans; small people should not be employed."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 8,
+      "name_zh": "比",
+      "name_pinyin": "Bǐ",
+      "name_en": "Pî",
+      "name_en_modern": "Holding Together",
+      "lines_binary": "000010",
+      "upper_trigram": "kan",
+      "lower_trigram": "kun",
+      "judgment_en": "Holding Together brings good fortune; let one examine himself by divination whether he has the virtue to be the centre of union, and the late-comer meets misfortune.",
+      "image_en": "Water on the earth in the image of union; the ancient kings established the states and cultivated affection with the princes.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Seeking union with sincerity brings no error; sincerity full as an earthen vessel attracts good fortune from without."
+        },
+        {
+          "position": 2,
+          "text_en": "Union proceeding from the inner self; firm correctness brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "One seeks union with those who are not the right people."
+        },
+        {
+          "position": 4,
+          "text_en": "Union with the one outside oneself above; firm correctness brings good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "The most illustrious union: the king drives game on three sides and lets the animals in front escape, and the people need no warning; good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "One seeks union but has no head to it; misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 9,
+      "name_zh": "小畜",
+      "name_pinyin": "Xiǎo Xù",
+      "name_en": "Hsiâo Khû",
+      "name_en_modern": "The Taming Power of the Small",
+      "lines_binary": "111011",
+      "upper_trigram": "xun",
+      "lower_trigram": "qian",
+      "judgment_en": "The Taming Power of the Small brings success; dense clouds come from our western borders but no rain falls.",
+      "image_en": "Wind moves across heaven in the image of small restraint; the superior person adorns the outward manifestation of his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One returns to his own path; what mistake could there be? good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "One is drawn back along the path by others; good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "The spokes of the carriage are broken, and husband and wife look at each other with averted eyes."
+        },
+        {
+          "position": 4,
+          "text_en": "Sincerity makes blood and fear depart; there will be no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Sincere and bound in loyalty to its neighbour, one is enriched together with them."
+        },
+        {
+          "position": 6,
+          "text_en": "The rain has fallen and progress is stayed; the virtue is honoured but the wife in persistence invites peril, for the moon is nearly full and the superior person who moves on will meet misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 10,
+      "name_zh": "履",
+      "name_pinyin": "Lǚ",
+      "name_en": "Lî",
+      "name_en_modern": "Treading",
+      "lines_binary": "110111",
+      "upper_trigram": "qian",
+      "lower_trigram": "dui",
+      "judgment_en": "Treading on the tail of a tiger which does not bite the person; there will be progress and success.",
+      "image_en": "Heaven above and the marsh below are the image of treading; the superior person discriminates between high and low and gives settlement to the aims of the people.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One treads his accustomed path simply; going forward there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "One treads the level, easy path; the firm correctness of a quiet solitary person brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "A one-eyed man thinks he can see and a lame man that he can walk; he treads on the tiger’s tail and is bitten, misfortune, like a soldier playing the great ruler."
+        },
+        {
+          "position": 4,
+          "text_en": "One treads on the tiger’s tail with apprehension and caution; in the end there will be good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "Resolute treading; firm correctness, but with peril."
+        },
+        {
+          "position": 6,
+          "text_en": "One looks back at the whole course trodden and examines the omens; if all is complete there will be great good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 11,
+      "name_zh": "泰",
+      "name_pinyin": "Tài",
+      "name_en": "Thâi",
+      "name_en_modern": "Peace",
+      "lines_binary": "111000",
+      "upper_trigram": "kun",
+      "lower_trigram": "qian",
+      "judgment_en": "In Peace the small departs and the great approaches; there will be good fortune with progress and success.",
+      "image_en": "Heaven and earth communicate in the image of peace; the ruler fashions and completes the courses of heaven and earth to help the people.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Grass is pulled up and brings the roots of its kind with it; advancing brings good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "One bears with the uncultivated, crosses the river without a boat, does not forget the distant, and has no selfish friendships, walking in the middle path."
+        },
+        {
+          "position": 3,
+          "text_en": "There is no plain without a slope and no going without a return; firmness amid difficulty is without error, and one enjoys the happiness one has."
+        },
+        {
+          "position": 4,
+          "text_en": "One flutters down without boasting of wealth, together with neighbours, trusting without being warned."
+        },
+        {
+          "position": 5,
+          "text_en": "The emperor Yi gives his younger sister in marriage; by this there is happiness and great good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "The city wall returns to the moat; do not use the army now, but issue orders only to one’s own town, for firmness brings regret."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 12,
+      "name_zh": "否",
+      "name_pinyin": "Pǐ",
+      "name_en": "Phî",
+      "name_en_modern": "Standstill",
+      "lines_binary": "000111",
+      "upper_trigram": "qian",
+      "lower_trigram": "kun",
+      "judgment_en": "Standstill: there is a lack of good understanding among people, and firm correctness of the superior person does not avail; the great departs and the small approaches.",
+      "image_en": "Heaven and earth do not communicate in the image of standstill; the superior person restrains his virtue to avoid calamity and does not accept honour or emolument.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Grass is pulled up with the roots of its kind; firm correctness brings good fortune and success."
+        },
+        {
+          "position": 2,
+          "text_en": "The small people patiently endure and flatter; for the superior person to endure the standstill brings success."
+        },
+        {
+          "position": 3,
+          "text_en": "One bears shame for what he has in mind."
+        },
+        {
+          "position": 4,
+          "text_en": "One acts in accordance with the ordinance of heaven and commits no error; companions share in the blessing."
+        },
+        {
+          "position": 5,
+          "text_en": "Standstill ceases for the great person, good fortune, but he keeps saying “it may fail, it may fail” and ties it to a clump of mulberry."
+        },
+        {
+          "position": 6,
+          "text_en": "The standstill is overthrown; before there was standstill, afterwards joy."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 13,
+      "name_zh": "同人",
+      "name_pinyin": "Tóng Rén",
+      "name_en": "Thung Zăn",
+      "name_en_modern": "Fellowship with People",
+      "lines_binary": "101111",
+      "upper_trigram": "qian",
+      "lower_trigram": "li",
+      "judgment_en": "Fellowship with people in the open field brings progress and success; it is advantageous to cross the great stream and to maintain the firm correctness of the superior person.",
+      "image_en": "Heaven with fire beneath it is the image of fellowship; the superior person distinguishes things according to their kinds and classes.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Fellowship at the gate; there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "Fellowship only with one’s own clan; there will be occasion for regret."
+        },
+        {
+          "position": 3,
+          "text_en": "One hides weapons in the thicket and climbs a high hill to watch, and for three years does not rise."
+        },
+        {
+          "position": 4,
+          "text_en": "One mounts the city wall but cannot attack; good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "In fellowship one first wails and cries out and afterwards laughs; the great host conquers and they meet together."
+        },
+        {
+          "position": 6,
+          "text_en": "Fellowship in the open country outside the city; there will be no occasion for regret."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 14,
+      "name_zh": "大有",
+      "name_pinyin": "Dà Yǒu",
+      "name_en": "Tâ Yû",
+      "name_en_modern": "Possession in Great Measure",
+      "lines_binary": "111101",
+      "upper_trigram": "li",
+      "lower_trigram": "qian",
+      "judgment_en": "Possession in Great Measure brings great progress and success.",
+      "image_en": "Fire above heaven is the image of great possession; the superior person represses evil and gives distinction to good, obeying the will of heaven.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "No approach to what is injurious and no error; let one be mindful of difficulty and there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "A large wagon with its load; there may be movement in any direction and no error."
+        },
+        {
+          "position": 3,
+          "text_en": "A prince presents his offerings to the Son of Heaven; a small person could not do this."
+        },
+        {
+          "position": 4,
+          "text_en": "One keeps his great resources under restraint; there will be no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Sincerity meets with sincerity and dignity is shown; there will be good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Help is given from heaven; good fortune and nothing but advantage."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 15,
+      "name_zh": "謙",
+      "name_pinyin": "Qiān",
+      "name_en": "Khien",
+      "name_en_modern": "Modesty",
+      "lines_binary": "001000",
+      "upper_trigram": "kun",
+      "lower_trigram": "gen",
+      "judgment_en": "Modesty brings progress and success; the superior person who is humble carries things through to the end.",
+      "image_en": "A mountain in the midst of the earth is the image of modesty; the superior person diminishes what is excessive and increases what is deficient, weighing things and distributing fairly.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The superior person adds modesty to modesty and crosses the great stream; good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "Modesty that expresses itself; firm correctness brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "The superior person of acknowledged merit who is modest carries things to completion; good fortune."
+        },
+        {
+          "position": 4,
+          "text_en": "Everything is advantageous for one who stirs up modesty."
+        },
+        {
+          "position": 5,
+          "text_en": "One need not be rich to employ neighbours; it is advantageous to use force to correct, and nothing will be unadvantageous."
+        },
+        {
+          "position": 6,
+          "text_en": "Modesty that expresses itself; it is advantageous to set the army in motion to punish one’s own city and state."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 16,
+      "name_zh": "豫",
+      "name_pinyin": "Yù",
+      "name_en": "Yü",
+      "name_en_modern": "Enthusiasm",
+      "lines_binary": "000100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "kun",
+      "judgment_en": "Enthusiasm: it is advantageous to establish feudal princes and to set the army in motion.",
+      "image_en": "Thunder issues from the earth with a crashing noise in the image of enthusiasm; the ancient kings made music to honour virtue and offered it to God and their ancestors.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One proclaims his enthusiasm aloud; there will be misfortune."
+        },
+        {
+          "position": 2,
+          "text_en": "Firm as a rock, one does not wait the whole day; firm correctness brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "One looks up for enthusiasm and will have regret; delay also brings regret."
+        },
+        {
+          "position": 4,
+          "text_en": "The source of enthusiasm attains great things; doubt not, for friends gather around like hair held by a clasp."
+        },
+        {
+          "position": 5,
+          "text_en": "One is chronically ill with enthusiasm yet lives on and does not die."
+        },
+        {
+          "position": 6,
+          "text_en": "Deluded enthusiasm, but if one changes course even after completion there will be no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 17,
+      "name_zh": "隨",
+      "name_pinyin": "Suí",
+      "name_en": "Sui",
+      "name_en_modern": "Following",
+      "lines_binary": "100110",
+      "upper_trigram": "dui",
+      "lower_trigram": "zhen",
+      "judgment_en": "Following brings great progress and success; it is advantageous to be firm and correct, and there will be no error.",
+      "image_en": "Thunder within the marsh is the image of following; the superior person at nightfall goes within to rest and enjoy repose.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One is changing the object of his pursuit; firm correctness brings good fortune, and going beyond the gate to meet others brings merit."
+        },
+        {
+          "position": 2,
+          "text_en": "One clings to the little boy and lets go of the strong man."
+        },
+        {
+          "position": 3,
+          "text_en": "One clings to the strong man and lets go of the little boy; by following he gets what he seeks, and firm correctness is advantageous."
+        },
+        {
+          "position": 4,
+          "text_en": "Following and getting adherents will bring misfortune even in a correct course; sincerity in the right path brings clarity and no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Sincere in fostering what is excellent; there will be good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Sincerity firmly held and bound, as if the king were presenting offerings on the western mountain."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 18,
+      "name_zh": "蠱",
+      "name_pinyin": "Gǔ",
+      "name_en": "Kû",
+      "name_en_modern": "Work on What Has Been Spoiled",
+      "lines_binary": "011001",
+      "upper_trigram": "gen",
+      "lower_trigram": "xun",
+      "judgment_en": "Work on What Has Been Spoiled brings great progress and success; it is advantageous to cross the great stream, and one should consider three days before the starting point and three days after it.",
+      "image_en": "Wind at the foot of the mountain is the image of decay; the superior person stirs up the people and nourishes their virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "A son deals with the troubles caused by his father; if he is able, the father will escape blame, and though perilous the end will be fortunate."
+        },
+        {
+          "position": 2,
+          "text_en": "A son deals with the troubles caused by his mother; he should not be too firm."
+        },
+        {
+          "position": 3,
+          "text_en": "A son deals with the troubles caused by his father with some small regret, but no great error."
+        },
+        {
+          "position": 4,
+          "text_en": "A son views indulgently the troubles caused by his father; going on he will find cause for regret."
+        },
+        {
+          "position": 5,
+          "text_en": "A son deals with the troubles caused by his father and obtains praise."
+        },
+        {
+          "position": 6,
+          "text_en": "One does not serve king or prince, but holds his own lofty aims."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 19,
+      "name_zh": "臨",
+      "name_pinyin": "Lín",
+      "name_en": "Lin",
+      "name_en_modern": "Approach",
+      "lines_binary": "110000",
+      "upper_trigram": "kun",
+      "lower_trigram": "dui",
+      "judgment_en": "Approach brings great progress and success, with firm correctness; in the eighth month there will be misfortune.",
+      "image_en": "The earth above the marsh is the image of approach; the superior person is inexhaustible in teaching and boundless in protecting the people.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Approach in common with others; firm correctness brings good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "Approach in common; good fortune, and everything is advantageous."
+        },
+        {
+          "position": 3,
+          "text_en": "Approach that is complacent and sweet brings no advantage; if one grieves over it, there will be no error."
+        },
+        {
+          "position": 4,
+          "text_en": "Approach in the highest degree; no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Approach by means of wisdom, as befits a great ruler; good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Approach that is honest and generous; good fortune and no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 20,
+      "name_zh": "觀",
+      "name_pinyin": "Guān",
+      "name_en": "Kwân",
+      "name_en_modern": "Contemplation",
+      "lines_binary": "000011",
+      "upper_trigram": "xun",
+      "lower_trigram": "kun",
+      "judgment_en": "Contemplation: the worshipper has washed his hands but has not yet presented his offerings, full of sincerity and dignified.",
+      "image_en": "Wind moving above the earth is the image of contemplation; the ancient kings examined the regions, observed the people and set forth their instructions.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Contemplation like that of a boy, no error for a small person, but regret for the superior person."
+        },
+        {
+          "position": 2,
+          "text_en": "Contemplation through a crack of the door; advantageous for the firm correctness of a woman."
+        },
+        {
+          "position": 3,
+          "text_en": "One contemplates his own life and decides whether to advance or retreat."
+        },
+        {
+          "position": 4,
+          "text_en": "Contemplation of the glory of the kingdom; it is advantageous to be a guest of the king."
+        },
+        {
+          "position": 5,
+          "text_en": "One contemplates his own life; the superior person will thus be free from error."
+        },
+        {
+          "position": 6,
+          "text_en": "One contemplates his character to see if it is that of a superior person; he will be free from error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 21,
+      "name_zh": "噬嗑",
+      "name_pinyin": "Shì Kè",
+      "name_en": "Shih Ho",
+      "name_en_modern": "Biting Through",
+      "lines_binary": "100101",
+      "upper_trigram": "li",
+      "lower_trigram": "zhen",
+      "judgment_en": "Biting Through brings success; it is advantageous to use legal constraints.",
+      "image_en": "Thunder and lightning together are the image of biting through; the ancient kings made the penalties clear and promulgated the laws.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Feet in the stocks so that the toes are hidden; there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "One bites through soft flesh and goes on to the nose; there will be no error."
+        },
+        {
+          "position": 3,
+          "text_en": "One bites dried meat and meets something poisonous; small regret but no error."
+        },
+        {
+          "position": 4,
+          "text_en": "One bites dried gristly meat and finds a metal arrow; firmness amid difficulty brings good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "One bites dried meat and finds yellow gold; perseverance in peril brings no error."
+        },
+        {
+          "position": 6,
+          "text_en": "A cangue on the neck so that the ears are hidden; there will be misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 22,
+      "name_zh": "賁",
+      "name_pinyin": "Bì",
+      "name_en": "Pî",
+      "name_en_modern": "Grace",
+      "lines_binary": "101001",
+      "upper_trigram": "gen",
+      "lower_trigram": "li",
+      "judgment_en": "Grace brings success, but it is advantageous to undertake only small matters.",
+      "image_en": "Fire at the foot of the mountain is the image of grace; the superior person throws light on government affairs but does not dare to decide litigation by it.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One adorns his feet, leaves the carriage and walks."
+        },
+        {
+          "position": 2,
+          "text_en": "One adorns his beard."
+        },
+        {
+          "position": 3,
+          "text_en": "Adorned and bedewed; perpetual firm correctness brings good fortune."
+        },
+        {
+          "position": 4,
+          "text_en": "Adorned yet simple, white as a flying horse; the suitor is not a robber but seeks a union."
+        },
+        {
+          "position": 5,
+          "text_en": "Grace in the hills and gardens with only a small roll of silk to offer; there is some regret, but in the end good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Simple grace in white; there will be no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 23,
+      "name_zh": "剝",
+      "name_pinyin": "Bō",
+      "name_en": "Po",
+      "name_en_modern": "Splitting Apart",
+      "lines_binary": "000001",
+      "upper_trigram": "gen",
+      "lower_trigram": "kun",
+      "judgment_en": "Splitting Apart: it is not advantageous to make a movement in any direction.",
+      "image_en": "The mountain rests on the earth in the image of splitting apart; those above make their position secure only by generosity to those below.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One overturns the couch by splitting its legs; disregard of firmness brings misfortune."
+        },
+        {
+          "position": 2,
+          "text_en": "One overturns the couch by splitting its frame; disregard of firmness brings misfortune."
+        },
+        {
+          "position": 3,
+          "text_en": "One splits away from the others; there will be no error."
+        },
+        {
+          "position": 4,
+          "text_en": "One overturns the couch and splits the skin of him upon it; misfortune."
+        },
+        {
+          "position": 5,
+          "text_en": "A string of fishes, favour from the palace ladies; everything is advantageous."
+        },
+        {
+          "position": 6,
+          "text_en": "A large fruit still uneaten: the superior person obtains a carriage, the small people split their own houses apart."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 24,
+      "name_zh": "復",
+      "name_pinyin": "Fù",
+      "name_en": "Fû",
+      "name_en_modern": "Return",
+      "lines_binary": "100000",
+      "upper_trigram": "kun",
+      "lower_trigram": "zhen",
+      "judgment_en": "Return brings progress and success; going out and coming in without error, friends come without blame, and on the seventh day comes the return; it is advantageous to have somewhere to go.",
+      "image_en": "Thunder within the earth is the image of return; the ancient kings closed the passes at the solstice, merchants did not travel and the ruler did not inspect the regions.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Returning from a short distance without going astray; great good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "An admirable return; good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "Repeated returns with peril, but no error."
+        },
+        {
+          "position": 4,
+          "text_en": "One walks in the midst of others yet returns alone."
+        },
+        {
+          "position": 5,
+          "text_en": "A noble-hearted return; there will be no regret."
+        },
+        {
+          "position": 6,
+          "text_en": "One has gone astray in returning, misfortune and calamity; an army set in motion will be defeated and the ruler suffers, and for ten years no attack is possible."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 25,
+      "name_zh": "無妄",
+      "name_pinyin": "Wú Wàng",
+      "name_en": "Wû Wang",
+      "name_en_modern": "Innocence",
+      "lines_binary": "100111",
+      "upper_trigram": "qian",
+      "lower_trigram": "zhen",
+      "judgment_en": "Innocence brings great progress and success with firm correctness; one who is not correct meets calamity and should not move in any direction.",
+      "image_en": "Thunder rolls beneath heaven and all things are given their innocence; the ancient kings nourished all things in accordance with the seasons.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Innocent movement brings good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "One reaps without having ploughed and harvests in the third year without having tilled; it is advantageous to have somewhere to go."
+        },
+        {
+          "position": 3,
+          "text_en": "Undeserved calamity: a cow tied up is gained by a passer-by and the villager is blamed."
+        },
+        {
+          "position": 4,
+          "text_en": "One can remain firm and correct; there will be no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Undeserved illness: use no medicine and there will be rejoicing."
+        },
+        {
+          "position": 6,
+          "text_en": "Innocent action now brings calamity; nothing is advantageous."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 26,
+      "name_zh": "大畜",
+      "name_pinyin": "Dà Xù",
+      "name_en": "Tâ Khû",
+      "name_en_modern": "The Taming Power of the Great",
+      "lines_binary": "111001",
+      "upper_trigram": "gen",
+      "lower_trigram": "qian",
+      "judgment_en": "The Taming Power of the Great: firm correctness is advantageous, not to eat at home brings good fortune, and it is advantageous to cross the great stream.",
+      "image_en": "Heaven within the mountain is the image of great accumulation; the superior person stores up the words and deeds of the ancients to nourish his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Peril is at hand; it will be advantageous to desist."
+        },
+        {
+          "position": 2,
+          "text_en": "The axle strap is removed from the carriage."
+        },
+        {
+          "position": 3,
+          "text_en": "Good horses follow one another; it is advantageous to be firm amid difficulty and to practise chariot driving and defence daily, with somewhere to go."
+        },
+        {
+          "position": 4,
+          "text_en": "The headboard of a young bull; great good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "The tusks of a gelded boar; good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "One commands the road of heaven; progress and success."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 27,
+      "name_zh": "頤",
+      "name_pinyin": "Yí",
+      "name_en": "Î",
+      "name_en_modern": "Nourishment",
+      "lines_binary": "100001",
+      "upper_trigram": "gen",
+      "lower_trigram": "zhen",
+      "judgment_en": "Nourishment with firm correctness brings good fortune; observe how a person nourishes others and what he seeks to fill his own mouth with.",
+      "image_en": "Thunder at the foot of the mountain is the image of nourishment; the superior person is careful in his words and temperate in eating and drinking.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "You let your magic tortoise go and look at me with mouth drooping; misfortune."
+        },
+        {
+          "position": 2,
+          "text_en": "One looks for nourishment from the top of the hill in a perverse way; going forward brings misfortune."
+        },
+        {
+          "position": 3,
+          "text_en": "One acts contrary to the proper way of nourishment; firmness brings misfortune, and for ten years nothing is advantageous."
+        },
+        {
+          "position": 4,
+          "text_en": "Seeking nourishment from above with a tiger’s downward glare and insatiable craving; good fortune and no error."
+        },
+        {
+          "position": 5,
+          "text_en": "One acts contrary to the usual way; firm abiding brings good fortune, but do not cross the great stream."
+        },
+        {
+          "position": 6,
+          "text_en": "The source of nourishment: peril but good fortune, and it is advantageous to cross the great stream."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 28,
+      "name_zh": "大過",
+      "name_pinyin": "Dà Guò",
+      "name_en": "Tâ Kwo",
+      "name_en_modern": "Preponderance of the Great",
+      "lines_binary": "011110",
+      "upper_trigram": "dui",
+      "lower_trigram": "xun",
+      "judgment_en": "Preponderance of the Great: the ridgepole sags to the breaking point; it is advantageous to have somewhere to go, and there will be success.",
+      "image_en": "The marsh rises above the trees in the image of great excess; the superior person stands alone without fear and withdraws from the world without regret.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One places white mats of rushes beneath things; there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "A withered willow puts forth shoots and an old man takes a young wife; everything is advantageous."
+        },
+        {
+          "position": 3,
+          "text_en": "The ridgepole sags; there will be misfortune."
+        },
+        {
+          "position": 4,
+          "text_en": "The ridgepole is braced; good fortune, but if there are ulterior motives there will be regret."
+        },
+        {
+          "position": 5,
+          "text_en": "A withered willow puts forth flowers and an old woman takes a young husband; no blame but no praise."
+        },
+        {
+          "position": 6,
+          "text_en": "One wades through the stream till the water covers his head; misfortune but no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 29,
+      "name_zh": "坎",
+      "name_pinyin": "Kǎn",
+      "name_en": "Khan",
+      "name_en_modern": "The Abysmal (Water)",
+      "lines_binary": "010010",
+      "upper_trigram": "kan",
+      "lower_trigram": "kan",
+      "judgment_en": "The Abysmal repeated: through sincerity the mind penetrates, and action brings high value.",
+      "image_en": "Water flows on continually and reaches its goal in the image of the repeated abyss; the superior person maintains constant virtue and continues to teach.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "In the repeated abyss one enters a cavern within the pit; misfortune."
+        },
+        {
+          "position": 2,
+          "text_en": "In the abyss there is danger; one should seek only small success."
+        },
+        {
+          "position": 3,
+          "text_en": "Coming to the abyss and finding it deep and dangerous, one should not act, for to go in only deeper brings no advantage."
+        },
+        {
+          "position": 4,
+          "text_en": "A jug of wine and a bowl of rice, earthen vessels handed in through the window; in the end there will be no error."
+        },
+        {
+          "position": 5,
+          "text_en": "The abyss is not filled to overflowing but only to the level; there will be no error."
+        },
+        {
+          "position": 6,
+          "text_en": "Bound with cords and placed among thorns, one cannot find his way for three years; misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 30,
+      "name_zh": "離",
+      "name_pinyin": "Lí",
+      "name_en": "Lî",
+      "name_en_modern": "The Clinging (Fire)",
+      "lines_binary": "101101",
+      "upper_trigram": "li",
+      "lower_trigram": "li",
+      "judgment_en": "The Clinging: firm correctness is advantageous and brings success; to care for the cow brings good fortune.",
+      "image_en": "Brightness doubled is the image of fire; the great person by perpetuating this brightness illumines the four quarters.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Footsteps in confusion; if one is reverent there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "Yellow light; great good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "In the light of the setting sun, if one does not beat the earthen pot and sing, he laments the approach of old age; misfortune."
+        },
+        {
+          "position": 4,
+          "text_en": "It comes abruptly, blazes up, dies and is thrown away."
+        },
+        {
+          "position": 5,
+          "text_en": "Tears in floods and lamenting; good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "The king uses him to go forth and punish, and he crushes the leaders but not their followers; there will be no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 31,
+      "name_zh": "咸",
+      "name_pinyin": "Xián",
+      "name_en": "Hsien",
+      "name_en_modern": "Influence (Wooing)",
+      "lines_binary": "001110",
+      "upper_trigram": "dui",
+      "lower_trigram": "gen",
+      "judgment_en": "Influence brings success through firm correctness; to take a maiden in marriage brings good fortune.",
+      "image_en": "A lake on the mountain is the image of influence; the superior person keeps his mind free and open to receive others.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Influence shown in the big toes."
+        },
+        {
+          "position": 2,
+          "text_en": "Influence shown in the calves of the legs; misfortune, but to remain still brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "Influence in the thighs: one follows what the heart desires, and to go on so brings regret."
+        },
+        {
+          "position": 4,
+          "text_en": "Firm correctness brings good fortune and regret disappears; but if the mind wavers in agitation, only friends follow one’s thoughts."
+        },
+        {
+          "position": 5,
+          "text_en": "Influence shown in the back of the neck; there will be no regret."
+        },
+        {
+          "position": 6,
+          "text_en": "Influence shown in the jaws, cheeks and tongue."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 32,
+      "name_zh": "恆",
+      "name_pinyin": "Héng",
+      "name_en": "Hăng",
+      "name_en_modern": "Duration",
+      "lines_binary": "011100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "xun",
+      "judgment_en": "Duration brings success and no error; firm correctness is advantageous, and it is advantageous to have somewhere to go.",
+      "image_en": "Thunder and wind are the image of duration; the superior person stands firm and does not change his course.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One seeks duration too deeply at the start; firmness brings misfortune, and nothing is advantageous."
+        },
+        {
+          "position": 2,
+          "text_en": "All occasion for regret disappears."
+        },
+        {
+          "position": 3,
+          "text_en": "One does not make his virtue lasting and may be disgraced; firmness brings regret."
+        },
+        {
+          "position": 4,
+          "text_en": "A field with no game in it."
+        },
+        {
+          "position": 5,
+          "text_en": "One makes his virtue lasting: firmness brings good fortune for a wife, misfortune for a husband."
+        },
+        {
+          "position": 6,
+          "text_en": "Duration in agitation; there will be misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 33,
+      "name_zh": "遯",
+      "name_pinyin": "Dùn",
+      "name_en": "Thun",
+      "name_en_modern": "Retreat",
+      "lines_binary": "001111",
+      "upper_trigram": "qian",
+      "lower_trigram": "gen",
+      "judgment_en": "Retreat brings success; in what is small, firm correctness is advantageous.",
+      "image_en": "The mountain beneath heaven is the image of retreat; the superior person keeps small people at a distance, not with anger but with dignity.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "At the tail of the retreat there is peril; one should not try to go anywhere."
+        },
+        {
+          "position": 2,
+          "text_en": "One holds fast with the hide of a yellow ox; nothing can tear it loose."
+        },
+        {
+          "position": 3,
+          "text_en": "A halting retreat, with distress and peril; to keep servants and concubines brings good fortune."
+        },
+        {
+          "position": 4,
+          "text_en": "A voluntary retreat brings good fortune to the superior person and downfall to the small person."
+        },
+        {
+          "position": 5,
+          "text_en": "An admirable retreat; firm correctness brings good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "A noble retreat; everything is advantageous."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 34,
+      "name_zh": "大壯",
+      "name_pinyin": "Dà Zhuàng",
+      "name_en": "Tâ Kwang",
+      "name_en_modern": "The Power of the Great",
+      "lines_binary": "111100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "qian",
+      "judgment_en": "The Power of the Great: firm correctness is advantageous.",
+      "image_en": "Thunder above heaven is the image of great power; the superior person does not tread a path that is not according to propriety.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Power in the toes; advancing brings misfortune, however certain one feels."
+        },
+        {
+          "position": 2,
+          "text_en": "Firm correctness brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "The small person uses his strength and the superior person does not; firmness is perilous, like a ram butting a hedge and entangling its horns."
+        },
+        {
+          "position": 4,
+          "text_en": "Firm correctness brings good fortune and regret disappears; the hedge opens without entanglement, and the strength is like the axle of a great wagon."
+        },
+        {
+          "position": 5,
+          "text_en": "One loses the ram too easily; there will be no regret."
+        },
+        {
+          "position": 6,
+          "text_en": "The ram butts the hedge and can neither retreat nor advance; nothing is advantageous, but if one notes the difficulty there is good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 35,
+      "name_zh": "晉",
+      "name_pinyin": "Jìn",
+      "name_en": "Tsin",
+      "name_en_modern": "Progress",
+      "lines_binary": "000101",
+      "upper_trigram": "li",
+      "lower_trigram": "kun",
+      "judgment_en": "Progress: the powerful prince is honoured with many horses and received three times in a single day.",
+      "image_en": "The sun rises above the earth in the image of progress; the superior person gives himself to making his bright virtue brighter.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Progressing yet turned back; firm correctness brings good fortune, and if confidence is lacking, remain calm and there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "Progressing in sorrow; firm correctness brings good fortune, and one receives great blessing from the ancestress."
+        },
+        {
+          "position": 3,
+          "text_en": "All around trust him; regret disappears."
+        },
+        {
+          "position": 4,
+          "text_en": "Progressing like a hamster; firmness brings peril."
+        },
+        {
+          "position": 5,
+          "text_en": "Regret disappears; take not to heart loss or gain, for advancing brings good fortune and everything is advantageous."
+        },
+        {
+          "position": 6,
+          "text_en": "Progressing with the horns, only to punish one’s own city; peril but good fortune and no error, though firmness brings regret."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 36,
+      "name_zh": "明夷",
+      "name_pinyin": "Míng Yí",
+      "name_en": "Ming Î",
+      "name_en_modern": "Darkening of the Light",
+      "lines_binary": "101000",
+      "upper_trigram": "kun",
+      "lower_trigram": "li",
+      "judgment_en": "Darkening of the Light: it is advantageous to be firm and correct amid difficulty.",
+      "image_en": "The light has sunk into the earth; the superior person in dealing with the multitude veils his brightness yet still shines.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The light is darkened in flight and lowers its wings; the superior person travels three days without eating, and his host murmurs against him."
+        },
+        {
+          "position": 2,
+          "text_en": "The light is darkened and he is wounded in the left thigh; he saves himself with a strong horse, good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "Hunting in the south, the light is darkened and the great chief is captured; one should not be hasty in setting things right."
+        },
+        {
+          "position": 4,
+          "text_en": "He enters the left side of the belly and gets at the heart of the darkening, then leaves the gate and courtyard."
+        },
+        {
+          "position": 5,
+          "text_en": "The darkening of the light as with Prince Ji; firm correctness is advantageous."
+        },
+        {
+          "position": 6,
+          "text_en": "Not light but darkness; first he climbed to heaven, then he plunged into the earth."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 37,
+      "name_zh": "家人",
+      "name_pinyin": "Jiā Rén",
+      "name_en": "Kiâ Zăn",
+      "name_en_modern": "The Family",
+      "lines_binary": "101011",
+      "upper_trigram": "xun",
+      "lower_trigram": "li",
+      "judgment_en": "The Family: the firm correctness of the wife is advantageous.",
+      "image_en": "Wind coming forth from fire is the image of the family; the superior person has substance in his words and duration in his conduct.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Firm rules are established within the household; regret disappears."
+        },
+        {
+          "position": 2,
+          "text_en": "The wife should not follow her own whims but attend to the food within; firm correctness brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "When the household is treated with severity there is regret, yet good fortune; when wife and children giggle and laugh, in the end there is regret."
+        },
+        {
+          "position": 4,
+          "text_en": "The wife enriches the household; great good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "The king approaches his family; have no anxiety, for there will be good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Sincerity and awe-inspiring dignity; in the end there will be good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 38,
+      "name_zh": "睽",
+      "name_pinyin": "Kuí",
+      "name_en": "Khwei",
+      "name_en_modern": "Opposition",
+      "lines_binary": "110101",
+      "upper_trigram": "li",
+      "lower_trigram": "dui",
+      "judgment_en": "Opposition: in small matters there will be good fortune.",
+      "image_en": "Fire above and the lake below are the image of opposition; the superior person retains his individuality amid all fellowship.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Regret disappears; if one loses his horses do not chase them, they will return, and even an evil man seen brings no error."
+        },
+        {
+          "position": 2,
+          "text_en": "One meets his lord in a narrow lane; there will be no error."
+        },
+        {
+          "position": 3,
+          "text_en": "One sees his wagon dragged back, his oxen halted, his hair and nose cut off; no good beginning but a good end."
+        },
+        {
+          "position": 4,
+          "text_en": "Isolated by opposition, one meets a like-minded man and both are sincere; peril but no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Regret disappears; the companion bites through the skin, and going forward there will be no error."
+        },
+        {
+          "position": 6,
+          "text_en": "Isolated by opposition one sees a pig covered with mud and a wagonload of ghosts, draws the bow then lays it aside; it is not a robber but a suitor, and going forth when rain falls brings good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 39,
+      "name_zh": "蹇",
+      "name_pinyin": "Jiǎn",
+      "name_en": "Kien",
+      "name_en_modern": "Obstruction",
+      "lines_binary": "001010",
+      "upper_trigram": "kan",
+      "lower_trigram": "gen",
+      "judgment_en": "Obstruction: the south-west is advantageous, the north-east is not; it is advantageous to see the great person, and firm correctness brings good fortune.",
+      "image_en": "Water on the mountain is the image of obstruction; the superior person turns to himself and cultivates his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Going leads to obstruction, coming back to praise."
+        },
+        {
+          "position": 2,
+          "text_en": "The king’s servant meets obstruction upon obstruction, but not through his own fault."
+        },
+        {
+          "position": 3,
+          "text_en": "Going leads to obstruction, hence he returns."
+        },
+        {
+          "position": 4,
+          "text_en": "Going leads to obstruction, coming back to union with others."
+        },
+        {
+          "position": 5,
+          "text_en": "In the greatest obstruction, friends come."
+        },
+        {
+          "position": 6,
+          "text_en": "Going leads to obstruction, coming back to great good fortune; it is advantageous to see the great person."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 40,
+      "name_zh": "解",
+      "name_pinyin": "Xiè",
+      "name_en": "Kieh",
+      "name_en_modern": "Deliverance",
+      "lines_binary": "010100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "kan",
+      "judgment_en": "Deliverance: the south-west is advantageous; if there is nowhere further to go, returning brings good fortune, and if there is somewhere to go, hastening brings good fortune.",
+      "image_en": "Thunder and rain set in and the image of deliverance; the superior person pardons mistakes and deals gently with wrongdoing.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "There will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "One catches three foxes in the field and gets a yellow arrow; firm correctness brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "A porter riding in a carriage invites robbers; firmness brings regret."
+        },
+        {
+          "position": 4,
+          "text_en": "Deliver yourself from your great toe; then the friend comes and you can trust him."
+        },
+        {
+          "position": 5,
+          "text_en": "If only the superior person can deliver himself it brings good fortune, and he proves to the small people that he is in earnest."
+        },
+        {
+          "position": 6,
+          "text_en": "The prince shoots at a hawk on the high wall and kills it; everything is advantageous."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 41,
+      "name_zh": "損",
+      "name_pinyin": "Sǔn",
+      "name_en": "Sun",
+      "name_en_modern": "Decrease",
+      "lines_binary": "110001",
+      "upper_trigram": "gen",
+      "lower_trigram": "dui",
+      "judgment_en": "Decrease combined with sincerity brings great good fortune without error; firm correctness is possible and advantageous, and even two small bowls may be used for the offering.",
+      "image_en": "The lake at the foot of the mountain is the image of decrease; the superior person restrains his anger and represses his desires.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Going quickly when one’s own tasks are done brings no error, but one should consider how much to decrease others."
+        },
+        {
+          "position": 2,
+          "text_en": "Firm correctness is advantageous, undertaking anything brings misfortune; one can increase others without decreasing oneself."
+        },
+        {
+          "position": 3,
+          "text_en": "When three walk together one is lost; when one walks alone he finds a companion."
+        },
+        {
+          "position": 4,
+          "text_en": "One diminishes his ailment and makes the other hasten to come with joy; no error."
+        },
+        {
+          "position": 5,
+          "text_en": "One is increased by ten pairs of tortoise shells that cannot be refused; great good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "One is increased without depriving others, no error, firm correctness brings good fortune; it is advantageous to go somewhere, and one gains servants but no longer has a separate home."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 42,
+      "name_zh": "益",
+      "name_pinyin": "Yì",
+      "name_en": "Yî",
+      "name_en_modern": "Increase",
+      "lines_binary": "100011",
+      "upper_trigram": "xun",
+      "lower_trigram": "zhen",
+      "judgment_en": "Increase: it is advantageous to have somewhere to go and to cross the great stream.",
+      "image_en": "Wind and thunder are the image of increase; the superior person when he sees good imitates it and when he has faults corrects them.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "It is advantageous to accomplish great deeds; great good fortune and no error."
+        },
+        {
+          "position": 2,
+          "text_en": "One is increased by ten pairs of tortoise shells that cannot be refused; perpetual firmness brings good fortune, and the king presents offerings to God."
+        },
+        {
+          "position": 3,
+          "text_en": "One is enriched through unfortunate events; no blame if one is sincere, walks the middle path and reports to the prince with a seal."
+        },
+        {
+          "position": 4,
+          "text_en": "If one walks in the middle and reports to the prince, he will follow; it is advantageous to be used in moving the capital."
+        },
+        {
+          "position": 5,
+          "text_en": "With a sincere heart one seeks to benefit all, no question about it, supreme good fortune; sincerity is recognised as one’s virtue."
+        },
+        {
+          "position": 6,
+          "text_en": "One brings increase to no one and someone even strikes him; he does not keep his heart constant, misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 43,
+      "name_zh": "夬",
+      "name_pinyin": "Guài",
+      "name_en": "Kwâi",
+      "name_en_modern": "Breakthrough (Resoluteness)",
+      "lines_binary": "111110",
+      "upper_trigram": "dui",
+      "lower_trigram": "qian",
+      "judgment_en": "Breakthrough: one must resolutely make the matter known at the king’s court and announce it sincerely though there is peril; he should inform his own city and not resort to arms, but it is advantageous to have somewhere to go.",
+      "image_en": "The lake has risen up to heaven in the image of breakthrough; the superior person dispenses riches downward and refrains from resting on his virtue.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Mighty in the advancing toes; going forward without ability to succeed brings blame."
+        },
+        {
+          "position": 2,
+          "text_en": "A cry of alarm and arms at evening and night; fear not."
+        },
+        {
+          "position": 3,
+          "text_en": "Power in the cheekbones brings misfortune; the superior person is firmly resolved, walks alone in rain and is bespattered, murmured against but without error."
+        },
+        {
+          "position": 4,
+          "text_en": "No skin on the thighs and walking with difficulty; if one let himself be led like a sheep regret would vanish, but he hears the words and does not believe."
+        },
+        {
+          "position": 5,
+          "text_en": "Dealing with weeds requires firm resolution; walking in the middle there is no error."
+        },
+        {
+          "position": 6,
+          "text_en": "No cry; in the end there will be misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 44,
+      "name_zh": "姤",
+      "name_pinyin": "Gòu",
+      "name_en": "Kâu",
+      "name_en_modern": "Coming to Meet",
+      "lines_binary": "011111",
+      "upper_trigram": "qian",
+      "lower_trigram": "xun",
+      "judgment_en": "Coming to Meet: the woman is bold and strong; one should not marry such a woman.",
+      "image_en": "Wind beneath heaven is the image of coming to meet; the ruler issues his commands and proclaims them to the four quarters.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "It must be checked with a brake of bronze; firm correctness brings good fortune, and if one lets things take their course misfortune follows, like a lean pig straining to run about."
+        },
+        {
+          "position": 2,
+          "text_en": "There is a fish in the tank; no error, but it is not advantageous to let it reach the guests."
+        },
+        {
+          "position": 3,
+          "text_en": "No skin on the thighs and walking with difficulty; peril but no great error."
+        },
+        {
+          "position": 4,
+          "text_en": "No fish in the tank; this gives rise to misfortune."
+        },
+        {
+          "position": 5,
+          "text_en": "A melon covered with willow leaves hides its brightness; it falls from heaven."
+        },
+        {
+          "position": 6,
+          "text_en": "One comes to meet with his horns; regret but no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 45,
+      "name_zh": "萃",
+      "name_pinyin": "Cuì",
+      "name_en": "Tsui",
+      "name_en_modern": "Gathering Together",
+      "lines_binary": "000110",
+      "upper_trigram": "dui",
+      "lower_trigram": "kun",
+      "judgment_en": "Gathering Together brings success; the king approaches his ancestral temple, it is advantageous to see the great person, firm correctness brings success, and great offerings bring good fortune, with somewhere to go.",
+      "image_en": "The lake above the earth is the image of gathering; the superior person renews his weapons to meet the unforeseen.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Sincerity not carried to the end brings now confusion, now gathering; if one cries out, a single grasp of the hand brings laughter, and going on there is no error."
+        },
+        {
+          "position": 2,
+          "text_en": "Letting oneself be drawn brings good fortune and no error; if one is sincere, even a small offering is advantageous."
+        },
+        {
+          "position": 3,
+          "text_en": "Gathering amid sighs, nothing advantageous; going on brings no error but small regret."
+        },
+        {
+          "position": 4,
+          "text_en": "Great good fortune and no error."
+        },
+        {
+          "position": 5,
+          "text_en": "In gathering one holds his position, no error, but some are not yet sincere; sublime and enduring firmness makes regret disappear."
+        },
+        {
+          "position": 6,
+          "text_en": "Lamenting and sighing, floods of tears; there will be no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 46,
+      "name_zh": "升",
+      "name_pinyin": "Shēng",
+      "name_en": "Shăng",
+      "name_en_modern": "Pushing Upward",
+      "lines_binary": "011000",
+      "upper_trigram": "kun",
+      "lower_trigram": "xun",
+      "judgment_en": "Pushing Upward brings great progress and success; one must see the great person without anxiety, and advancing to the south brings good fortune.",
+      "image_en": "Wood grows within the earth in the image of pushing upward; the superior person in devotion to virtue heaps up small things to achieve something high and great.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Pushing upward that is welcomed; great good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "If one is sincere, even a small offering is advantageous; there will be no error."
+        },
+        {
+          "position": 3,
+          "text_en": "One pushes upward into an empty city."
+        },
+        {
+          "position": 4,
+          "text_en": "The king offers sacrifice on Mount Qi; good fortune and no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Firm correctness brings good fortune; one pushes upward by steps."
+        },
+        {
+          "position": 6,
+          "text_en": "Pushing upward in darkness; it is advantageous to be unremittingly firm and correct."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 47,
+      "name_zh": "困",
+      "name_pinyin": "Kùn",
+      "name_en": "Khwăn",
+      "name_en_modern": "Oppression (Exhaustion)",
+      "lines_binary": "010110",
+      "upper_trigram": "dui",
+      "lower_trigram": "kan",
+      "judgment_en": "Oppression may yet lead to success; firm correctness brings good fortune to the great person without error, but when one has something to say it is not believed.",
+      "image_en": "The lake with no water in it is the image of exhaustion; the superior person stakes his life on following his will.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One sits oppressed under a bare tree and enters a dark valley, and for three years sees nothing."
+        },
+        {
+          "position": 2,
+          "text_en": "Oppressed amid wine and food, the man in the scarlet knee-covers is just coming; it is advantageous to offer sacrifice, but advancing brings misfortune, though no error."
+        },
+        {
+          "position": 3,
+          "text_en": "Oppressed by stones, one leans on thorns and thistles, enters his house and does not see his wife; misfortune."
+        },
+        {
+          "position": 4,
+          "text_en": "One comes very slowly, oppressed in a bronze carriage; regret, but a good end."
+        },
+        {
+          "position": 5,
+          "text_en": "Nose and feet cut off, oppressed by the man in the scarlet knee-covers; joy comes softly, and it is advantageous to make offerings."
+        },
+        {
+          "position": 6,
+          "text_en": "Oppressed by creeping vines on a precarious height, one says that every move brings regret; if he repents and moves there is good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 48,
+      "name_zh": "井",
+      "name_pinyin": "Jǐng",
+      "name_en": "Tsing",
+      "name_en_modern": "The Well",
+      "lines_binary": "011010",
+      "upper_trigram": "kan",
+      "lower_trigram": "xun",
+      "judgment_en": "The Well: the town may be changed but the well cannot; it neither decreases nor increases, people come and go and draw from it, but if the rope is too short or the jug breaks there is misfortune.",
+      "image_en": "Water above wood is the image of the well; the superior person encourages the people at their work and exhorts them to help one another.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The mud of the well is not drunk; no animals come to an old well."
+        },
+        {
+          "position": 2,
+          "text_en": "At the well-hole one shoots fish; the jug is broken and leaks."
+        },
+        {
+          "position": 3,
+          "text_en": "The well is cleaned but no one drinks from it, to the sorrow of my heart; it could be used, and if the king were clear-minded all would share the blessing."
+        },
+        {
+          "position": 4,
+          "text_en": "The well is being lined; there will be no error."
+        },
+        {
+          "position": 5,
+          "text_en": "In the well there is a clear cold spring from which one may drink."
+        },
+        {
+          "position": 6,
+          "text_en": "One draws from the well without hindrance, and it is dependable; sincerity brings supreme good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 49,
+      "name_zh": "革",
+      "name_pinyin": "Gé",
+      "name_en": "Ko",
+      "name_en_modern": "Revolution (Molting)",
+      "lines_binary": "101110",
+      "upper_trigram": "dui",
+      "lower_trigram": "li",
+      "judgment_en": "Revolution: only when the day of change has come is one believed; great progress and success through firm correctness, and regret disappears.",
+      "image_en": "Fire in the lake is the image of revolution; the superior person sets the calendar in order and makes the seasons clear.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One is bound with the hide of a yellow ox."
+        },
+        {
+          "position": 2,
+          "text_en": "When one’s own day comes one may bring about revolution; advancing brings good fortune and no error."
+        },
+        {
+          "position": 3,
+          "text_en": "Advancing brings misfortune, firmness brings peril; only when talk of revolution has gone round three times may one commit himself and be believed."
+        },
+        {
+          "position": 4,
+          "text_en": "Regret disappears; one is believed and changes the form of government, good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "The great person changes like a tiger; even before divining he is believed."
+        },
+        {
+          "position": 6,
+          "text_en": "The superior person changes like a panther and the small people change their faces; advancing brings misfortune, firm abiding good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 50,
+      "name_zh": "鼎",
+      "name_pinyin": "Dǐng",
+      "name_en": "Ting",
+      "name_en_modern": "The Cauldron",
+      "lines_binary": "011101",
+      "upper_trigram": "li",
+      "lower_trigram": "xun",
+      "judgment_en": "The Cauldron: great good fortune and success.",
+      "image_en": "Fire above wood is the image of the cauldron; the superior person consolidates his fate by keeping his position correct.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "A cauldron turned upside down to remove what is stagnant; one takes a concubine for the sake of her son, no error."
+        },
+        {
+          "position": 2,
+          "text_en": "There is food in the cauldron; my comrades are envious but cannot harm me, good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "The handle of the cauldron is altered and one is impeded, the fat of the pheasant is not eaten; once the rain falls regret disappears and good fortune comes at last."
+        },
+        {
+          "position": 4,
+          "text_en": "The legs of the cauldron are broken and the prince’s meal is spilled, and his person is soiled; misfortune."
+        },
+        {
+          "position": 5,
+          "text_en": "The cauldron has yellow handles and golden carrying rings; firm correctness is advantageous."
+        },
+        {
+          "position": 6,
+          "text_en": "The cauldron has rings of jade; great good fortune, nothing that is not advantageous."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 51,
+      "name_zh": "震",
+      "name_pinyin": "Zhèn",
+      "name_en": "Kăn",
+      "name_en_modern": "The Arousing (Thunder)",
+      "lines_binary": "100100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "zhen",
+      "judgment_en": "The Arousing brings success; when thunder comes there is fear, then laughter and cheerful talk, and the shock terrifies for a hundred miles while one does not let fall the sacrificial spoon and chalice.",
+      "image_en": "Thunder repeated is the image of the arousing; the superior person in fear and trembling sets his life in order and examines himself.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Thunder comes with fear, then laughter and talk; good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "Thunder comes with peril and one loses his treasures and climbs the nine hills; do not pursue them, for in seven days they return."
+        },
+        {
+          "position": 3,
+          "text_en": "Thunder makes one distraught; if one is roused to action there will be no calamity."
+        },
+        {
+          "position": 4,
+          "text_en": "The shock is mired in mud."
+        },
+        {
+          "position": 5,
+          "text_en": "Thunder goes hither and thither with peril, but nothing is lost, and there is work to be done."
+        },
+        {
+          "position": 6,
+          "text_en": "Thunder brings ruin and terrified gazing around, and advancing brings misfortune; if it has not yet touched one’s own body but only the neighbour, there is no error, though there will be talk among comrades."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 52,
+      "name_zh": "艮",
+      "name_pinyin": "Gèn",
+      "name_en": "Kăn",
+      "name_en_modern": "Keeping Still (Mountain)",
+      "lines_binary": "001001",
+      "upper_trigram": "gen",
+      "lower_trigram": "gen",
+      "judgment_en": "Keeping Still: one keeps his back still and loses sense of his body, walks in the courtyard and does not see the people there; there will be no error.",
+      "image_en": "Mountains standing close together are the image of keeping still; the superior person does not let his thoughts go beyond his position.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Keeping the toes still; no error, and perpetual firm correctness is advantageous."
+        },
+        {
+          "position": 2,
+          "text_en": "Keeping the calves still cannot rescue the one he follows; his heart is not glad."
+        },
+        {
+          "position": 3,
+          "text_en": "Keeping the loins still and making the ribs stiff is perilous; the heart suffocates."
+        },
+        {
+          "position": 4,
+          "text_en": "Keeping the trunk still; there will be no error."
+        },
+        {
+          "position": 5,
+          "text_en": "Keeping the jaws still so that words have order; regret disappears."
+        },
+        {
+          "position": 6,
+          "text_en": "Noble-hearted keeping still; good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 53,
+      "name_zh": "漸",
+      "name_pinyin": "Jiàn",
+      "name_en": "Kien",
+      "name_en_modern": "Development (Gradual Progress)",
+      "lines_binary": "001011",
+      "upper_trigram": "xun",
+      "lower_trigram": "gen",
+      "judgment_en": "Gradual Progress: the maiden is given in marriage, good fortune, and firm correctness is advantageous.",
+      "image_en": "A tree on the mountain is the image of gradual development; the superior person abides in dignity and virtue to improve the manners of the people.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The wild goose gradually approaches the shore; the young son is in danger and there is talk, but no error."
+        },
+        {
+          "position": 2,
+          "text_en": "The wild goose gradually approaches the cliff and eats and drinks in peace and concord; good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "The wild goose gradually approaches the dry plateau; the husband goes forth and does not return, the wife is pregnant but does not bear, misfortune, though it is advantageous to resist robbers."
+        },
+        {
+          "position": 4,
+          "text_en": "The wild goose gradually approaches the tree and may find a flat branch; no error."
+        },
+        {
+          "position": 5,
+          "text_en": "The wild goose gradually approaches the summit; for three years the wife does not conceive, but in the end nothing can hinder her, good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "The wild goose gradually approaches the cloud heights; its feathers can be used for the sacred dance, good fortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 54,
+      "name_zh": "歸妹",
+      "name_pinyin": "Guī Mèi",
+      "name_en": "Kwei Mei",
+      "name_en_modern": "The Marrying Maiden",
+      "lines_binary": "110100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "dui",
+      "judgment_en": "The Marrying Maiden: undertakings bring misfortune, and nothing is advantageous.",
+      "image_en": "Thunder over the lake is the image of the marrying maiden; the superior person understands the transitory in the light of eternity.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The maiden is married as a secondary wife; a lame man who can still tread, advancing brings good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "A one-eyed man who can still see; the firm correctness of a solitary woman is advantageous."
+        },
+        {
+          "position": 3,
+          "text_en": "The maiden was to marry in a lowly position and returns as a secondary wife."
+        },
+        {
+          "position": 4,
+          "text_en": "The maiden delays her marriage beyond the proper time, but a late marriage comes in due course."
+        },
+        {
+          "position": 5,
+          "text_en": "The emperor Yi gave his younger sister in marriage, and her embroidered garments were less fine than those of the secondary wife; the moon almost full brings good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "The woman holds a basket with nothing in it and the man stabs a sheep without blood flowing; nothing is advantageous."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 55,
+      "name_zh": "豐",
+      "name_pinyin": "Fēng",
+      "name_en": "Făng",
+      "name_en_modern": "Abundance (Fullness)",
+      "lines_binary": "101100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "li",
+      "judgment_en": "Abundance brings progress and success; the king attains it, be not sad, and be like the sun at midday.",
+      "image_en": "Thunder and lightning come together in the image of abundance; the superior person decides lawsuits and carries out punishments.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One meets his destined lord and may be with him ten days without error; going forward brings recognition."
+        },
+        {
+          "position": 2,
+          "text_en": "The curtain is so dense that the Pole star is seen at midday; going forward meets with suspicion and hatred, but sincerity moves others and brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "The curtain is so dense that small stars are seen at noon; one breaks his right arm, but there is no error."
+        },
+        {
+          "position": 4,
+          "text_en": "The curtain is so dense that the Pole star is seen at midday; one meets his lord who is of like kind, good fortune."
+        },
+        {
+          "position": 5,
+          "text_en": "Lines are coming, bringing blessing and fame; good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "One has his house in a state of abundance yet screens off his family, peers through the gate and sees no one for three years; misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 56,
+      "name_zh": "旅",
+      "name_pinyin": "Lǚ",
+      "name_en": "Lü",
+      "name_en_modern": "The Wanderer",
+      "lines_binary": "001101",
+      "upper_trigram": "li",
+      "lower_trigram": "gen",
+      "judgment_en": "The Wanderer: success in small things; firm correctness brings good fortune to the wanderer.",
+      "image_en": "Fire on the mountain is the image of the wanderer; the superior person is clear and cautious in imposing penalties and does not protract lawsuits.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "The wanderer busies himself with trivial things and draws down calamity upon himself."
+        },
+        {
+          "position": 2,
+          "text_en": "The wanderer comes to an inn with his property and wins the steadfastness of a young servant."
+        },
+        {
+          "position": 3,
+          "text_en": "The wanderer burns his inn and loses the steadfastness of his young servant; firmness brings peril."
+        },
+        {
+          "position": 4,
+          "text_en": "The wanderer rests in a shelter and obtains his property and an axe, but his heart is not glad."
+        },
+        {
+          "position": 5,
+          "text_en": "One shoots a pheasant and loses an arrow, but in the end obtains praise and office."
+        },
+        {
+          "position": 6,
+          "text_en": "The bird burns its nest; the wanderer laughs at first, then laments and weeps, and loses his cow through carelessness, misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 57,
+      "name_zh": "巽",
+      "name_pinyin": "Xùn",
+      "name_en": "Sun",
+      "name_en_modern": "The Gentle (Wind)",
+      "lines_binary": "011011",
+      "upper_trigram": "xun",
+      "lower_trigram": "xun",
+      "judgment_en": "The Gentle brings success in small things; it is advantageous to have somewhere to go and to see the great person.",
+      "image_en": "Winds following one another are the image of the gentle; the superior person spreads his commands abroad and carries out his undertakings.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Advancing and retreating; the firm correctness of a warrior is advantageous."
+        },
+        {
+          "position": 2,
+          "text_en": "Penetration under the bed; priests and magicians are used in great number, good fortune and no error."
+        },
+        {
+          "position": 3,
+          "text_en": "Repeated and importunate penetration brings regret."
+        },
+        {
+          "position": 4,
+          "text_en": "Regret disappears; one takes three kinds of game in the hunt."
+        },
+        {
+          "position": 5,
+          "text_en": "Firm correctness brings good fortune, regret disappears and nothing is unadvantageous; no beginning but a good end, with three days before the change and three days after, good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "Penetration under the bed; one loses his property and his axe, and firmness brings misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 58,
+      "name_zh": "兌",
+      "name_pinyin": "Duì",
+      "name_en": "Tui",
+      "name_en_modern": "The Joyous (Lake)",
+      "lines_binary": "110110",
+      "upper_trigram": "dui",
+      "lower_trigram": "dui",
+      "judgment_en": "The Joyous brings progress and success; firm correctness is advantageous.",
+      "image_en": "Lakes resting one on the other are the image of the joyous; the superior person joins with friends for discussion and practice.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Harmonious joy; good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "Sincere joy; good fortune, and regret disappears."
+        },
+        {
+          "position": 3,
+          "text_en": "Joy that comes from without; misfortune."
+        },
+        {
+          "position": 4,
+          "text_en": "Joy that is weighed and not at rest; if one removes what is injurious there will be rejoicing."
+        },
+        {
+          "position": 5,
+          "text_en": "Sincerity toward what is disintegrating; there is peril."
+        },
+        {
+          "position": 6,
+          "text_en": "Seductive joy that leads one on."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 59,
+      "name_zh": "渙",
+      "name_pinyin": "Huàn",
+      "name_en": "Hwan",
+      "name_en_modern": "Dispersion (Dissolution)",
+      "lines_binary": "010011",
+      "upper_trigram": "xun",
+      "lower_trigram": "kan",
+      "judgment_en": "Dispersion brings success; the king approaches his ancestral temple, it is advantageous to cross the great stream, and firm correctness is advantageous.",
+      "image_en": "Wind blows over the water in the image of dispersion; the ancient kings sacrificed to God and built temples.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One brings help with the strength of a horse; good fortune."
+        },
+        {
+          "position": 2,
+          "text_en": "At the dispersion one hurries to his support; regret disappears."
+        },
+        {
+          "position": 3,
+          "text_en": "One disperses his own self; there will be no regret."
+        },
+        {
+          "position": 4,
+          "text_en": "One disperses his bond with his group, supreme good fortune; dispersion leads to accumulation, which ordinary people do not think of."
+        },
+        {
+          "position": 5,
+          "text_en": "One disperses his sweat with loud cries and the king’s stores are scattered; there will be no error."
+        },
+        {
+          "position": 6,
+          "text_en": "One disperses his blood, keeps at a distance and departs; there will be no error."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 60,
+      "name_zh": "節",
+      "name_pinyin": "Jié",
+      "name_en": "Kieh",
+      "name_en_modern": "Limitation",
+      "lines_binary": "110010",
+      "upper_trigram": "kan",
+      "lower_trigram": "dui",
+      "judgment_en": "Limitation brings progress and success, but galling limitation must not be persevered in.",
+      "image_en": "Water over the lake is the image of limitation; the superior person creates number and measure and examines the nature of virtue and conduct.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One does not go out of the door and courtyard; there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "One does not go out of the gate and courtyard; misfortune."
+        },
+        {
+          "position": 3,
+          "text_en": "One who knows no limitation will have cause to lament; there will be no error."
+        },
+        {
+          "position": 4,
+          "text_en": "Contented limitation; progress and success."
+        },
+        {
+          "position": 5,
+          "text_en": "Sweet limitation brings good fortune; going forward brings esteem."
+        },
+        {
+          "position": 6,
+          "text_en": "Galling limitation; firmness brings misfortune, but regret disappears."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 61,
+      "name_zh": "中孚",
+      "name_pinyin": "Zhōng Fú",
+      "name_en": "Kung Fû",
+      "name_en_modern": "Inner Truth",
+      "lines_binary": "110011",
+      "upper_trigram": "xun",
+      "lower_trigram": "dui",
+      "judgment_en": "Inner Truth moves even pigs and fishes, bringing good fortune; it is advantageous to cross the great stream, and firm correctness is advantageous.",
+      "image_en": "Wind over the lake is the image of inner truth; the superior person deliberates on criminal cases and delays executions.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "Being prepared brings good fortune; if there are secret designs, there is disquiet."
+        },
+        {
+          "position": 2,
+          "text_en": "A crane calls in the shade and its young answer it; I have a goblet of good wine and will share it with you."
+        },
+        {
+          "position": 3,
+          "text_en": "One finds a comrade, now beats the drum, now stops, now weeps, now sings."
+        },
+        {
+          "position": 4,
+          "text_en": "The moon is nearly full and the team horse goes astray; there will be no error."
+        },
+        {
+          "position": 5,
+          "text_en": "One possesses truth that binds others together; there will be no error."
+        },
+        {
+          "position": 6,
+          "text_en": "A cock-crow trying to rise to heaven; firmness brings misfortune."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 62,
+      "name_zh": "小過",
+      "name_pinyin": "Xiǎo Guò",
+      "name_en": "Hsiâo Kwo",
+      "name_en_modern": "Preponderance of the Small",
+      "lines_binary": "001100",
+      "upper_trigram": "zhen",
+      "lower_trigram": "gen",
+      "judgment_en": "Preponderance of the Small brings success with firm correctness; small things may be done but not great, and the flying bird leaves a message that one should not strive upward but remain below, great good fortune.",
+      "image_en": "Thunder on the mountain is the image of small excess; the superior person in conduct exceeds in reverence, in mourning in grief, and in expenditure in thrift.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "A bird that flies upward meets misfortune."
+        },
+        {
+          "position": 2,
+          "text_en": "One passes by his ancestor and meets his ancestress, does not reach his prince but meets the minister; no error."
+        },
+        {
+          "position": 3,
+          "text_en": "If one is not extremely careful somebody may come up from behind and strike him; misfortune."
+        },
+        {
+          "position": 4,
+          "text_en": "No error; one meets the other without passing by, and going on brings peril, so one must be on guard and not act, since perpetual firmness is not advantageous."
+        },
+        {
+          "position": 5,
+          "text_en": "Dense clouds but no rain from our western borders; the prince shoots and hits the one in the cave."
+        },
+        {
+          "position": 6,
+          "text_en": "One passes by without meeting; the flying bird leaves him, misfortune, and this means calamity and injury."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 63,
+      "name_zh": "既濟",
+      "name_pinyin": "Jì Jì",
+      "name_en": "Ki Tsi",
+      "name_en_modern": "After Completion",
+      "lines_binary": "101010",
+      "upper_trigram": "kan",
+      "lower_trigram": "li",
+      "judgment_en": "After Completion brings success in small matters; firm correctness is advantageous, good fortune at the beginning but disorder at the end.",
+      "image_en": "Water over fire is the image of the condition after completion; the superior person takes thought of misfortune and arms himself against it in advance.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One drags back his wheels and wets his tail; there will be no error."
+        },
+        {
+          "position": 2,
+          "text_en": "The woman loses the curtain of her carriage; do not run after it, for in seven days she will get it."
+        },
+        {
+          "position": 3,
+          "text_en": "The Illustrious Ancestor attacks the Devil’s Country and subdues it after three years; small people should not be employed."
+        },
+        {
+          "position": 4,
+          "text_en": "The finest clothes turn to rags; one must be careful all day long."
+        },
+        {
+          "position": 5,
+          "text_en": "The neighbour in the east slaughters an ox, but the neighbour in the west with his small offering receives more of the blessing."
+        },
+        {
+          "position": 6,
+          "text_en": "One gets his head wet; there is peril."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    },
+    {
+      "number": 64,
+      "name_zh": "未濟",
+      "name_pinyin": "Wèi Jì",
+      "name_en": "Wei Tsi",
+      "name_en_modern": "Before Completion",
+      "lines_binary": "010101",
+      "upper_trigram": "li",
+      "lower_trigram": "kan",
+      "judgment_en": "Before Completion brings success, but if the little fox, having nearly crossed the stream, gets its tail wet, nothing is advantageous.",
+      "image_en": "Fire above water is the image of the condition before completion; the superior person carefully discriminates among things so that each finds its place.",
+      "lines": [
+        {
+          "position": 1,
+          "text_en": "One gets his tail wet; there will be occasion for regret."
+        },
+        {
+          "position": 2,
+          "text_en": "One drags back his wheels; firm correctness brings good fortune."
+        },
+        {
+          "position": 3,
+          "text_en": "Before completion, attack brings misfortune, yet it is advantageous to cross the great stream."
+        },
+        {
+          "position": 4,
+          "text_en": "Firm correctness brings good fortune and regret disappears; with a shock one attacks the Devil’s Country and after three years is rewarded with a great kingdom."
+        },
+        {
+          "position": 5,
+          "text_en": "Firm correctness brings good fortune and no regret; the light of the superior person is sincere, good fortune."
+        },
+        {
+          "position": 6,
+          "text_en": "There is sincerity in drinking wine, no error; but if one wets his head there is loss of sincerity."
+        }
+      ],
+      "name_vi": "",
+      "text_vi": ""
+    }
+  ]
+}

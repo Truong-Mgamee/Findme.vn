@@ -1,0 +1,44 @@
+{
+  "name": "@findme/web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Findme web: SEO content hub (ISR, engines + published atoms), PWA app at /[locale]/app, /admin content CMS.",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "echo \"unit tests: none (see test:e2e)\"",
+    "test:e2e": "PLAYWRIGHT_BROWSERS_PATH=${PLAYWRIGHT_BROWSERS_PATH:-/opt/pw-browsers} playwright test",
+    "icons": "node scripts/gen-icons.mjs"
+  },
+  "dependencies": {
+    "@findme/api-client": "workspace:*",
+    "@findme/content": "workspace:*",
+    "@findme/engine-almanac": "workspace:*",
+    "@findme/engine-astro": "workspace:*",
+    "@findme/engine-bazi": "workspace:*",
+    "@findme/engine-calendar": "workspace:*",
+    "@findme/engine-core": "workspace:*",
+    "@findme/engine-numerology": "workspace:*",
+    "@findme/engine-tarot": "workspace:*",
+    "@findme/engine-ziwei": "workspace:*",
+    "@findme/i18n": "workspace:*",
+    "diff": "^8.0.2",
+    "marked": "^16.1.0",
+    "next": "15.5.27",
+    "next-intl": "^4.14.9",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.7.0"
+  }
+}
