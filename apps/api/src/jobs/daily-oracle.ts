@@ -91,11 +91,15 @@ export function templateDaily(segment: string, facts: Record<string, unknown>, l
   if (segment.startsWith('ea')) {
     const f = facts as { huangdao: boolean; zhixing: string; yi: string[]; ji: string[]; goodHours: string[]; luckyColor?: string; luckyNumbers?: number[]; clashesWithUser?: boolean };
     const good = f.huangdao;
+    const NOISE = new Set(['Việc khác không nên', 'Mọi việc không nên', 'Nothing else advisable', 'Nothing advisable', 'Săn bắt', 'Săn bắn', 'Hunting', 'Đan lưới', 'Making nets']);
+    const yi = f.yi.filter((x) => !NOISE.has(x));
+    const yiText = yi.length ? yi.slice(0, 3).join(', ') : vi ? 'việc thường ngày, hoàn tất việc dở' : 'routine work, finishing what is half-done';
+    f.yi = [yiText];
     return {
       headline: vi ? (good ? 'Ngày hoàng đạo, hợp khởi sự' : 'Ngày hắc đạo, nên giữ nhịp chậm') : good ? 'An auspicious day to begin things' : 'A quieter day: keep the pace gentle',
       body: vi
-        ? `Trực ${f.zhixing}. Nên: ${f.yi.slice(0, 3).join(', ')}. Kiêng: ${f.ji.slice(0, 2).join(', ')}.${f.clashesWithUser ? ' Ngày xung tuổi bạn, tránh quyết định lớn.' : ''}`
-        : `Officer ${f.zhixing}. Favourable: ${f.yi.slice(0, 3).join(', ')}. Avoid: ${f.ji.slice(0, 2).join(', ')}.${f.clashesWithUser ? ' This day clashes with your birth year; postpone big decisions.' : ''}`,
+        ? `Trực ${f.zhixing}. Nên: ${f.yi[0]}. Kiêng: ${f.ji.slice(0, 2).join(', ')}.${f.clashesWithUser ? ' Ngày xung tuổi bạn, tránh quyết định lớn.' : ''}`
+        : `Officer ${f.zhixing}. Favourable: ${f.yi[0]}. Avoid: ${f.ji.slice(0, 2).join(', ')}.${f.clashesWithUser ? ' This day clashes with your birth year; postpone big decisions.' : ''}`,
       focus: vi ? (good ? 'Khởi đầu' : 'Củng cố') : good ? 'Beginnings' : 'Consolidate',
       luckyHint: vi ? `Giờ tốt: ${f.goodHours.slice(0, 3).join(', ')}${f.luckyColor ? ` · Màu ${f.luckyColor}` : ''}` : `Good hours: ${f.goodHours.slice(0, 3).join(', ')}${f.luckyColor ? ` · Colour ${f.luckyColor}` : ''}`,
     };
