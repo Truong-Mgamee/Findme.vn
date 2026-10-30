@@ -11,15 +11,25 @@
     "errorGeneric": "Có lỗi xảy ra. Vui lòng thử lại.",
     "disclaimer": "Nội dung luận giải mang tính chiêm nghiệm và gợi mở, không thay thế tư vấn y tế, pháp lý hay tài chính.",
     "plusBadge": "Plus",
-    "freeTodayBadge": "Miễn phí hôm nay"
+    "freeTodayBadge": "Miễn phí hôm nay",
+    "close": "Đóng",
+    "change": "Đổi",
+    "delete": "Xoá",
+    "confirm": "Xác nhận",
+    "prev": "Trước",
+    "next": "Sau"
   },
   "onboarding": {
-    "locale": { "title": "Chọn ngôn ngữ", "subtitle": "Bạn có thể đổi bất kỳ lúc nào." },
+    "locale": {
+      "title": "Chọn ngôn ngữ",
+      "subtitle": "Bạn có thể đổi bất kỳ lúc nào."
+    },
     "pack": {
       "title": "Bạn muốn khám phá gì?",
       "eastAsia": "Đông Á: Tử Vi, Bát Tự, Lịch ngày, Kinh Dịch",
       "western": "Phương Tây: Tarot, Thần số học, Chiêm tinh",
-      "both": "Cả hai"
+      "both": "Cả hai",
+      "suggested": "Gợi ý cho bạn"
     },
     "birth": {
       "title": "Bạn sinh khi nào?",
@@ -29,11 +39,39 @@
       "timeUnknownHint": "Lá số Tử Vi và trụ giờ sẽ chỉ mang tính tham khảo.",
       "place": "Nơi sinh",
       "placeHint": "Dùng để tính múi giờ và giờ mặt trời thực.",
-      "gender": "Giới tính"
+      "gender": "Giới tính",
+      "subtitle": "Dữ liệu ngày sinh được mã hoá và bạn có thể xoá bất kỳ lúc nào.",
+      "placePlaceholder": "Tìm thành phố…",
+      "fullName": "Họ tên (không bắt buộc)",
+      "fullNamePlaceholder": "Như trên giấy khai sinh",
+      "fullNameHint": "Chỉ dùng cho các chỉ số theo tên (Sứ mệnh, Linh hồn). Hiện hỗ trợ chữ Latinh.",
+      "privacy": "Chế độ khách: không cần tài khoản. Dữ liệu ngày sinh được mã hoá khi lưu.",
+      "genders": {
+        "female": "Nữ",
+        "male": "Nam",
+        "other": "Khác"
+      }
     },
-    "insights": { "title": "Đây là bạn", "subtitle": "Ba điều lá số nói về bạn" },
-    "dailyTime": { "title": "Bạn muốn nhận \"Hôm nay của bạn\" lúc mấy giờ?", "enablePush": "Gửi thông báo mỗi ngày" },
-    "firstReading": { "title": "Bài luận giải đầy đủ đầu tiên", "subtitle": "Miễn phí. Mất khoảng một phút." }
+    "insights": {
+      "title": "Đây là bạn",
+      "subtitle": "Ba điều lá số nói về bạn",
+      "engineNote": "Tính bằng engine xác định — không dùng AI cho các dữ kiện này."
+    },
+    "dailyTime": {
+      "title": "Bạn muốn nhận \"Hôm nay của bạn\" lúc mấy giờ?",
+      "enablePush": "Gửi thông báo mỗi ngày",
+      "subtitle": "Mỗi ngày một thông báo, đúng giờ bạn chọn. Không bao giờ vào ban đêm.",
+      "pickHour": "Chọn giờ",
+      "pushExplainer": "Chúng tôi sẽ gửi \"Hôm nay của bạn\" lúc {hour}. Bạn có thể tắt bất kỳ lúc nào.",
+      "allow": "Bật thông báo",
+      "notNow": "Để sau"
+    },
+    "firstReading": {
+      "title": "Bài luận giải đầy đủ đầu tiên",
+      "subtitle": "Miễn phí. Mất khoảng một phút.",
+      "goToday": "Xem Hôm nay",
+      "accountLater": "Bạn có thể tạo tài khoản sau để giữ luận giải trên nhiều thiết bị."
+    }
   },
   "today": {
     "title": "Hôm nay",
@@ -46,7 +84,25 @@
     "cardOfDay": "Lá bài hôm nay",
     "personalDay": "Số ngày cá nhân {number}",
     "askMore": "Hỏi thêm",
-    "share": "Chia sẻ"
+    "share": "Chia sẻ",
+    "pages": {
+      "overview": "Tổng quan",
+      "almanac": "Lịch ngày hôm nay",
+      "numbers": "Con số & màu sắc",
+      "action": "Hành động"
+    },
+    "moonIn": "Mặt Trăng ở {sign}",
+    "retrograde": "Nghịch hành: {bodies}",
+    "focus": "Trọng tâm",
+    "luckyHint": "Gợi ý may mắn",
+    "offline": "Ngoại tuyến",
+    "offlineBanner": "Bạn đang ngoại tuyến — dữ kiện hôm nay được tính trên máy. Lời nhắn mỗi ngày sẽ hiện khi có mạng.",
+    "noContent": "Lời nhắn hôm nay đang được viết…",
+    "needsProfile": "Thêm ngày sinh để cá nhân hoá ngày của bạn.",
+    "pushTitle": "Hôm nay của bạn đã sẵn sàng",
+    "pushBody": "Mở Findme để xem hôm nay thế nào.",
+    "shareText": "Hôm nay của tôi ({date}) — findme.vn",
+    "sharing": "Đang tạo thẻ chia sẻ…"
   },
   "explore": {
     "title": "Khám phá",
@@ -57,7 +113,20 @@
     "tarot": "Tarot",
     "numerology": "Thần số học",
     "compat": "Hợp tuổi / hợp đôi",
-    "astro": "Bản đồ sao"
+    "astro": "Bản đồ sao",
+    "subtitle": "Lá số và luận giải theo truyền thống của bạn",
+    "alsoAvailable": "Cũng có sẵn",
+    "pricingNote": "Lá số, tứ trụ, lịch ngày và một lá bài mỗi ngày luôn miễn phí. Luận giải sâu: lần đầu miễn phí, sau đó Plus hoặc 1 credit.",
+    "desc": {
+      "ziwei": "12 cung, các sao và đại hạn",
+      "bazi": "Tứ trụ, ngũ hành, đại vận 10 năm",
+      "almanac": "Ngày âm, giờ tốt, chọn ngày",
+      "iching": "Gieo sáu hào",
+      "tarot": "Trải bài",
+      "numerology": "Số chủ đạo và chu kỳ cá nhân",
+      "compat": "So sánh hai hồ sơ",
+      "astro": "Hành tinh, nhà, góc chiếu"
+    }
   },
   "paywall": {
     "title": "Đi sâu hơn với Plus",
@@ -68,7 +137,23 @@
     "trialCta": "Dùng thử 7 ngày miễn phí",
     "renewNotice": "Tự động gia hạn {price}/{period} sau khi hết dùng thử. Huỷ bất kỳ lúc nào trong cài đặt cửa hàng.",
     "useCredit": "Dùng 1 credit thay vì đăng ký",
-    "restore": "Khôi phục giao dịch"
+    "restore": "Khôi phục giao dịch",
+    "subtitle": "Không giới hạn luận giải, Hỏi AI, hợp tuổi và lịch sử.",
+    "period": {
+      "weekly": "tuần",
+      "monthly": "tháng",
+      "yearly": "năm"
+    },
+    "subscribeCta": "Đăng ký {price}",
+    "renewNoticeNoTrial": "Tự động gia hạn {price}/{period}. Huỷ bất kỳ lúc nào trong cài đặt cửa hàng.",
+    "creditBalance": "{count, plural, other {Còn # credit}}",
+    "terms": "Thanh toán qua tài khoản cửa hàng. Gói tự gia hạn nếu không huỷ ít nhất 24 giờ trước khi hết kỳ.",
+    "features": {
+      "readings": "Luận giải sâu không giới hạn",
+      "ask": "Hỏi AI không giới hạn",
+      "compat": "Hợp tuổi chi tiết",
+      "history": "Toàn bộ lịch sử"
+    }
   },
   "settings": {
     "title": "Cài đặt",
@@ -78,7 +163,19 @@
     "subscription": "Gói đăng ký",
     "privacy": "Quyền riêng tư & dữ liệu",
     "deleteData": "Xoá dữ liệu của tôi",
-    "about": "Giới thiệu"
+    "about": "Giới thiệu",
+    "deleteConfirm": "Thao tác này xoá vĩnh viễn hồ sơ, luận giải và credit trên máy chủ và trên thiết bị này.",
+    "privacyNote": "Chế độ khách — không tài khoản. Dữ liệu ngày sinh được mã hoá khi lưu (AES-256) và không gửi cho hệ thống phân tích.",
+    "appearance": "Giao diện",
+    "scheme": {
+      "dark": "Trời đêm",
+      "light": "Sáng",
+      "system": "Theo hệ thống"
+    },
+    "textSize": "Cỡ chữ",
+    "calendarStandardHint": "Việt Nam (UTC+7) và Trung Quốc (UTC+8) lệch nhau ở một số ngày; Hàn Quốc và Nhật Bản dùng UTC+9.",
+    "credits": "Dữ liệu địa điểm: danh sách thành phố lớn (tương thích GeoNames). Tarot: bộ cổ điển 1909, phạm vi công cộng. Âm lịch: thuật toán Hồ Ngọc Đức (VN), lunar-typescript (CN/KR/JP).",
+    "devPseudoLocale": "Pseudo-locale (dev)"
   },
   "web": {
     "nav": {
@@ -660,5 +757,378 @@
         "review": "Đang duyệt"
       }
     }
+  },
+  "a11y": {
+    "page": "Trang {index} trên {total}",
+    "palace": "Cung {palace}, {branch}. Sao: {stars}"
+  },
+  "errors": {
+    "network": "Không có kết nối. Kiểm tra mạng và thử lại.",
+    "notFound": "Không tìm thấy.",
+    "comingSoon": "Tính năng này sắp ra mắt.",
+    "offlineGuest": "Bạn đang ngoại tuyến. Hồ sơ sẽ được tạo ngay khi có mạng.",
+    "noProfile": "Hãy tạo hồ sơ của bạn trước."
+  },
+  "ask": {
+    "title": "Hỏi",
+    "subtitle": "Câu hỏi dựa trên lá số của bạn",
+    "quota": "{count, plural, other {Còn # câu hỏi}}",
+    "context": "Ngữ cảnh:",
+    "noContext": "Không",
+    "empty": "Hỏi bất cứ điều gì về ngày hôm nay hoặc một bài luận giải. 3 câu miễn phí mỗi ngày.",
+    "placeholder": "Nhập câu hỏi…",
+    "send": "Gửi",
+    "thinking": "Đang suy nghĩ…",
+    "comingSoon": "Hỏi AI chưa khả dụng trong bản này — sẽ có cùng với bộ soạn AI.",
+    "guardrail": "Không tư vấn y tế, pháp lý hay tài chính. Chỉ để chiêm nghiệm.",
+    "suggest": {
+      "today": "Hôm nay tôi nên tập trung vào điều gì?",
+      "love": "Lá số nói gì về chuyện tình cảm của tôi?",
+      "career": "Giai đoạn này có hợp để đổi việc không?",
+      "decision": "Tháng này nên tiếp cận quyết định lớn thế nào?"
+    },
+    "role": {
+      "user": "Bạn",
+      "assistant": "Findme",
+      "system": "Ghi chú"
+    }
+  },
+  "you": {
+    "title": "Bạn",
+    "plusActive": "Plus đang hoạt động",
+    "freePlan": "Gói miễn phí",
+    "credits": "{count, plural, other {# credit}}",
+    "trial": "dùng thử",
+    "freeReadingAvailable": "Luận giải sâu đầu tiên của bạn miễn phí.",
+    "freeReadingUsed": "Đã dùng lượt miễn phí đầu tiên.",
+    "manage": "Quản lý gói",
+    "cancelNote": "Huỷ bất kỳ lúc nào trong cài đặt cửa hàng. Giá đầy đủ và ngày gia hạn luôn hiển thị trước khi đăng ký."
+  },
+  "more": {
+    "title": "Thêm",
+    "almanacHint": "Lịch tháng, chi tiết ngày, giờ hoàng đạo",
+    "history": "Luận giải của bạn",
+    "noHistory": "Chưa có luận giải nào.",
+    "historyPlusNote": "Lịch sử quá 7 ngày thuộc gói Plus."
+  },
+  "profiles": {
+    "selfLabel": "Tôi",
+    "partnerLabel": "Người ấy",
+    "you": "Bạn",
+    "timeUnknownShort": "không rõ giờ",
+    "addPartner": "Thêm người",
+    "addPartnerHint": "Người yêu, con cái hoặc bạn bè — để xem hợp tuổi và chọn ngày.",
+    "labelField": "Tên / nhãn",
+    "labelPlaceholder": "vd. Người yêu"
+  },
+  "reading": {
+    "title": "Luận giải",
+    "computing": "Đang lập lá số…",
+    "connecting": "Đang kết nối…",
+    "streaming": "Đang viết luận giải…",
+    "aiPending": "Phần luận giải bằng chữ đang được chuẩn bị và sẽ hiện ở đây.",
+    "factsCount": "{count, plural, other {# dữ kiện}} từ engine",
+    "actions": "Gợi ý hành động",
+    "streamError": "Không tải được luận giải ({code}).",
+    "deepCta": "Xem luận giải đầy đủ",
+    "deepNote": "Lần đầu miễn phí · sau đó Plus hoặc 1 credit",
+    "askAbout": "Hỏi về bài này",
+    "rateUp": "Hữu ích",
+    "rateDown": "Chưa hữu ích",
+    "openDetail": "Mở luận giải đầy đủ",
+    "confidence": {
+      "high": "Độ tin cậy cao",
+      "medium": "Độ tin cậy trung bình",
+      "low": "Tham khảo"
+    },
+    "kinds": {
+      "ziwei_full": "Luận giải Tử Vi",
+      "bazi_luck": "Bát Tự & đại vận",
+      "numerology_full": "Báo cáo thần số học",
+      "compatibility": "Hợp tuổi",
+      "almanac_pick": "Chọn ngày",
+      "tarot_spread": "Trải bài Tarot",
+      "iching": "Kinh Dịch"
+    },
+    "paidBy": {
+      "free_first": "miễn phí",
+      "subscription": "Plus",
+      "credit": "credit"
+    }
+  },
+  "ziwei": {
+    "bodyTag": "Thân",
+    "decadal": "Đại hạn",
+    "yearly": "Lưu niên",
+    "monthly": "Lưu nguyệt",
+    "soulStar": "Mệnh chủ",
+    "bodyStar": "Thân chủ",
+    "fiveClass": "Cục",
+    "emptyPalace": "Vô chính diệu (mượn sao cung đối)",
+    "timeUnknownWarning": "Không rõ giờ sinh: lá số giả định giờ Ngọ. Vị trí các cung có thể khác — kết quả chỉ mang tính tham khảo.",
+    "schoolUnverified": "Bảng tứ hoá của phái này đang chờ chuyên gia kiểm chứng.",
+    "schools": {
+      "default": "Thông dụng",
+      "zhongzhou": "Trung Châu",
+      "quanshu": "Toàn Thư / Nam phái",
+      "khamThienTuHoa": "Khâm Thiên Tứ Hoá"
+    },
+    "overlay": {
+      "none": "Chỉ bản mệnh",
+      "horoscope": "Đại hạn / lưu niên / lưu nguyệt"
+    },
+    "horoscopeFor": "Vận hạn cho ngày {date}",
+    "yearlyMutagen": "Tứ hoá lưu niên",
+    "pattern": "Cách cục",
+    "bodyPalace": "Cung Thân",
+    "ages": "Tuổi"
+  },
+  "bazi": {
+    "pillars": {
+      "year": "Năm",
+      "month": "Tháng",
+      "day": "Ngày",
+      "hour": "Giờ"
+    },
+    "hourUnknown": "Trụ giờ tham khảo",
+    "dayMaster": "Nhật chủ",
+    "hidden": "Tàng can",
+    "nayin": "Nạp âm",
+    "stage": "Trường sinh",
+    "elements": "Ngũ hành",
+    "useful": "Dụng thần",
+    "unfavorable": "Kỵ thần",
+    "luck": "Vận hạn",
+    "luckPeriods": "Đại vận 10 năm",
+    "annual": "Lưu niên",
+    "age": "Tuổi",
+    "now": "Hiện tại",
+    "luckStart": "Khởi vận lúc {years} tuổi {months} tháng, {direction}",
+    "direction": {
+      "forward": "thuận",
+      "backward": "nghịch"
+    },
+    "timeUnknownWarning": "Không rõ giờ sinh: trụ giờ không được tính vào vượng suy và vận hạn."
+  },
+  "numerology": {
+    "lifePath": "Số chủ đạo",
+    "expression": "Số sứ mệnh",
+    "soulUrge": "Số linh hồn",
+    "personality": "Số nhân cách",
+    "birthday": "Số ngày sinh",
+    "maturity": "Số trưởng thành",
+    "personalYear": "Năm cá nhân",
+    "personalMonth": "Tháng cá nhân",
+    "personalDay": "Ngày cá nhân",
+    "master": "Số bậc thầy",
+    "needsName": "Thêm tên",
+    "nameMissing": "Thêm họ tên đầy đủ để mở các chỉ số theo tên.",
+    "karmicDebt": "Nợ nghiệp",
+    "pinnacles": "Đỉnh cao & thử thách",
+    "ages": "Tuổi {from}–{to}",
+    "challenge": "Thử thách"
+  },
+  "astro": {
+    "sun": "Mặt Trời",
+    "moon": "Mặt Trăng",
+    "rising": "Cung Mọc",
+    "planets": "Hành tinh",
+    "aspects": "Góc chiếu",
+    "house": "Nhà {n}",
+    "houses": {
+      "placidus": "Placidus",
+      "whole": "Nguyên cung"
+    },
+    "timeUnknownWarning": "Không rõ giờ sinh: nhà, cung Mọc và Mặt Trăng chỉ gần đúng (giả định 12h trưa).",
+    "signs": {
+      "aries": "Bạch Dương",
+      "taurus": "Kim Ngưu",
+      "gemini": "Song Tử",
+      "cancer": "Cự Giải",
+      "leo": "Sư Tử",
+      "virgo": "Xử Nữ",
+      "libra": "Thiên Bình",
+      "scorpio": "Bọ Cạp",
+      "sagittarius": "Nhân Mã",
+      "capricorn": "Ma Kết",
+      "aquarius": "Bảo Bình",
+      "pisces": "Song Ngư"
+    },
+    "bodies": {
+      "sun": "Mặt Trời",
+      "moon": "Mặt Trăng",
+      "mercury": "Sao Thuỷ",
+      "venus": "Sao Kim",
+      "mars": "Sao Hoả",
+      "jupiter": "Sao Mộc",
+      "saturn": "Sao Thổ",
+      "uranus": "Thiên Vương",
+      "neptune": "Hải Vương",
+      "pluto": "Diêm Vương",
+      "northNode": "La Hầu"
+    },
+    "aspectTypes": {
+      "conjunction": "hợp",
+      "opposition": "đối",
+      "trine": "tam hợp",
+      "square": "vuông",
+      "sextile": "lục hợp"
+    },
+    "moonPhase": {
+      "new": "Trăng non",
+      "waxingCrescent": "Trăng lưỡi liềm đầu tháng",
+      "firstQuarter": "Thượng huyền",
+      "waxingGibbous": "Trăng khuyết đầu tháng",
+      "full": "Trăng tròn",
+      "waningGibbous": "Trăng khuyết cuối tháng",
+      "lastQuarter": "Hạ huyền",
+      "waningCrescent": "Trăng lưỡi liềm cuối tháng"
+    }
+  },
+  "tarot": {
+    "subtitle": "Bộ bài cổ điển 1909 · 78 lá",
+    "question": "Câu hỏi của bạn",
+    "questionPlaceholder": "Bạn đang nghĩ gì? (không bắt buộc)",
+    "draw": "Rút bài",
+    "redraw": "Rút lại",
+    "flipAll": "Lật tất cả",
+    "faceDown": "Úp",
+    "reversed": "Ngược",
+    "interpretation": "Luận giải",
+    "localNote": "Luận theo từ khoá cổ điển của bộ bài. Luận giải bằng AI sẽ có trong bản cập nhật sau.",
+    "askAi": "Lưu & xin luận giải đầy đủ",
+    "saved": "Đã lưu. Luận giải đầy đủ sẽ xuất hiện trong mục luận giải.",
+    "aiComingSoon": "Luận giải Tarot bằng AI sắp ra mắt — lượt rút của bạn hiện chỉ lưu trên máy.",
+    "deckCredit": "Ý nghĩa lá bài theo A. E. Waite (1911), thuộc phạm vi công cộng.",
+    "spreads": {
+      "one": "Một lá",
+      "three": "Ba lá",
+      "five": "Năm lá",
+      "celticCross": "Thập tự Celtic"
+    },
+    "positions": {
+      "card": "Lá bài",
+      "past": "Quá khứ",
+      "present": "Hiện tại",
+      "future": "Tương lai",
+      "situation": "Tình huống",
+      "challenge": "Thử thách",
+      "advice": "Lời khuyên",
+      "outcome": "Kết quả",
+      "hidden": "Ảnh hưởng ẩn",
+      "foundation": "Nền tảng",
+      "recentPast": "Quá khứ gần",
+      "crown": "Kết quả tốt nhất",
+      "nearFuture": "Tương lai gần",
+      "self": "Bạn",
+      "environment": "Hoàn cảnh",
+      "hopesFears": "Hy vọng & lo sợ"
+    }
+  },
+  "iching": {
+    "subtitle": "Gieo sáu hào, từ dưới lên",
+    "coins": "Ba đồng xu",
+    "yarrow": "Cỏ thi",
+    "yang": "dương",
+    "yin": "âm",
+    "changing": "động",
+    "line": "Hào",
+    "castLine": "Gieo hào {n}",
+    "castAll": "Gieo cả sáu hào",
+    "again": "Gieo lại",
+    "result": "Kết quả",
+    "primary": "Quẻ chính",
+    "relating": "Quẻ biến",
+    "changingLines": "Hào động",
+    "aiComingSoon": "Luận giải quẻ bằng chữ sẽ có cùng với bộ soạn AI.",
+    "sourceCredit": "Lời quẻ theo bản dịch Legge / Wilhelm (phạm vi công cộng)."
+  },
+  "almanac": {
+    "lunarDate": "{day}/{month}{leap, select, 1 { (nhuận)} other {}}",
+    "huangdao": "Ngày hoàng đạo",
+    "heidao": "Ngày hắc đạo",
+    "yi": "Nên",
+    "ji": "Kiêng",
+    "clash": "Xung {zodiac} ({ganzhi})",
+    "clashesWithUser": "Ngày này xung tuổi bạn — tránh việc lớn.",
+    "harmsUser": "Ngày này hại tuổi bạn.",
+    "solarTerm": "Tiết khí",
+    "weekdays": "T2,T3,T4,T5,T6,T7,CN",
+    "notPersonalized": "Đang tải hồ sơ để cá nhân hoá ngày này…",
+    "engineNote": "Tính trên máy theo chuẩn lịch quốc gia. Việc nên/kiêng theo lịch vạn niên truyền thống.",
+    "openDay": "Xem ngày",
+    "standard": {
+      "vn": "Việt Nam",
+      "cn": "Trung Quốc / Đài Loan",
+      "kr": "Hàn Quốc",
+      "jp": "Nhật Bản"
+    },
+    "tasks": {
+      "wedding": "Cưới hỏi",
+      "opening": "Khai trương",
+      "moving": "Chuyển nhà",
+      "contract": "Ký kết",
+      "travel": "Xuất hành",
+      "groundbreaking": "Động thổ",
+      "haircut": "Cắt tóc",
+      "pray": "Cúng lễ",
+      "burial": "An táng",
+      "study": "Nhập học"
+    },
+    "reasons": {
+      "yi_match": "Hợp với việc này",
+      "ji_conflict": "Thuộc việc nên kiêng",
+      "nothing_advisable": "Mọi việc không nên",
+      "huangdao": "Ngày hoàng đạo",
+      "zhixing_good": "Trực tốt",
+      "zhixing_break": "Trực Phá",
+      "xiu_good": "Sao tốt",
+      "clash_profile": "Xung tuổi",
+      "harm_profile": "Hại tuổi",
+      "useful_element": "Ngũ hành hợp"
+    },
+    "pick": {
+      "title": "Chọn ngày tốt",
+      "hint": "Xếp hạng ngày theo việc, tránh xung tuổi",
+      "task": "Việc",
+      "window": "Từ {from}",
+      "days": "{count} ngày",
+      "profiles": "Người liên quan",
+      "run": "Tìm ngày tốt",
+      "paidNote": "Plus hoặc 1 credit mỗi lần tìm",
+      "results": "{count, plural, other {Tìm thấy # ngày}}",
+      "none": "Không có ngày phù hợp trong khoảng này.",
+      "exportSoon": "Xuất ra lịch (.ics) sắp có."
+    }
+  },
+  "compat": {
+    "subtitle": "Địa chi năm, nhật chủ và số chủ đạo",
+    "pickPartner": "Với ai?",
+    "invite": "Mời qua liên kết",
+    "inviteText": "So lá số với mình trên Findme: {url}",
+    "inviteTitle": "Lời mời",
+    "inviteBody": "Có người mời bạn so lá số (mã {code}).",
+    "inviteApiNote": "Lời mời sẽ tự liên kết hồ sơ khi API lời mời ra mắt; hiện tại hãy thêm người đó thủ công.",
+    "run": "So sánh",
+    "result": "Kết quả",
+    "score": "Điểm hợp",
+    "lifePaths": "Số chủ đạo {a} & {b}",
+    "branchRelation": "Địa chi năm",
+    "dayMasterRelation": "Nhật chủ",
+    "relations": {
+      "six_harmony": "Lục hợp",
+      "trine": "Tam hợp",
+      "same": "Cùng tuổi",
+      "clash": "Xung",
+      "neutral": "Bình thường"
+    },
+    "dayMasters": {
+      "same": "Cùng hành",
+      "a_generates_b": "Bạn sinh người ấy",
+      "b_generates_a": "Người ấy sinh bạn",
+      "a_controls_b": "Bạn khắc người ấy",
+      "b_controls_a": "Người ấy khắc bạn"
+    },
+    "reasons": {}
   }
 }

@@ -11,15 +11,25 @@
     "errorGeneric": "Something went wrong. Please try again.",
     "disclaimer": "Readings are for reflection and inspiration. They are not medical, legal or financial advice.",
     "plusBadge": "Plus",
-    "freeTodayBadge": "Free today"
+    "freeTodayBadge": "Free today",
+    "close": "Close",
+    "change": "Change",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "prev": "Previous",
+    "next": "Next"
   },
   "onboarding": {
-    "locale": { "title": "Choose your language", "subtitle": "You can change this anytime." },
+    "locale": {
+      "title": "Choose your language",
+      "subtitle": "You can change this anytime."
+    },
     "pack": {
       "title": "What would you like to explore?",
       "eastAsia": "East Asian: Zi Wei, Four Pillars, Almanac, I Ching",
       "western": "Western: Tarot, Numerology, Astrology",
-      "both": "Both"
+      "both": "Both",
+      "suggested": "Suggested for you"
     },
     "birth": {
       "title": "When were you born?",
@@ -29,11 +39,39 @@
       "timeUnknownHint": "Zi Wei and hour-pillar results will be approximate.",
       "place": "Place of birth",
       "placeHint": "Used for time zone and true solar time.",
-      "gender": "Gender"
+      "gender": "Gender",
+      "subtitle": "Your birth data stays encrypted and you can delete it any time.",
+      "placePlaceholder": "Search a city…",
+      "fullName": "Full name (optional)",
+      "fullNamePlaceholder": "As on your birth certificate",
+      "fullNameHint": "Only used for name numbers (Expression, Soul Urge). Latin script only for now.",
+      "privacy": "Guest mode: no account needed. Your birth data is encrypted at rest.",
+      "genders": {
+        "female": "Female",
+        "male": "Male",
+        "other": "Other"
+      }
     },
-    "insights": { "title": "This is you", "subtitle": "Three things your chart says" },
-    "dailyTime": { "title": "When should your Daily Oracle arrive?", "enablePush": "Send me a daily notification" },
-    "firstReading": { "title": "Your first full reading", "subtitle": "On us. It takes about a minute." }
+    "insights": {
+      "title": "This is you",
+      "subtitle": "Three things your chart says",
+      "engineNote": "Computed by deterministic engines — no AI involved in these facts."
+    },
+    "dailyTime": {
+      "title": "When should your Daily Oracle arrive?",
+      "enablePush": "Send me a daily notification",
+      "subtitle": "One notification a day, at the time you choose. Never at night.",
+      "pickHour": "Pick a time",
+      "pushExplainer": "We will send your Daily Oracle at {hour}. You can turn this off anytime.",
+      "allow": "Turn on notifications",
+      "notNow": "Not now"
+    },
+    "firstReading": {
+      "title": "Your first full reading",
+      "subtitle": "On us. It takes about a minute.",
+      "goToday": "Go to Today",
+      "accountLater": "You can create an account later to keep your readings across devices."
+    }
   },
   "today": {
     "title": "Today",
@@ -46,7 +84,25 @@
     "cardOfDay": "Card of the day",
     "personalDay": "Personal day {number}",
     "askMore": "Ask more",
-    "share": "Share"
+    "share": "Share",
+    "pages": {
+      "overview": "Overview",
+      "almanac": "Today's almanac",
+      "numbers": "Numbers & colour",
+      "action": "Action"
+    },
+    "moonIn": "Moon in {sign}",
+    "retrograde": "Retrograde: {bodies}",
+    "focus": "Focus",
+    "luckyHint": "Lucky hint",
+    "offline": "Offline",
+    "offlineBanner": "You are offline — today's facts were computed on your device. The daily note will appear when you are back online.",
+    "noContent": "Your daily note is being written…",
+    "needsProfile": "Add your birth details to personalise your day.",
+    "pushTitle": "Your Daily Oracle is ready",
+    "pushBody": "Open Findme to see what today holds.",
+    "shareText": "My Daily Oracle for {date} — findme.vn",
+    "sharing": "Preparing your card…"
   },
   "explore": {
     "title": "Explore",
@@ -57,7 +113,20 @@
     "tarot": "Tarot",
     "numerology": "Numerology",
     "compat": "Compatibility",
-    "astro": "Birth chart"
+    "astro": "Birth chart",
+    "subtitle": "Charts and readings for your tradition",
+    "alsoAvailable": "Also available",
+    "pricingNote": "Charts, four pillars, the almanac and one card a day are always free. Deep readings: first one free, then Plus or 1 credit.",
+    "desc": {
+      "ziwei": "12 palaces, stars and luck cycles",
+      "bazi": "Four pillars, elements, 10-year luck",
+      "almanac": "Lunar day, good hours, pick a date",
+      "iching": "Cast six lines",
+      "tarot": "Draw a spread",
+      "numerology": "Life path and personal cycles",
+      "compat": "Two profiles compared",
+      "astro": "Planets, houses, aspects"
+    }
   },
   "paywall": {
     "title": "Go deeper with Plus",
@@ -68,7 +137,23 @@
     "trialCta": "Start 7-day free trial",
     "renewNotice": "Renews automatically at {price} per {period} after the trial. Cancel anytime in your store settings.",
     "useCredit": "Use 1 credit instead",
-    "restore": "Restore purchases"
+    "restore": "Restore purchases",
+    "subtitle": "Unlimited readings, Ask AI, compatibility and history.",
+    "period": {
+      "weekly": "week",
+      "monthly": "month",
+      "yearly": "year"
+    },
+    "subscribeCta": "Subscribe for {price}",
+    "renewNoticeNoTrial": "Renews automatically at {price} per {period}. Cancel anytime in your store settings.",
+    "creditBalance": "{count, plural, one {# credit left} other {# credits left}}",
+    "terms": "Payment is charged to your store account. Subscriptions renew unless cancelled at least 24h before the period ends.",
+    "features": {
+      "readings": "Unlimited deep readings",
+      "ask": "Unlimited Ask AI",
+      "compat": "Detailed compatibility",
+      "history": "Full history"
+    }
   },
   "settings": {
     "title": "Settings",
@@ -78,7 +163,19 @@
     "subscription": "Subscription",
     "privacy": "Privacy & data",
     "deleteData": "Delete my data",
-    "about": "About"
+    "about": "About",
+    "deleteConfirm": "This permanently deletes your profiles, readings and credits on our servers and on this device.",
+    "privacyNote": "Guest mode — no account. Birth data is encrypted at rest (AES-256) and never sent to analytics.",
+    "appearance": "Appearance",
+    "scheme": {
+      "dark": "Night sky",
+      "light": "Light",
+      "system": "System"
+    },
+    "textSize": "Text size",
+    "calendarStandardHint": "Vietnam (UTC+7) and China (UTC+8) differ on some days; Korea and Japan use UTC+9.",
+    "credits": "Place data: bundled list of major cities (GeoNames-compatible). Tarot: Classic 1909 deck, public domain. Lunar calendar: Hồ Ngọc Đức rules (VN), lunar-typescript (CN/KR/JP).",
+    "devPseudoLocale": "Pseudo-locale (dev)"
   },
   "web": {
     "nav": {
@@ -660,5 +757,378 @@
         "review": "In review"
       }
     }
+  },
+  "a11y": {
+    "page": "Page {index} of {total}",
+    "palace": "{palace} palace, {branch}. Stars: {stars}"
+  },
+  "errors": {
+    "network": "No connection. Check your network and try again.",
+    "notFound": "Not found.",
+    "comingSoon": "This feature is coming soon.",
+    "offlineGuest": "You are offline. We will create your profile as soon as you are back online.",
+    "noProfile": "Create your profile first."
+  },
+  "ask": {
+    "title": "Ask",
+    "subtitle": "Questions grounded in your charts",
+    "quota": "{count, plural, one {# question left} other {# questions left}}",
+    "context": "Context:",
+    "noContext": "None",
+    "empty": "Ask anything about your day or a reading. 3 free questions a day.",
+    "placeholder": "Type your question…",
+    "send": "Send",
+    "thinking": "Thinking…",
+    "comingSoon": "Ask AI is not available yet in this build — it arrives with the AI composer.",
+    "guardrail": "No medical, legal or financial advice. For reflection only.",
+    "suggest": {
+      "today": "What should I focus on today?",
+      "love": "What does my chart say about relationships?",
+      "career": "Is this a good period for a career move?",
+      "decision": "How should I approach a big decision this month?"
+    },
+    "role": {
+      "user": "You",
+      "assistant": "Findme",
+      "system": "Note"
+    }
+  },
+  "you": {
+    "title": "You",
+    "plusActive": "Plus is active",
+    "freePlan": "Free plan",
+    "credits": "{count, plural, one {# credit} other {# credits}}",
+    "trial": "trial",
+    "freeReadingAvailable": "Your first deep reading is free.",
+    "freeReadingUsed": "First free reading used.",
+    "manage": "Manage subscription",
+    "cancelNote": "Cancel anytime in your store settings. Full price and renewal date are always shown before you subscribe."
+  },
+  "more": {
+    "title": "More",
+    "almanacHint": "Month view, day details, good hours",
+    "history": "Your readings",
+    "noHistory": "No readings yet.",
+    "historyPlusNote": "History older than 7 days is part of Plus."
+  },
+  "profiles": {
+    "selfLabel": "Me",
+    "partnerLabel": "Partner",
+    "you": "You",
+    "timeUnknownShort": "time unknown",
+    "addPartner": "Add a person",
+    "addPartnerHint": "Partner, child or friend — for compatibility and date picking.",
+    "labelField": "Name / label",
+    "labelPlaceholder": "e.g. Partner"
+  },
+  "reading": {
+    "title": "Reading",
+    "computing": "Computing your chart…",
+    "connecting": "Connecting…",
+    "streaming": "Writing your reading…",
+    "aiPending": "The written interpretation is being prepared and will appear here.",
+    "factsCount": "{count, plural, one {# fact} other {# facts}} from the engine",
+    "actions": "Suggested actions",
+    "streamError": "Could not load the interpretation ({code}).",
+    "deepCta": "Get the full reading",
+    "deepNote": "First deep reading free · then Plus or 1 credit",
+    "askAbout": "Ask about this",
+    "rateUp": "Helpful",
+    "rateDown": "Not helpful",
+    "openDetail": "Open full reading",
+    "confidence": {
+      "high": "High confidence",
+      "medium": "Medium confidence",
+      "low": "Approximate"
+    },
+    "kinds": {
+      "ziwei_full": "Zi Wei reading",
+      "bazi_luck": "Four Pillars & luck",
+      "numerology_full": "Numerology report",
+      "compatibility": "Compatibility",
+      "almanac_pick": "Date picking",
+      "tarot_spread": "Tarot spread",
+      "iching": "I Ching"
+    },
+    "paidBy": {
+      "free_first": "free",
+      "subscription": "Plus",
+      "credit": "credit"
+    }
+  },
+  "ziwei": {
+    "bodyTag": "Body",
+    "decadal": "Decade",
+    "yearly": "Year",
+    "monthly": "Month",
+    "soulStar": "Soul star",
+    "bodyStar": "Body star",
+    "fiveClass": "Class",
+    "emptyPalace": "No major star (borrow from opposite palace)",
+    "timeUnknownWarning": "Birth time unknown: the chart assumes noon. Palace positions may differ — results are approximate.",
+    "schoolUnverified": "This school's transformation table is pending expert verification.",
+    "schools": {
+      "default": "Standard",
+      "zhongzhou": "Zhongzhou",
+      "quanshu": "Quanshu / Southern",
+      "khamThienTuHoa": "Khâm Thiên Tứ Hoá"
+    },
+    "overlay": {
+      "none": "Natal only",
+      "horoscope": "Decade / year / month"
+    },
+    "horoscopeFor": "Luck cycles for {date}",
+    "yearlyMutagen": "Annual transformations",
+    "pattern": "Pattern",
+    "bodyPalace": "Body palace",
+    "ages": "Ages"
+  },
+  "bazi": {
+    "pillars": {
+      "year": "Year",
+      "month": "Month",
+      "day": "Day",
+      "hour": "Hour"
+    },
+    "hourUnknown": "Hour pillar approximate",
+    "dayMaster": "Day master",
+    "hidden": "Hidden stems",
+    "nayin": "Nayin",
+    "stage": "Stage",
+    "elements": "Five elements",
+    "useful": "Useful",
+    "unfavorable": "Unfavourable",
+    "luck": "Luck cycles",
+    "luckPeriods": "10-year luck periods",
+    "annual": "Annual luck",
+    "age": "Age",
+    "now": "Now",
+    "luckStart": "First period starts at {years}y {months}m, {direction}",
+    "direction": {
+      "forward": "forward",
+      "backward": "backward"
+    },
+    "timeUnknownWarning": "Birth time unknown: the hour pillar is omitted from strength and luck calculations."
+  },
+  "numerology": {
+    "lifePath": "Life Path",
+    "expression": "Expression",
+    "soulUrge": "Soul Urge",
+    "personality": "Personality",
+    "birthday": "Birthday",
+    "maturity": "Maturity",
+    "personalYear": "Personal Year",
+    "personalMonth": "Personal Month",
+    "personalDay": "Personal Day",
+    "master": "Master number",
+    "needsName": "Add name",
+    "nameMissing": "Add your full name to unlock name-based numbers.",
+    "karmicDebt": "Karmic debt",
+    "pinnacles": "Pinnacles & challenges",
+    "ages": "Ages {from}–{to}",
+    "challenge": "Challenge"
+  },
+  "astro": {
+    "sun": "Sun",
+    "moon": "Moon",
+    "rising": "Rising",
+    "planets": "Planets",
+    "aspects": "Aspects",
+    "house": "House {n}",
+    "houses": {
+      "placidus": "Placidus",
+      "whole": "Whole sign"
+    },
+    "timeUnknownWarning": "Birth time unknown: houses, rising sign and Moon are approximate (noon assumed).",
+    "signs": {
+      "aries": "Aries",
+      "taurus": "Taurus",
+      "gemini": "Gemini",
+      "cancer": "Cancer",
+      "leo": "Leo",
+      "virgo": "Virgo",
+      "libra": "Libra",
+      "scorpio": "Scorpio",
+      "sagittarius": "Sagittarius",
+      "capricorn": "Capricorn",
+      "aquarius": "Aquarius",
+      "pisces": "Pisces"
+    },
+    "bodies": {
+      "sun": "Sun",
+      "moon": "Moon",
+      "mercury": "Mercury",
+      "venus": "Venus",
+      "mars": "Mars",
+      "jupiter": "Jupiter",
+      "saturn": "Saturn",
+      "uranus": "Uranus",
+      "neptune": "Neptune",
+      "pluto": "Pluto",
+      "northNode": "North Node"
+    },
+    "aspectTypes": {
+      "conjunction": "conjunct",
+      "opposition": "opposite",
+      "trine": "trine",
+      "square": "square",
+      "sextile": "sextile"
+    },
+    "moonPhase": {
+      "new": "New Moon",
+      "waxingCrescent": "Waxing crescent",
+      "firstQuarter": "First quarter",
+      "waxingGibbous": "Waxing gibbous",
+      "full": "Full Moon",
+      "waningGibbous": "Waning gibbous",
+      "lastQuarter": "Last quarter",
+      "waningCrescent": "Waning crescent"
+    }
+  },
+  "tarot": {
+    "subtitle": "Classic 1909 deck · 78 cards",
+    "question": "Your question",
+    "questionPlaceholder": "What is on your mind? (optional)",
+    "draw": "Draw cards",
+    "redraw": "Draw again",
+    "flipAll": "Reveal all",
+    "faceDown": "Face down",
+    "reversed": "Reversed",
+    "interpretation": "Interpretation",
+    "localNote": "Keyword reading from the deck's classic meanings. The AI interpretation arrives in a later update.",
+    "askAi": "Save & ask for a full reading",
+    "saved": "Saved. The full interpretation will appear in your readings.",
+    "aiComingSoon": "Full AI tarot readings are coming soon — your draw stays on this device for now.",
+    "deckCredit": "Card meanings after A. E. Waite (1911), public domain.",
+    "spreads": {
+      "one": "One card",
+      "three": "Three cards",
+      "five": "Five cards",
+      "celticCross": "Celtic Cross"
+    },
+    "positions": {
+      "card": "The card",
+      "past": "Past",
+      "present": "Present",
+      "future": "Future",
+      "situation": "Situation",
+      "challenge": "Challenge",
+      "advice": "Advice",
+      "outcome": "Outcome",
+      "hidden": "Hidden influence",
+      "foundation": "Foundation",
+      "recentPast": "Recent past",
+      "crown": "Best outcome",
+      "nearFuture": "Near future",
+      "self": "You",
+      "environment": "Environment",
+      "hopesFears": "Hopes & fears"
+    }
+  },
+  "iching": {
+    "subtitle": "Cast six lines, bottom to top",
+    "coins": "Three coins",
+    "yarrow": "Yarrow stalks",
+    "yang": "yang",
+    "yin": "yin",
+    "changing": "changing",
+    "line": "Line",
+    "castLine": "Cast line {n}",
+    "castAll": "Cast all six",
+    "again": "Cast again",
+    "result": "Result",
+    "primary": "Primary hexagram",
+    "relating": "Relating hexagram",
+    "changingLines": "Changing lines",
+    "aiComingSoon": "Written interpretation of your cast arrives with the AI composer.",
+    "sourceCredit": "Texts after the Legge / Wilhelm public-domain translations."
+  },
+  "almanac": {
+    "lunarDate": "{day}/{month}{leap, select, 1 { (leap)} other {}}",
+    "huangdao": "Auspicious day",
+    "heidao": "Inauspicious day",
+    "yi": "Favourable",
+    "ji": "Avoid",
+    "clash": "Clashes with {zodiac} ({ganzhi})",
+    "clashesWithUser": "This day clashes with your birth year — avoid big moves.",
+    "harmsUser": "This day harms your birth year.",
+    "solarTerm": "Solar term",
+    "weekdays": "Mon,Tue,Wed,Thu,Fri,Sat,Sun",
+    "notPersonalized": "Loading your profile to personalise this day…",
+    "engineNote": "Computed on your device from the national calendar standard. 宜/忌 follow the traditional almanac.",
+    "openDay": "Open day",
+    "standard": {
+      "vn": "Vietnam",
+      "cn": "China / Taiwan",
+      "kr": "Korea",
+      "jp": "Japan"
+    },
+    "tasks": {
+      "wedding": "Wedding",
+      "opening": "Opening",
+      "moving": "Moving house",
+      "contract": "Contract",
+      "travel": "Travel",
+      "groundbreaking": "Groundbreaking",
+      "haircut": "Haircut",
+      "pray": "Prayer",
+      "burial": "Burial",
+      "study": "Studies"
+    },
+    "reasons": {
+      "yi_match": "Favourable for this task",
+      "ji_conflict": "Listed as unfavourable",
+      "nothing_advisable": "Nothing advisable",
+      "huangdao": "Auspicious day",
+      "zhixing_good": "Good day officer",
+      "zhixing_break": "Day officer: Break",
+      "xiu_good": "Auspicious mansion",
+      "clash_profile": "Clashes with a birth year",
+      "harm_profile": "Harms a birth year",
+      "useful_element": "Favourable element"
+    },
+    "pick": {
+      "title": "Pick a good date",
+      "hint": "Rank days for a task, avoiding clashes with your year",
+      "task": "Task",
+      "window": "From {from}",
+      "days": "{count} days",
+      "profiles": "People involved",
+      "run": "Find good days",
+      "paidNote": "Plus or 1 credit per search",
+      "results": "{count, plural, one {# day found} other {# days found}}",
+      "none": "No suitable day in this window.",
+      "exportSoon": "Export to calendar (.ics) is coming soon."
+    }
+  },
+  "compat": {
+    "subtitle": "Year branches, day masters and life paths",
+    "pickPartner": "Who with?",
+    "invite": "Invite via link",
+    "inviteText": "Compare our charts on Findme: {url}",
+    "inviteTitle": "Invitation",
+    "inviteBody": "Someone invited you to compare charts (code {code}).",
+    "inviteApiNote": "Shared invites will link profiles automatically once the invite API ships; for now add the person manually.",
+    "run": "Compare",
+    "result": "Result",
+    "score": "Compatibility score",
+    "lifePaths": "Life paths {a} & {b}",
+    "branchRelation": "Year branches",
+    "dayMasterRelation": "Day masters",
+    "relations": {
+      "six_harmony": "Six harmony",
+      "trine": "Trine",
+      "same": "Same sign",
+      "clash": "Clash",
+      "neutral": "Neutral"
+    },
+    "dayMasters": {
+      "same": "Same element",
+      "a_generates_b": "You nourish them",
+      "b_generates_a": "They nourish you",
+      "a_controls_b": "You control them",
+      "b_controls_a": "They control you"
+    },
+    "reasons": {}
   }
 }
