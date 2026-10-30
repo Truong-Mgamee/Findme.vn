@@ -51,7 +51,7 @@ export function buildMetadata(input: SeoInput): Metadata {
       siteName: 'Findme',
       locale: input.locale === 'vi' ? 'vi_VN' : 'en_US',
       type: input.type ?? 'website',
-      images: input.images ?? ['/og-default.png'],
+      images: input.images ?? ['/icons/icon-512.png'],
     },
     twitter: { card: 'summary_large_image', title: input.title, description: input.description },
     other,
