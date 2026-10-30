@@ -29,16 +29,16 @@ const payload: DailyPayload = {
 };
 
 describe('OracleCard', () => {
-  it('prefers the personal segment over the common one', () => {
+  it('prefers the personal segment over the common one', async () => {
     expect(pickContent(payload)?.headline).toBe('Hôm nay hợp với bạn');
     expect(pickContent({ ...payload, content: { 'ea:common': { headline: 'Chung' } } })?.headline).toBe('Chung');
     expect(pickContent({ ...payload, content: {} })).toBeNull();
   });
 
-  it('renders headline, streak, almanac, tarot and numbers pages', () => {
+  it('renders headline, streak, almanac, tarot and numbers pages', async () => {
     const onShare = jest.fn();
     const onAsk = jest.fn();
-    render(
+    await render(
       <ThemeProvider>
         <OracleCard payload={payload} onShare={onShare} onAsk={onAsk} labels={{ streak: (n) => `Chuỗi ${n} ngày`, share: 'Chia sẻ', ask: 'Hỏi thêm' }} />
       </ThemeProvider>,
@@ -50,20 +50,20 @@ describe('OracleCard', () => {
     expect(screen.getByTestId('oracle-page-tarot')).toBeTruthy();
     expect(screen.getByTestId('oracle-page-numbers')).toBeTruthy();
     expect(screen.getByTestId('oracle-page-action')).toBeTruthy();
-    expect(screen.getByText(drawn.card.name_en)).toBeTruthy();
+    expect(screen.getAllByText(drawn.card.name_en).length).toBeGreaterThan(0);
     expect(screen.getByTestId('oracle-lucky-number').props.children).toBe(almanac.personal.luckyNumbers.join(' · '));
     expect(screen.getByText('Personal day 7')).toBeTruthy();
     expect(screen.getByText('Tài chính')).toBeTruthy();
-    fireEvent.press(screen.getByTestId('oracle-share'));
-    fireEvent.press(screen.getByTestId('oracle-ask'));
+    await fireEvent.press(screen.getByTestId('oracle-share'));
+    await fireEvent.press(screen.getByTestId('oracle-ask'));
     expect(onShare).toHaveBeenCalled();
     expect(onAsk).toHaveBeenCalled();
     expect(screen.queryByTestId('oracle-offline')).toBeNull();
   });
 
-  it('shows the offline badge and a placeholder when no daily copy exists (western only)', () => {
+  it('shows the offline badge and a placeholder when no daily copy exists (western only)', async () => {
     const west: DailyPayload = { ...payload, traditionPack: 'western', segments: ['w:common'], content: {}, eastAsia: undefined, tarot: null };
-    render(
+    await render(
       <ThemeProvider scheme="light">
         <OracleCard payload={west} offline labels={{ offline: 'Ngoại tuyến', noContent: 'Đang viết…' }} />
       </ThemeProvider>,

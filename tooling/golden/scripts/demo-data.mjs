@@ -7,7 +7,7 @@ import { dailyCard, drawCards } from '@findme/engine-tarot';
 import { castHexagram } from '@findme/engine-iching';
 import { dailySky, computeNatalChart } from '@findme/engine-astro';
 import { resolveBirth } from '@findme/engine-calendar';
-const today = new Date().toISOString().slice(0, 10);
+const today = process.argv[3] ?? new Date().toISOString().slice(0, 10);
 const birth = { date: '1997-12-24', time: '12:00', timeUnknown: false, gender: 'female', place: { name: 'Hà Nội', lat: 21.0285, lng: 105.8542, tz: 'Asia/Ho_Chi_Minh', country: 'VN' }, calendarStandard: 'vn' };
 const rb = resolveBirth(birth);
 const zw = computeZiwei(birth, { locale: 'vi' });
