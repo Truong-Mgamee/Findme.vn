@@ -22,8 +22,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: WORKSPACE_PACKAGES,
   poweredByHeader: false,
-  // Engines are only evaluated on the server (SEO pages + route handlers); keep them out of the client bundle.
-  serverExternalPackages: [],
+  // Workspace sources use ESM `./x.js` specifiers that point at `.ts` files; map them for webpack (Turbopack does this natively).
+  webpack: (config) => {
+    config.resolve.extensionAlias = { '.js': ['.ts', '.tsx', '.js'], '.mjs': ['.mts', '.mjs'] };
+    return config;
+  },
   async headers() {
     return [
       {

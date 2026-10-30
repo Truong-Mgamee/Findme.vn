@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { getDayAlmanac } from '@findme/engine-almanac';
 import { civilToLunar } from '@findme/engine-calendar';
 import { dailyCard } from '@findme/engine-tarot';
 import { lifePath, parseDate } from '@findme/engine-numerology';
@@ -14,9 +15,12 @@ test.describe('SEO hub (engine-only, no API)', () => {
     await expect(page.getByTestId('title')).toContainText('Lịch âm hôm nay');
     const [y, m, d] = todayIn('Asia/Ho_Chi_Minh').split('-').map(Number) as [number, number, number];
     const lunar = civilToLunar(y, m, d, 'vn');
+    const almanac = getDayAlmanac(`${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`, 'vn', 'vi');
     await expect(page.getByTestId('lunar-date')).toContainText(`Ngày ${lunar.day} tháng ${lunar.month}`);
-    await expect(page.getByTestId('huangdao')).toContainText(/hoàng đạo|hắc đạo/);
-    await expect(page.getByTestId('good-hours').locator('li')).toHaveCount(6);
+    await expect(page.getByTestId('huangdao')).toContainText(almanac.huangdao ? 'hoàng đạo' : 'hắc đạo');
+    // lunar-typescript yields 13 hour slots (early/late 子); compare with the engine rather than a fixed count
+    await expect(page.getByTestId('good-hours').locator('li')).toHaveCount(almanac.hours.filter((h) => h.auspicious).length);
+    await expect(page.getByTestId('yi').locator('li')).toHaveCount(almanac.yi.length);
     await expect(page.getByTestId('yi').locator('li').first()).toBeVisible();
     // hreflang + JSON-LD + canonical
     await expect(page.locator('link[rel="alternate"][hreflang="vi-VN"]')).toHaveAttribute('href', /\/vi\/lich-am-hom-nay$/);

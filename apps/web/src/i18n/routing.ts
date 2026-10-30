@@ -33,14 +33,20 @@ export const PATHNAMES = {
   '/offline': '/offline',
 } as const;
 
+/**
+ * Locales the web app ships copy for (slug maps above, LIFE_PATH_COPY, ZODIAC_TRAITS…). ENABLED_LOCALES in @findme/i18n
+ * is the source of truth; enabling a wave-2 locale there requires adding it here and to the per-locale tables.
+ */
+export type AppLocale = 'vi' | 'en';
+const WEB_LOCALES = ENABLED_LOCALES.filter((l): l is AppLocale => l === 'vi' || l === 'en');
+
 export const routing = defineRouting({
-  locales: ENABLED_LOCALES,
+  locales: WEB_LOCALES,
   defaultLocale: 'vi',
   localePrefix: 'always',
   pathnames: PATHNAMES,
 });
 
-export type AppLocale = (typeof routing.locales)[number];
 export type Pathname = keyof typeof PATHNAMES;
 
 export function isAppLocale(v: string): v is AppLocale {
