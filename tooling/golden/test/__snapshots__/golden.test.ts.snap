@@ -181,6 +181,7 @@ exports[`golden: calendar + bazi + ziwei per profile > cn-1900 — early 20th ce
     ],
     "patterns": [
       "jiYueTongLiang",
+      "luMaJiaoChi",
     ],
     "soul": "lucunMin",
     "soulBranch": "xuEarthly",
@@ -562,6 +563,7 @@ exports[`golden: calendar + bazi + ziwei per profile > kr-saju — Korea: true s
     ],
     "patterns": [
       "shaPoLang",
+      "luMaJiaoChi",
     ],
     "soul": "lucunMin",
     "soulBranch": "xuEarthly",
