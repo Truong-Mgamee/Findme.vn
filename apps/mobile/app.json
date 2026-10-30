@@ -8,7 +8,10 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
-    "ios": { "supportsTablet": true, "bundleIdentifier": "com.mgamee.dailyfate" },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mgamee.dailyfate"
+    },
     "android": {
       "package": "com.mgamee.dailyfate",
       "adaptiveIcon": {
@@ -19,7 +22,17 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": { "favicon": "./assets/favicon.png", "bundler": "metro", "output": "single" },
-    "plugins": ["expo-localization"]
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
   }
 }

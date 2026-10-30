@@ -1,5 +1,20 @@
 # Tiến độ thực thi
 
+## 2026-10-30 – Sprint 2 (một phần M3 App core + M2 content)
+
+| Ticket | Kết quả | Bằng chứng |
+|---|---|---|
+| T-SETUP-02 (một phần) | expo-router (Stack + Tabs), AsyncStorage lưu hồ sơ, đổi ngôn ngữ vi/en runtime | `apps/mobile/app/**`, `src/store/profile.tsx` |
+| T-FE-01…03, 05 | **Onboarding** thay hồ sơ demo: tên, họ tên, giới tính, ngày sinh, giờ sinh 3 chế độ (đồng hồ / 12 canh giờ / không rõ), nơi sinh (28 thành phố tạm, GeoNames ở T-FE-04) | `docs/plan/screenshots/01-02-*.png`; e2e Playwright: nhập form → Hôm nay, reload vẫn giữ hồ sơ |
+| T-FE-10 | Tab **Hôm nay** dùng hồ sơ thật | `03-today.png` |
+| T-FE-20…24 (text) | Tab **Lá số**: lưới Tử vi 12 cung (chính tinh + độ sáng, tuần/triệt, đại hạn, Thân), bảng chiêm tinh (ASC/MC/10 hành tinh/aspects), thần số (số chủ đạo + luận giải lớp 1–2 từ content pack, 5 số lõi, năm cá nhân), bát tự (tứ trụ, nhật chủ, vượng/nhược, tỷ lệ ngũ hành, đại vận). Chưa vẽ SVG | `04-07-*.png` |
+| T-FE-40 | Tab **Lịch**: ngày tốt tháng, lọc theo 6 loại việc, loại ngày xung tuổi, điểm 0–100, giờ hoàng đạo | `07-calendar.png` |
+| T-FE-70 | Tab **Tôi**: ngôn ngữ, sửa/xoá hồ sơ, license, disclaimer | |
+| T-DATA-01/03 (một phần) | `@fortune/content`: schema record, pack vi/en, 24 đoạn luận giải Số chủ đạo 1–9, 11, 22, 33 (lớp 1 + 2), fallback en, 4 test | `packages/content` |
+
+### Chưa làm
+GeoNames + múi giờ lịch sử (hiện offset chuẩn, chưa DST); Lingui; lá số SVG; so sánh (compare) UI; tarot spread UI; paywall/RevenueCat; push; content Tử vi/chiêm tinh/tarot/daily template; Supabase project thật; ảnh tarot.
+
 ## 2026-10-10 – Sprint 1 (M0 scaffold) + phần lớn M1 engine, làm trong 1 phiên
 
 **Quyết định mặc định (chưa được Trường xác nhận, đổi được bất cứ lúc nào):** tên tạm "Daily Fate"; Wave 1 = vi + en; không có marketplace người thật ở v1.

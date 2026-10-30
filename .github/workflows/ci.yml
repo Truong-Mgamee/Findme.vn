@@ -15,5 +15,8 @@ jobs:
       - run: pnpm --filter @fortune/engine lint
       - run: pnpm --filter @fortune/engine typecheck
       - run: pnpm --filter @fortune/engine test
+      - run: pnpm --filter @fortune/content lint
+      - run: pnpm --filter @fortune/content test
       - run: pnpm --filter @fortune/engine build
+      - run: pnpm --filter @fortune/content build
       - run: pnpm --filter mobile typecheck

@@ -9,9 +9,9 @@
     "typecheck": "turbo run typecheck",
     "engine:build": "pnpm --filter @fortune/engine build",
     "engine:test": "pnpm --filter @fortune/engine test",
-    "mobile": "pnpm engine:build && pnpm --filter mobile start",
-    "web": "pnpm engine:build && pnpm --filter mobile web",
-    "web:export": "pnpm engine:build && pnpm --filter mobile export:web"
+    "mobile": "pnpm engine:build && pnpm --filter @fortune/content build && pnpm --filter mobile start",
+    "web": "pnpm engine:build && pnpm --filter @fortune/content build && pnpm --filter mobile web",
+    "web:export": "pnpm engine:build && pnpm --filter @fortune/content build && pnpm --filter mobile export:web"
   },
   "devDependencies": {
     "turbo": "^2.5.0",
