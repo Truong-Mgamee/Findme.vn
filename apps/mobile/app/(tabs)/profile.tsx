@@ -42,7 +42,7 @@ function TuVi() {
         {GRID.map((pos, i) => {
           if (pos === 0) {
             if (i === 6 || i === 9) return null; // covered by the 50 %-wide centre / spacer
-            if (i === 10) return <View key={i} style={[s.cell, { width: "50%" }]} />;
+            if (i === 10) return <View key={i} style={[s.cell, { width: "50%", aspectRatio: 1.7 }]} />;
             return (
               <View key={i} style={[s.cell, { width: "50%", aspectRatio: 1.7 }]}>
                 <View style={s.cellIn}>
