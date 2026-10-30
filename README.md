@@ -21,7 +21,10 @@ pnpm install                 # Node 22, pnpm 10 (node-linker=hoisted cho Expo)
 pnpm engine:test             # 131 test: 50 lá số Tử vi vs oracle Python, 41 năm Tết, chiêm tinh, thần số, tarot
 pnpm web                     # build engine rồi mở app trên trình duyệt
 pnpm mobile                  # Expo dev server (quét QR bằng Expo Go hoặc chạy ios/android)
+pnpm web:bundle              # build web tĩnh vào dist-web/ (host ở đâu cũng được)
 ```
+
+Bản web thử nghiệm đang chạy (private, cần đăng nhập claude.ai): https://claude.ai/artifact/886qekje6NhPjEMPwNAVMV
 
 ## Engine API (packages/engine)
 

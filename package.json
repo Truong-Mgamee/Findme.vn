@@ -11,7 +11,8 @@
     "engine:test": "pnpm --filter @fortune/engine test",
     "mobile": "pnpm engine:build && pnpm --filter @fortune/content build && pnpm --filter mobile start",
     "web": "pnpm engine:build && pnpm --filter @fortune/content build && pnpm --filter mobile web",
-    "web:export": "pnpm engine:build && pnpm --filter @fortune/content build && pnpm --filter mobile export:web"
+    "web:export": "pnpm engine:build && pnpm --filter @fortune/content build && pnpm --filter mobile export:web",
+    "web:bundle": "bash scripts/build-web-bundle.sh"
   },
   "devDependencies": {
     "turbo": "^2.5.0",
