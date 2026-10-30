@@ -641,8 +641,16 @@
       },
       "daily": {
         "title": "Xem trước nội dung ngày",
-        "body": "Xem trước daily_content theo segment cần `GET /v1/today?preview=<segment>` phía API, hiện chưa có. Tạm thời dùng token khách trong ứng dụng để xem các segment hôm nay.",
-        "todo": "Chờ API: GET /v1/today?preview=segment"
+        "body": "Các dòng daily_content theo ngày (GET /v1/admin/daily-content). Chạy lại job Daily Oracle cho ngày đó để tạo lại.",
+        "date": "Ngày",
+        "locale": "Ngôn ngữ",
+        "load": "Tải",
+        "run": "Chạy job Daily Oracle",
+        "running": "Đang chạy…",
+        "segment": "Segment",
+        "payload": "Payload",
+        "empty": "Không có dòng nào cho ngày này.",
+        "jobResult": "Đã tạo {generated}, bỏ qua {skipped}, chi phí ${cost}"
       },
       "status": {
         "draft": "Nháp",

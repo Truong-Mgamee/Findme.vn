@@ -641,8 +641,16 @@
       },
       "daily": {
         "title": "Daily content preview",
-        "body": "Previewing daily_content by segment needs `GET /v1/today?preview=<segment>` on the API, which does not exist yet. Until then, use a guest token in the app to view today's segments.",
-        "todo": "Blocked on API: GET /v1/today?preview=segment"
+        "body": "Rows of daily_content for a date (GET /v1/admin/daily-content). Re-run the Daily Oracle job for the date to regenerate.",
+        "date": "Date",
+        "locale": "Locale",
+        "load": "Load",
+        "run": "Run Daily Oracle job",
+        "running": "Running…",
+        "segment": "Segment",
+        "payload": "Payload",
+        "empty": "No rows for this date.",
+        "jobResult": "Generated {generated}, skipped {skipped}, cost ${cost}"
       },
       "status": {
         "draft": "Draft",
